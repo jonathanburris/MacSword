@@ -1,0 +1,303 @@
+\hypertarget{interface_module_view_controller}{\section{Module\-View\-Controller Class Reference}
+\label{interface_module_view_controller}\index{Module\-View\-Controller@{Module\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Module\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Module\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.800000cm]{interface_module_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-Attributed\-String $\ast$) -\/ \hyperlink{interface_module_view_controller_a9b8719aea240bb6d9e12ea0078eb34ec}{displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_af93fa75282ae196249c4a08e8845fb8f}{populate\-Modules\-Menu}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{set\-Status\-Text\-:}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_aebe8aa693a307d7f2cab428e8cc8572f}{search\-Operation\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_affce1dc00566ecfbdaa29a5c204ea414}{index\-Creation\-Finished\-:}
+\item 
+(N\-S\-Text\-View $\ast$) -\/ \hyperlink{interface_module_view_controller_aa04c518654a720c5d33543c1f6907669}{text\-View}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{content\-View\-Init\-Finished\-:}
+\item 
+(N\-S\-Menu $\ast$) -\/ \hyperlink{interface_module_view_controller_a14434144f47d2ff967d87e42abbff1d8}{menu\-For\-Event\-:}
+\item 
+(id) -\/ \hyperlink{interface_module_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_module_view_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\item 
+(N\-S\-Menu $\ast$) -\/ \hyperlink{interface_module_view_controller_ab3a24e21a58c1e870eb4d2b6380d7a72}{text\-Context\-Menu}
+\item 
+(N\-S\-Menu $\ast$) -\/ \hyperlink{interface_module_view_controller_a0bbefe9238ed181dcad8bbff9a3ee994}{link\-Context\-Menu}
+\item 
+(N\-S\-Menu $\ast$) -\/ \hyperlink{interface_module_view_controller_a638510d39068d3fda16c07822afeafbf}{image\-Context\-Menu}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_a4a49d07d887f1925ad6444192089c725}{look\-Up\-In\-Index\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_ac6d3095552bad1b1ff74a3291928fe68}{look\-Up\-In\-Index\-Of\-Bible\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_aa5063fbebfe24aff0910ced51558ce4f}{look\-Up\-In\-Dictionary\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_a27f9fde6424976e1fc929a88a68cff8c}{look\-Up\-In\-Dictionary\-Of\-Module\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_aaa256786cbc78bf2414a38d012961d22}{open\-Link\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_view_controller_ae33ea5821124cb7c5505e60a9679d7b9}{display\-Module\-About\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Box $\ast$ \hyperlink{interface_module_view_controller_a9a9977454586999c31286b17841fe58b}{place\-Holder\-View}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_module_view_controller_a02b2bd514de65dc47edc557e3f39e71e}{text\-Context\-Menu}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_module_view_controller_a5aa9c58bd26a160fadd38c0f6dff339d}{link\-Context\-Menu}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_module_view_controller_a5725748af4a2a253c46f52f9984cdfed}{image\-Context\-Menu}
+\item 
+\hyperlink{interface_ext_text_view_controller}{Ext\-Text\-View\-Controller} $\ast$ \hyperlink{interface_module_view_controller_a0452961582a310ae1acbe0d48f8ccaa6}{text\-View\-Controller}
+\item 
+\hyperlink{interface_indexer}{Indexer} $\ast$ \hyperlink{interface_module_view_controller_ac105518e4ab52f055cfb642583921fbf}{indexer}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_sword_module}{Sword\-Module} $\ast$ \hyperlink{interface_module_view_controller_a4d9ff35b74c4bbf911e200fd553a7090}{module}
+\item 
+B\-O\-O\-L \hyperlink{interface_module_view_controller_af810dd4770996b23d6ba667b91fc33f1}{perform\-Progress\-Calculation}
+\item 
+N\-S\-U\-R\-L $\ast$ \hyperlink{interface_module_view_controller_a79873fe7e12ce6ca97409a0e056bf2de}{context\-Menu\-Clicked\-Link}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_module_view_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{\index{Module\-View\-Controller@{Module\-View\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a14ea82a054bc45c1a1c62bb7f6985da2}
+
+
+Reimplemented in \hyperlink{interface_bible_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{Bible\-View\-Controller}, \hyperlink{interface_dictionary_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{Dictionary\-View\-Controller}, and \hyperlink{interface_gen_book_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{Gen\-Book\-View\-Controller}.
+
+\hypertarget{interface_module_view_controller_a9b8719aea240bb6d9e12ea0078eb34ec}{\index{Module\-View\-Controller@{Module\-View\-Controller}!displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:@{displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:}}
+\index{displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:@{displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{displayable\-H\-T\-M\-L\-From\-Search\-Results\-:search\-Query\-:number\-Of\-Results\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Attributed\-String $\ast$) displayable\-H\-T\-M\-L\-From\-Search\-Results\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array $\ast$)}]{temp\-Results}
+\item[{searchQuery:(N\-S\-String $\ast$)}]{search\-Query}
+\item[{numberOfResults:(int $\ast$)}]{results}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a9b8719aea240bb6d9e12ea0078eb34ec}
+Generates N\-S\-Attributed\-String from search results this is an abstract method, should be overriden by subclasses 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em results} & array of Search\-Results instances \\
+\hline
+\mbox{\tt in}  & {\em search\-Query} & \\
+\hline
+\mbox{\tt out}  & {\em number} & of verses found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+attributed string 
+\end{DoxyReturn}
+\hypertarget{interface_module_view_controller_ae33ea5821124cb7c5505e60a9679d7b9}{\index{Module\-View\-Controller@{Module\-View\-Controller}!display\-Module\-About\-:@{display\-Module\-About\-:}}
+\index{display\-Module\-About\-:@{display\-Module\-About\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{display\-Module\-About\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) display\-Module\-About\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_ae33ea5821124cb7c5505e60a9679d7b9}
+\hypertarget{interface_module_view_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Module\-View\-Controller@{Module\-View\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Module\-Commons\-View\-Controller}.
+
+
+
+Reimplemented in \hyperlink{interface_bible_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Bible\-View\-Controller}, \hyperlink{interface_dictionary_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Dictionary\-View\-Controller}, \hyperlink{interface_gen_book_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Gen\-Book\-View\-Controller}, and \hyperlink{interface_commentary_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Commentary\-View\-Controller}.
+
+\hypertarget{interface_module_view_controller_a638510d39068d3fda16c07822afeafbf}{\index{Module\-View\-Controller@{Module\-View\-Controller}!image\-Context\-Menu@{image\-Context\-Menu}}
+\index{image\-Context\-Menu@{image\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{image\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Menu $\ast$) image\-Context\-Menu 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a638510d39068d3fda16c07822afeafbf}
+
+
+Reimplemented from \hyperlink{protocol_context_menu_providing-p_a638510d39068d3fda16c07822afeafbf}{$<$\-Context\-Menu\-Providing$>$}.
+
+\hypertarget{interface_module_view_controller_affce1dc00566ecfbdaa29a5c204ea414}{\index{Module\-View\-Controller@{Module\-View\-Controller}!index\-Creation\-Finished\-:@{index\-Creation\-Finished\-:}}
+\index{index\-Creation\-Finished\-:@{index\-Creation\-Finished\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{index\-Creation\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) index\-Creation\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{mod}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_affce1dc00566ecfbdaa29a5c204ea414}
+\hypertarget{interface_module_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Module\-View\-Controller@{Module\-View\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Module\-Commons\-View\-Controller}.
+
+
+
+Reimplemented in \hyperlink{interface_bible_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Bible\-View\-Controller}, \hyperlink{interface_dictionary_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Dictionary\-View\-Controller}, \hyperlink{interface_gen_book_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Gen\-Book\-View\-Controller}, and \hyperlink{interface_commentary_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Commentary\-View\-Controller}.
+
+\hypertarget{interface_module_view_controller_a0bbefe9238ed181dcad8bbff9a3ee994}{\index{Module\-View\-Controller@{Module\-View\-Controller}!link\-Context\-Menu@{link\-Context\-Menu}}
+\index{link\-Context\-Menu@{link\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{link\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Menu $\ast$) link\-Context\-Menu 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a0bbefe9238ed181dcad8bbff9a3ee994}
+
+
+Reimplemented from \hyperlink{protocol_context_menu_providing-p_a0bbefe9238ed181dcad8bbff9a3ee994}{$<$\-Context\-Menu\-Providing$>$}.
+
+\hypertarget{interface_module_view_controller_aa5063fbebfe24aff0910ced51558ce4f}{\index{Module\-View\-Controller@{Module\-View\-Controller}!look\-Up\-In\-Dictionary\-:@{look\-Up\-In\-Dictionary\-:}}
+\index{look\-Up\-In\-Dictionary\-:@{look\-Up\-In\-Dictionary\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{look\-Up\-In\-Dictionary\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) look\-Up\-In\-Dictionary\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_aa5063fbebfe24aff0910ced51558ce4f}
+\hypertarget{interface_module_view_controller_a27f9fde6424976e1fc929a88a68cff8c}{\index{Module\-View\-Controller@{Module\-View\-Controller}!look\-Up\-In\-Dictionary\-Of\-Module\-:@{look\-Up\-In\-Dictionary\-Of\-Module\-:}}
+\index{look\-Up\-In\-Dictionary\-Of\-Module\-:@{look\-Up\-In\-Dictionary\-Of\-Module\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{look\-Up\-In\-Dictionary\-Of\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) look\-Up\-In\-Dictionary\-Of\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a27f9fde6424976e1fc929a88a68cff8c}
+\hypertarget{interface_module_view_controller_a4a49d07d887f1925ad6444192089c725}{\index{Module\-View\-Controller@{Module\-View\-Controller}!look\-Up\-In\-Index\-:@{look\-Up\-In\-Index\-:}}
+\index{look\-Up\-In\-Index\-:@{look\-Up\-In\-Index\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{look\-Up\-In\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) look\-Up\-In\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a4a49d07d887f1925ad6444192089c725}
+\hypertarget{interface_module_view_controller_ac6d3095552bad1b1ff74a3291928fe68}{\index{Module\-View\-Controller@{Module\-View\-Controller}!look\-Up\-In\-Index\-Of\-Bible\-:@{look\-Up\-In\-Index\-Of\-Bible\-:}}
+\index{look\-Up\-In\-Index\-Of\-Bible\-:@{look\-Up\-In\-Index\-Of\-Bible\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{look\-Up\-In\-Index\-Of\-Bible\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) look\-Up\-In\-Index\-Of\-Bible\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_ac6d3095552bad1b1ff74a3291928fe68}
+\hypertarget{interface_module_view_controller_a14434144f47d2ff967d87e42abbff1d8}{\index{Module\-View\-Controller@{Module\-View\-Controller}!menu\-For\-Event\-:@{menu\-For\-Event\-:}}
+\index{menu\-For\-Event\-:@{menu\-For\-Event\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{menu\-For\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Menu $\ast$) menu\-For\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a14434144f47d2ff967d87e42abbff1d8}
+\hypertarget{interface_module_view_controller_aaa256786cbc78bf2414a38d012961d22}{\index{Module\-View\-Controller@{Module\-View\-Controller}!open\-Link\-:@{open\-Link\-:}}
+\index{open\-Link\-:@{open\-Link\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{open\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_aaa256786cbc78bf2414a38d012961d22}
+\hypertarget{interface_module_view_controller_af93fa75282ae196249c4a08e8845fb8f}{\index{Module\-View\-Controller@{Module\-View\-Controller}!populate\-Modules\-Menu@{populate\-Modules\-Menu}}
+\index{populate\-Modules\-Menu@{populate\-Modules\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{populate\-Modules\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) populate\-Modules\-Menu 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_af93fa75282ae196249c4a08e8845fb8f}
+populates the modules menu to be overriden by subclasses \hypertarget{interface_module_view_controller_aebe8aa693a307d7f2cab428e8cc8572f}{\index{Module\-View\-Controller@{Module\-View\-Controller}!search\-Operation\-Finished\-:@{search\-Operation\-Finished\-:}}
+\index{search\-Operation\-Finished\-:@{search\-Operation\-Finished\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{search\-Operation\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) search\-Operation\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array $\ast$)}]{results}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_aebe8aa693a307d7f2cab428e8cc8572f}
+\hypertarget{interface_module_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{\index{Module\-View\-Controller@{Module\-View\-Controller}!set\-Status\-Text\-:@{set\-Status\-Text\-:}}
+\index{set\-Status\-Text\-:@{set\-Status\-Text\-:}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{set\-Status\-Text\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Status\-Text\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Text}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}
+abstract method to be overriden by subclasses 
+
+Reimplemented in \hyperlink{interface_bible_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{Bible\-View\-Controller}, \hyperlink{interface_dictionary_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{Dictionary\-View\-Controller}, and \hyperlink{interface_gen_book_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{Gen\-Book\-View\-Controller}.
+
+\hypertarget{interface_module_view_controller_ab3a24e21a58c1e870eb4d2b6380d7a72}{\index{Module\-View\-Controller@{Module\-View\-Controller}!text\-Context\-Menu@{text\-Context\-Menu}}
+\index{text\-Context\-Menu@{text\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{text\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Menu $\ast$) text\-Context\-Menu 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_ab3a24e21a58c1e870eb4d2b6380d7a72}
+
+
+Reimplemented from \hyperlink{protocol_context_menu_providing-p_ab3a24e21a58c1e870eb4d2b6380d7a72}{$<$\-Context\-Menu\-Providing$>$}.
+
+\hypertarget{interface_module_view_controller_aa04c518654a720c5d33543c1f6907669}{\index{Module\-View\-Controller@{Module\-View\-Controller}!text\-View@{text\-View}}
+\index{text\-View@{text\-View}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{text\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Text\-View $\ast$) text\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_view_controller_aa04c518654a720c5d33543c1f6907669}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_module_view_controller_a5725748af4a2a253c46f52f9984cdfed}{\index{Module\-View\-Controller@{Module\-View\-Controller}!image\-Context\-Menu@{image\-Context\-Menu}}
+\index{image\-Context\-Menu@{image\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{image\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) image\-Context\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_a5725748af4a2a253c46f52f9984cdfed}
+\hypertarget{interface_module_view_controller_ac105518e4ab52f055cfb642583921fbf}{\index{Module\-View\-Controller@{Module\-View\-Controller}!indexer@{indexer}}
+\index{indexer@{indexer}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{indexer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Indexer}$\ast$) indexer\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_ac105518e4ab52f055cfb642583921fbf}
+\hypertarget{interface_module_view_controller_a5aa9c58bd26a160fadd38c0f6dff339d}{\index{Module\-View\-Controller@{Module\-View\-Controller}!link\-Context\-Menu@{link\-Context\-Menu}}
+\index{link\-Context\-Menu@{link\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{link\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) link\-Context\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_a5aa9c58bd26a160fadd38c0f6dff339d}
+\hypertarget{interface_module_view_controller_a9a9977454586999c31286b17841fe58b}{\index{Module\-View\-Controller@{Module\-View\-Controller}!place\-Holder\-View@{place\-Holder\-View}}
+\index{place\-Holder\-View@{place\-Holder\-View}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{place\-Holder\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Box$\ast$) place\-Holder\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_a9a9977454586999c31286b17841fe58b}
+\hypertarget{interface_module_view_controller_a02b2bd514de65dc47edc557e3f39e71e}{\index{Module\-View\-Controller@{Module\-View\-Controller}!text\-Context\-Menu@{text\-Context\-Menu}}
+\index{text\-Context\-Menu@{text\-Context\-Menu}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{text\-Context\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) text\-Context\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_a02b2bd514de65dc47edc557e3f39e71e}
+\hypertarget{interface_module_view_controller_a0452961582a310ae1acbe0d48f8ccaa6}{\index{Module\-View\-Controller@{Module\-View\-Controller}!text\-View\-Controller@{text\-View\-Controller}}
+\index{text\-View\-Controller@{text\-View\-Controller}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{text\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Ext\-Text\-View\-Controller}$\ast$) text\-View\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_view_controller_a0452961582a310ae1acbe0d48f8ccaa6}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_module_view_controller_a79873fe7e12ce6ca97409a0e056bf2de}{\index{Module\-View\-Controller@{Module\-View\-Controller}!context\-Menu\-Clicked\-Link@{context\-Menu\-Clicked\-Link}}
+\index{context\-Menu\-Clicked\-Link@{context\-Menu\-Clicked\-Link}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{context\-Menu\-Clicked\-Link}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-U\-R\-L $\ast$) context\-Menu\-Clicked\-Link\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_module_view_controller_a79873fe7e12ce6ca97409a0e056bf2de}
+\hypertarget{interface_module_view_controller_a4d9ff35b74c4bbf911e200fd553a7090}{\index{Module\-View\-Controller@{Module\-View\-Controller}!module@{module}}
+\index{module@{module}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Module} $\ast$) module\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_module_view_controller_a4d9ff35b74c4bbf911e200fd553a7090}
+\hypertarget{interface_module_view_controller_af810dd4770996b23d6ba667b91fc33f1}{\index{Module\-View\-Controller@{Module\-View\-Controller}!perform\-Progress\-Calculation@{perform\-Progress\-Calculation}}
+\index{perform\-Progress\-Calculation@{perform\-Progress\-Calculation}!ModuleViewController@{Module\-View\-Controller}}
+\subsubsection[{perform\-Progress\-Calculation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) perform\-Progress\-Calculation\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_module_view_controller_af810dd4770996b23d6ba667b91fc33f1}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_module_view_controller_8h}{Module\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_module_view_controller_8m}{Module\-View\-Controller.\-m}\end{DoxyCompactItemize}

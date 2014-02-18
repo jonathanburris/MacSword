@@ -1,0 +1,156 @@
+\hypertarget{interface_single_view_host_controller}{\section{Single\-View\-Host\-Controller Class Reference}
+\label{interface_single_view_host_controller}\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Single\-View\-Host\-Controller.\-h$>$}
+
+Inheritance diagram for Single\-View\-Host\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.707317cm]{interface_single_view_host_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_single_view_host_controller_ab496f2a016754b68452a127d26bb6ef9}{init\-For\-View\-Type\-:}
+\item 
+(id) -\/ \hyperlink{interface_single_view_host_controller_a303243594b08c9c9280b957a624edc57}{init\-With\-Module\-:}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_single_view_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{view}
+\item 
+(void) -\/ \hyperlink{interface_single_view_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{set\-View\-:}
+\item 
+(\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type}) -\/ \hyperlink{interface_single_view_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{module\-Type}
+\item 
+(void) -\/ \hyperlink{interface_single_view_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_single_view_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\item 
+(id) -\/ \hyperlink{interface_single_view_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_single_view_host_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type} \hyperlink{interface_single_view_host_controller_a726b0904318ecd802451f0f5484974fe}{module\-Type}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_hostable_view_controller}{Hostable\-View\-Controller} $\ast$ \hyperlink{interface_single_view_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}{content\-View\-Controller}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_single_view_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}
+called from subview when it has fully loaded 
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_a0bd73ec236f8055ac6566b39ddf66add}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_single_view_host_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented from \hyperlink{interface_window_host_controller_a958c5e82e2f22a1a132161999b5d1704}{Window\-Host\-Controller}.
+
+\hypertarget{interface_single_view_host_controller_ab496f2a016754b68452a127d26bb6ef9}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!init\-For\-View\-Type\-:@{init\-For\-View\-Type\-:}}
+\index{init\-For\-View\-Type\-:@{init\-For\-View\-Type\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{init\-For\-View\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-For\-View\-Type\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Module\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_ab496f2a016754b68452a127d26bb6ef9}
+\hypertarget{interface_single_view_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented from \hyperlink{interface_window_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Window\-Host\-Controller}.
+
+\hypertarget{interface_single_view_host_controller_a303243594b08c9c9280b957a624edc57}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!init\-With\-Module\-:@{init\-With\-Module\-:}}
+\index{init\-With\-Module\-:@{init\-With\-Module\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{init\-With\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{a\-Module}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a303243594b08c9c9280b957a624edc57}
+\hypertarget{interface_single_view_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!module\-Type@{module\-Type}}
+\index{module\-Type@{module\-Type}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Type}) module\-Type 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}
+
+
+Reimplemented from \hyperlink{protocol_window_hosting-p_a2e69825435ec5d0c8cd8c49f5655ab6c}{$<$\-Window\-Hosting$>$}.
+
+\hypertarget{interface_single_view_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_single_view_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!set\-View\-:@{set\-View\-:}}
+\index{set\-View\-:@{set\-View\-:}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{set\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{a\-View}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_a9544a8dd4794dc764c2d74870c87ae35}
+
+
+Reimplemented from \hyperlink{interface_window_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{Window\-Host\-Controller}.
+
+\hypertarget{interface_single_view_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!view@{view}}
+\index{view@{view}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) view 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_single_view_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}
+
+
+Reimplemented from \hyperlink{interface_window_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{Window\-Host\-Controller}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_single_view_host_controller_a726b0904318ecd802451f0f5484974fe}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!module\-Type@{module\-Type}}
+\index{module\-Type@{module\-Type}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Type}) module\-Type\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_single_view_host_controller_a726b0904318ecd802451f0f5484974fe}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_single_view_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}{\index{Single\-View\-Host\-Controller@{Single\-View\-Host\-Controller}!content\-View\-Controller@{content\-View\-Controller}}
+\index{content\-View\-Controller@{content\-View\-Controller}!SingleViewHostController@{Single\-View\-Host\-Controller}}
+\subsubsection[{content\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Hostable\-View\-Controller}$\ast$) content\-View\-Controller\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_single_view_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_single_view_host_controller_8h}{Single\-View\-Host\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_single_view_host_controller_8m}{Single\-View\-Host\-Controller.\-m}\end{DoxyCompactItemize}

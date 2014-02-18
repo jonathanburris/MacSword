@@ -1,0 +1,62 @@
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h}{\section{src/\-Threaded\-Progress\-Sheet/\-M\-B\-Threaded\-Progress\-Sheet\-Controller.h File Reference}
+\label{_m_b_threaded_progress_sheet_controller_8h}\index{src/\-Threaded\-Progress\-Sheet/\-M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{src/\-Threaded\-Progress\-Sheet/\-M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}
+}
+{\ttfamily \#import $<$Cocoa/\-Cocoa.\-h$>$}\\*
+{\ttfamily \#import $<$Coco\-Logger/\-Coco\-Logger.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_m_b_threaded_progress_sheet_controller}{M\-B\-Threaded\-Progress\-Sheet\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_m_b_threaded_progress_sheet_controller_8h_af72722fd9ac7223e8427c84a8ee8d9e8}{T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}~@\char`\"{}Threaded\-Progress\-Sheet\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04}{Threaded\-Progress\-Action} \{ \hyperlink{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a206c1c3524436511b958feacb8fff743}{N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N} = 0, 
+\hyperlink{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a06dd65cf98d0a4948c15622c61755c8d}{I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}, 
+\hyperlink{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04ad2daf4ef6ef5c1ea6b3825259c3b273e}{S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}
+ \}
+\item 
+enum \hyperlink{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006}{Threadede\-Progress\-Return\-Code} \{ \hyperlink{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a71583fbedf163cf219942e15d42acf86}{N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D}, 
+\hyperlink{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a9318d0bad12fce85fadcce9967bf74d8}{C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_af72722fd9ac7223e8427c84a8ee8d9e8}{\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E@{T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}}
+\index{T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E@{T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}!MBThreadedProgressSheetController.h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}
+\subsubsection[{T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-H\-R\-E\-A\-D\-E\-D\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-S\-H\-E\-E\-T\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E~@\char`\"{}Threaded\-Progress\-Sheet\char`\"{}}}\label{_m_b_threaded_progress_sheet_controller_8h_af72722fd9ac7223e8427c84a8ee8d9e8}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006}{\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!Threadede\-Progress\-Return\-Code@{Threadede\-Progress\-Return\-Code}}
+\index{Threadede\-Progress\-Return\-Code@{Threadede\-Progress\-Return\-Code}!MBThreadedProgressSheetController.h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}
+\subsubsection[{Threadede\-Progress\-Return\-Code}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Threadede\-Progress\-Return\-Code}}}\label{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D@{N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D}!M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D@{N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a71583fbedf163cf219942e15d42acf86}{N\-O\-R\-M\-A\-L\-\_\-\-E\-N\-D}\label{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a71583fbedf163cf219942e15d42acf86}
+}]\index{C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D@{C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D}!M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D@{C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D}}\item[{\em 
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a9318d0bad12fce85fadcce9967bf74d8}{C\-A\-N\-C\-E\-L\-E\-D\-\_\-\-E\-N\-D}\label{_m_b_threaded_progress_sheet_controller_8h_a7a66af5dfc91437f7ee961911c58b006a9318d0bad12fce85fadcce9967bf74d8}
+}]\end{description}
+\end{Desc}
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04}{\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!Threaded\-Progress\-Action@{Threaded\-Progress\-Action}}
+\index{Threaded\-Progress\-Action@{Threaded\-Progress\-Action}!MBThreadedProgressSheetController.h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}
+\subsubsection[{Threaded\-Progress\-Action}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Threaded\-Progress\-Action}}}\label{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}!M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a206c1c3524436511b958feacb8fff743}{N\-O\-N\-E\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}\label{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a206c1c3524436511b958feacb8fff743}
+}]\index{I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}!M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a06dd65cf98d0a4948c15622c61755c8d}{I\-N\-D\-E\-X\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}\label{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04a06dd65cf98d0a4948c15622c61755c8d}
+}]\index{S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}!M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}}\index{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h@{M\-B\-Threaded\-Progress\-Sheet\-Controller.\-h}!S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N@{S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}}\item[{\em 
+\hypertarget{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04ad2daf4ef6ef5c1ea6b3825259c3b273e}{S\-E\-A\-R\-C\-H\-I\-N\-G\-\_\-\-P\-R\-O\-G\-R\-E\-S\-S\-\_\-\-A\-C\-T\-I\-O\-N}\label{_m_b_threaded_progress_sheet_controller_8h_a28ffd9442fbd1ecac346e68d4f3d6f04ad2daf4ef6ef5c1ea6b3825259c3b273e}
+}]\end{description}
+\end{Desc}

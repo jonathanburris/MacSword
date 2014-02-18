@@ -1,0 +1,92 @@
+\hypertarget{protocol_sword_module_access-p}{\section{$<$Sword\-Module\-Access$>$ Protocol Reference}
+\label{protocol_sword_module_access-p}\index{$<$\-Sword\-Module\-Access$>$@{$<$\-Sword\-Module\-Access$>$}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Module.\-h$>$}
+
+Inheritance diagram for $<$Sword\-Module\-Access$>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{protocol_sword_module_access-p}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(long) -\/ \hyperlink{protocol_sword_module_access-p_abee894396dd4355fb4d0a1c613f028c5}{entry\-Count}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{protocol_sword_module_access-p_a7f841144cca13041d14f64f8fc2e14f2}{stripped\-Text\-Entries\-For\-Ref\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{protocol_sword_module_access-p_a3f1c8e8237f4055fdc0b431d83bd35e0}{rendered\-Text\-Entries\-For\-Ref\-:}
+\item 
+(void) -\/ \hyperlink{protocol_sword_module_access-p_af12cda3e69ebf7baffa24da55fdf82d1}{write\-Entry\-:}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{protocol_sword_module_access-p_abee894396dd4355fb4d0a1c613f028c5}{\index{Sword\-Module\-Access-\/p@{Sword\-Module\-Access-\/p}!entry\-Count@{entry\-Count}}
+\index{entry\-Count@{entry\-Count}!SwordModuleAccess-p@{Sword\-Module\-Access-\/p}}
+\subsubsection[{entry\-Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (long) entry\-Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{protocol_sword_module_access-p_abee894396dd4355fb4d0a1c613f028c5}
+number of entries abstract method, should be overriden by subclasses 
+
+Reimplemented in \hyperlink{interface_sword_module_abee894396dd4355fb4d0a1c613f028c5}{Sword\-Module}.
+
+\hypertarget{protocol_sword_module_access-p_a3f1c8e8237f4055fdc0b431d83bd35e0}{\index{Sword\-Module\-Access-\/p@{Sword\-Module\-Access-\/p}!rendered\-Text\-Entries\-For\-Ref\-:@{rendered\-Text\-Entries\-For\-Ref\-:}}
+\index{rendered\-Text\-Entries\-For\-Ref\-:@{rendered\-Text\-Entries\-For\-Ref\-:}!SwordModuleAccess-p@{Sword\-Module\-Access-\/p}}
+\subsubsection[{rendered\-Text\-Entries\-For\-Ref\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) rendered\-Text\-Entries\-For\-Ref\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{reference}
+\end{DoxyParamCaption}
+}}\label{protocol_sword_module_access-p_a3f1c8e8237f4055fdc0b431d83bd35e0}
+abstract method, override in subclass This method generates H\-T\-M\-L string for a given reference. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & bible reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of \hyperlink{interface_sword_module_text_entry}{Sword\-Module\-Text\-Entry} instances 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{interface_sword_module_a3f1c8e8237f4055fdc0b431d83bd35e0}{Sword\-Module}.
+
+\hypertarget{protocol_sword_module_access-p_a7f841144cca13041d14f64f8fc2e14f2}{\index{Sword\-Module\-Access-\/p@{Sword\-Module\-Access-\/p}!stripped\-Text\-Entries\-For\-Ref\-:@{stripped\-Text\-Entries\-For\-Ref\-:}}
+\index{stripped\-Text\-Entries\-For\-Ref\-:@{stripped\-Text\-Entries\-For\-Ref\-:}!SwordModuleAccess-p@{Sword\-Module\-Access-\/p}}
+\subsubsection[{stripped\-Text\-Entries\-For\-Ref\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) stripped\-Text\-Entries\-For\-Ref\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{reference}
+\end{DoxyParamCaption}
+}}\label{protocol_sword_module_access-p_a7f841144cca13041d14f64f8fc2e14f2}
+abstract method, override in subclass This method generates stripped text string for a given reference. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & bible reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of \hyperlink{interface_sword_module_text_entry}{Sword\-Module\-Text\-Entry} instances 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{interface_sword_module_a7f841144cca13041d14f64f8fc2e14f2}{Sword\-Module}.
+
+\hypertarget{protocol_sword_module_access-p_af12cda3e69ebf7baffa24da55fdf82d1}{\index{Sword\-Module\-Access-\/p@{Sword\-Module\-Access-\/p}!write\-Entry\-:@{write\-Entry\-:}}
+\index{write\-Entry\-:@{write\-Entry\-:}!SwordModuleAccess-p@{Sword\-Module\-Access-\/p}}
+\subsubsection[{write\-Entry\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) write\-Entry\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module\-Text\-Entry} $\ast$)}]{an\-Entry}
+\end{DoxyParamCaption}
+}}\label{protocol_sword_module_access-p_af12cda3e69ebf7baffa24da55fdf82d1}
+write value to reference 
+
+Reimplemented in \hyperlink{interface_sword_module_af12cda3e69ebf7baffa24da55fdf82d1}{Sword\-Module}.
+
+
+
+The documentation for this protocol was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_module_8h}{Sword\-Module.\-h}\end{DoxyCompactItemize}

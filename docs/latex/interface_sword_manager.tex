@@ -1,0 +1,205 @@
+\hypertarget{interface_sword_manager}{\section{Sword\-Manager Class Reference}
+\label{interface_sword_manager}\index{Sword\-Manager@{Sword\-Manager}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Manager.\-h$>$}
+
+Inheritance diagram for Sword\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_sword_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_sword_manager_a0e145f8d86c15e4694540a8830f8d290}{init\-With\-Path\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_a464e99688dc329b4d58f3da1d11e46e7}{add\-Path\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_a32d626626eee0bc4ade146973f6abb1c}{finalize}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_a8ccd74b314363524b19dfab49c470b4c}{re\-Init}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_abf1332dd137b32797bb75bdd35ccde44}{generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_a3a7510af67457fafc54485b612d45ce9}{set\-Cipher\-Key\-:for\-Module\-Named\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_manager_a127ee9df2d17b68af339236f178cad62}{set\-Global\-Option\-:value\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_manager_abda52fffb7ad3591582d6e0b70e67b9c}{list\-Modules}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_manager_a65b30d3f09dd9f97cf483b30c2fbe4a5}{module\-Names}
+\item 
+(\hyperlink{interface_sword_module}{Sword\-Module} $\ast$) -\/ \hyperlink{interface_sword_manager_ad72d7a62345057f44c3358a7bce1582d}{module\-With\-Name\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_manager_ae5999d6e92b6d40bded0c636cb158da2}{modules\-For\-Feature\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_manager_a372b90b150c5afbc5b53069919108419}{modules\-For\-Type\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$) + \hyperlink{interface_sword_manager_a76e1fa281ca3e38e522ec1aac75872b0}{manager\-With\-Path\-:}
+\item 
+(\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$) + \hyperlink{interface_sword_manager_a8131ac6ccc7bf11e7b7aabe8a6d4ba14}{default\-Manager}
+\item 
+(void) + \hyperlink{interface_sword_manager_a29752bb636bcd290cbfa6a443446f33b}{init\-Locale}
+\item 
+(N\-S\-Array $\ast$) + \hyperlink{interface_sword_manager_a6380c1752b94ca25f1810f2bcd365833}{module\-Types}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Dictionary $\ast$ \hyperlink{interface_sword_manager_a281f6d11d15ea61d2d0aa49a9ed046b4}{modules}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_sword_manager_aa7d416dd4dc46d4975463066f7cf15b8}{modules\-Path}
+\item 
+N\-S\-Recursive\-Lock $\ast$ \hyperlink{interface_sword_manager_a30dcad661c1ead69f05828725d6a205d}{manager\-Lock}
+\item 
+B\-O\-O\-L \hyperlink{interface_sword_manager_a4242622569ad00cbb80aa23107c38791}{temporary\-Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_sword_manager_a464e99688dc329b4d58f3da1d11e46e7}{\index{Sword\-Manager@{Sword\-Manager}!add\-Path\-:@{add\-Path\-:}}
+\index{add\-Path\-:@{add\-Path\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{add\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Path\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{path}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a464e99688dc329b4d58f3da1d11e46e7}
+adds modules in this path \hypertarget{interface_sword_manager_a8131ac6ccc7bf11e7b7aabe8a6d4ba14}{\index{Sword\-Manager@{Sword\-Manager}!default\-Manager@{default\-Manager}}
+\index{default\-Manager@{default\-Manager}!SwordManager@{Sword\-Manager}}
+\subsubsection[{default\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Sword\-Manager} $\ast$) default\-Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a8131ac6ccc7bf11e7b7aabe8a6d4ba14}
+the singleton instance \hypertarget{interface_sword_manager_a32d626626eee0bc4ade146973f6abb1c}{\index{Sword\-Manager@{Sword\-Manager}!finalize@{finalize}}
+\index{finalize@{finalize}!SwordManager@{Sword\-Manager}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finalize 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a32d626626eee0bc4ade146973f6abb1c}
+Unloads Sword Manager. \hypertarget{interface_sword_manager_abf1332dd137b32797bb75bdd35ccde44}{\index{Sword\-Manager@{Sword\-Manager}!generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:@{generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:}}
+\index{generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:@{generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{generate\-Module\-Menu\-:for\-Moduletype\-:with\-Menu\-Target\-:with\-Menu\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) generate\-Module\-Menu\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Menu $\ast$$\ast$)}]{item\-Menu}
+\item[{forModuletype:(int)}]{type}
+\item[{withMenuTarget:(id)}]{a\-Target}
+\item[{withMenuAction:(S\-E\-L)}]{a\-Selector}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_abf1332dd137b32797bb75bdd35ccde44}
+generate a menu structure
+
+\mbox{[}in$\vert$out\mbox{]} sub\-Menu\-Item is the start of the menustructure. \mbox{[}in\mbox{]} type, create menu for module types. Module\-Type enum values can be O\-Red, -\/1 for all \mbox{[}in\mbox{]} a\-Target the target object of the created menuitem \mbox{[}in\mbox{]} a\-Selector the selector of the target that should be called \hypertarget{interface_sword_manager_a29752bb636bcd290cbfa6a443446f33b}{\index{Sword\-Manager@{Sword\-Manager}!init\-Locale@{init\-Locale}}
+\index{init\-Locale@{init\-Locale}!SwordManager@{Sword\-Manager}}
+\subsubsection[{init\-Locale}]{\setlength{\rightskip}{0pt plus 5cm}+ (void) init\-Locale 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a29752bb636bcd290cbfa6a443446f33b}
+\hypertarget{interface_sword_manager_a0e145f8d86c15e4694540a8830f8d290}{\index{Sword\-Manager@{Sword\-Manager}!init\-With\-Path\-:@{init\-With\-Path\-:}}
+\index{init\-With\-Path\-:@{init\-With\-Path\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{init\-With\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Path\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{path}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a0e145f8d86c15e4694540a8830f8d290}
+Constructor \hypertarget{interface_sword_manager_abda52fffb7ad3591582d6e0b70e67b9c}{\index{Sword\-Manager@{Sword\-Manager}!list\-Modules@{list\-Modules}}
+\index{list\-Modules@{list\-Modules}!SwordManager@{Sword\-Manager}}
+\subsubsection[{list\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) list\-Modules 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_abda52fffb7ad3591582d6e0b70e67b9c}
+list all module and return them in a Array \hypertarget{interface_sword_manager_a76e1fa281ca3e38e522ec1aac75872b0}{\index{Sword\-Manager@{Sword\-Manager}!manager\-With\-Path\-:@{manager\-With\-Path\-:}}
+\index{manager\-With\-Path\-:@{manager\-With\-Path\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{manager\-With\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Sword\-Manager} $\ast$) manager\-With\-Path\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{path}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a76e1fa281ca3e38e522ec1aac75872b0}
+return a manager for the specified path \hypertarget{interface_sword_manager_a65b30d3f09dd9f97cf483b30c2fbe4a5}{\index{Sword\-Manager@{Sword\-Manager}!module\-Names@{module\-Names}}
+\index{module\-Names@{module\-Names}!SwordManager@{Sword\-Manager}}
+\subsubsection[{module\-Names}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Names 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a65b30d3f09dd9f97cf483b30c2fbe4a5}
+\hypertarget{interface_sword_manager_ae5999d6e92b6d40bded0c636cb158da2}{\index{Sword\-Manager@{Sword\-Manager}!modules\-For\-Feature\-:@{modules\-For\-Feature\-:}}
+\index{modules\-For\-Feature\-:@{modules\-For\-Feature\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{modules\-For\-Feature\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) modules\-For\-Feature\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{feature}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_ae5999d6e92b6d40bded0c636cb158da2}
+Retrieve list of installed modules as an array, where the module has a specific feature \hypertarget{interface_sword_manager_a372b90b150c5afbc5b53069919108419}{\index{Sword\-Manager@{Sword\-Manager}!modules\-For\-Type\-:@{modules\-For\-Type\-:}}
+\index{modules\-For\-Type\-:@{modules\-For\-Type\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{modules\-For\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) modules\-For\-Type\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{type}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a372b90b150c5afbc5b53069919108419}
+\hypertarget{interface_sword_manager_a6380c1752b94ca25f1810f2bcd365833}{\index{Sword\-Manager@{Sword\-Manager}!module\-Types@{module\-Types}}
+\index{module\-Types@{module\-Types}!SwordManager@{Sword\-Manager}}
+\subsubsection[{module\-Types}]{\setlength{\rightskip}{0pt plus 5cm}+ (N\-S\-Array $\ast$) module\-Types 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a6380c1752b94ca25f1810f2bcd365833}
+\hypertarget{interface_sword_manager_ad72d7a62345057f44c3358a7bce1582d}{\index{Sword\-Manager@{Sword\-Manager}!module\-With\-Name\-:@{module\-With\-Name\-:}}
+\index{module\-With\-Name\-:@{module\-With\-Name\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{module\-With\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Module} $\ast$) module\-With\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_ad72d7a62345057f44c3358a7bce1582d}
+get module with name from internal list \hypertarget{interface_sword_manager_a8ccd74b314363524b19dfab49c470b4c}{\index{Sword\-Manager@{Sword\-Manager}!re\-Init@{re\-Init}}
+\index{re\-Init@{re\-Init}!SwordManager@{Sword\-Manager}}
+\subsubsection[{re\-Init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) re\-Init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a8ccd74b314363524b19dfab49c470b4c}
+reinit the sw\-Manager \hypertarget{interface_sword_manager_a3a7510af67457fafc54485b612d45ce9}{\index{Sword\-Manager@{Sword\-Manager}!set\-Cipher\-Key\-:for\-Module\-Named\-:@{set\-Cipher\-Key\-:for\-Module\-Named\-:}}
+\index{set\-Cipher\-Key\-:for\-Module\-Named\-:@{set\-Cipher\-Key\-:for\-Module\-Named\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{set\-Cipher\-Key\-:for\-Module\-Named\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Cipher\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{key}
+\item[{forModuleNamed:(N\-S\-String $\ast$)}]{name}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a3a7510af67457fafc54485b612d45ce9}
+\hypertarget{interface_sword_manager_a127ee9df2d17b68af339236f178cad62}{\index{Sword\-Manager@{Sword\-Manager}!set\-Global\-Option\-:value\-:@{set\-Global\-Option\-:value\-:}}
+\index{set\-Global\-Option\-:value\-:@{set\-Global\-Option\-:value\-:}!SwordManager@{Sword\-Manager}}
+\subsubsection[{set\-Global\-Option\-:value\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Global\-Option\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String$\ast$)}]{option}
+\item[{value:(N\-S\-String $\ast$)}]{value}
+\end{DoxyParamCaption}
+}}\label{interface_sword_manager_a127ee9df2d17b68af339236f178cad62}
+Sets global options such as 'Strongs' or 'Footnotes'. 
+
+\subsection{Property Documentation}
+\hypertarget{interface_sword_manager_a30dcad661c1ead69f05828725d6a205d}{\index{Sword\-Manager@{Sword\-Manager}!manager\-Lock@{manager\-Lock}}
+\index{manager\-Lock@{manager\-Lock}!SwordManager@{Sword\-Manager}}
+\subsubsection[{manager\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Recursive\-Lock $\ast$) manager\-Lock\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_manager_a30dcad661c1ead69f05828725d6a205d}
+\hypertarget{interface_sword_manager_a281f6d11d15ea61d2d0aa49a9ed046b4}{\index{Sword\-Manager@{Sword\-Manager}!modules@{modules}}
+\index{modules@{modules}!SwordManager@{Sword\-Manager}}
+\subsubsection[{modules}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Dictionary $\ast$) modules\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_manager_a281f6d11d15ea61d2d0aa49a9ed046b4}
+\hypertarget{interface_sword_manager_aa7d416dd4dc46d4975463066f7cf15b8}{\index{Sword\-Manager@{Sword\-Manager}!modules\-Path@{modules\-Path}}
+\index{modules\-Path@{modules\-Path}!SwordManager@{Sword\-Manager}}
+\subsubsection[{modules\-Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) modules\-Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_manager_aa7d416dd4dc46d4975463066f7cf15b8}
+\hypertarget{interface_sword_manager_a4242622569ad00cbb80aa23107c38791}{\index{Sword\-Manager@{Sword\-Manager}!temporary\-Manager@{temporary\-Manager}}
+\index{temporary\-Manager@{temporary\-Manager}!SwordManager@{Sword\-Manager}}
+\subsubsection[{temporary\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) temporary\-Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_sword_manager_a4242622569ad00cbb80aa23107c38791}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_manager_8h}{Sword\-Manager.\-h}\item 
+src/\-Sword/\hyperlink{_sword_manager_8mm}{Sword\-Manager.\-mm}\end{DoxyCompactItemize}

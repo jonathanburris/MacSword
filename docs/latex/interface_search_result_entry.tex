@@ -1,0 +1,113 @@
+\hypertarget{interface_search_result_entry}{\section{Search\-Result\-Entry Class Reference}
+\label{interface_search_result_entry}\index{Search\-Result\-Entry@{Search\-Result\-Entry}}
+}
+
+
+{\ttfamily \#import $<$Search\-Result\-Entry.\-h$>$}
+
+Inheritance diagram for Search\-Result\-Entry\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_search_result_entry}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_search_result_entry_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(id) -\/ \hyperlink{interface_search_result_entry_afdb9de914d97184d0f9f4acd5ce4b018}{init\-With\-Dictionary\-:}
+\item 
+(void) -\/ \hyperlink{interface_search_result_entry_a8b0874363f649cdaf14c568eceee1c80}{add\-Object\-:for\-Key\-:}
+\item 
+(id) -\/ \hyperlink{interface_search_result_entry_a8ecdbc0eaa1b5fe4468f0300cb8c3b2b}{object\-For\-Key\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_search_result_entry_a45308588bd1d2dc05240a9e1852d0da2}{document\-Name}
+\item 
+(N\-S\-Number $\ast$) -\/ \hyperlink{interface_search_result_entry_a24195ea4f27dc591671f326321ed42a4}{document\-Score}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_search_result_entry_aab0f64e5fd258b6193914b0d1a9c591b}{key\-String}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_search_result_entry_a0920dc7935061bc57daab91706be5934}{description}
+\begin{DoxyCompactList}\small\item\em take care for compare\-: operations this method returns the document name property \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_search_result_entry_a3cd567b9b84b4cbb41925286fc273925}{properties}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_search_result_entry_a8b0874363f649cdaf14c568eceee1c80}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!add\-Object\-:for\-Key\-:@{add\-Object\-:for\-Key\-:}}
+\index{add\-Object\-:for\-Key\-:@{add\-Object\-:for\-Key\-:}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{add\-Object\-:for\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Object\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Object $\ast$)}]{object}
+\item[{forKey:(N\-S\-Object $\ast$)}]{key}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a8b0874363f649cdaf14c568eceee1c80}
+\hypertarget{interface_search_result_entry_a0920dc7935061bc57daab91706be5934}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!description@{description}}
+\index{description@{description}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) description 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a0920dc7935061bc57daab91706be5934}
+
+
+take care for compare\-: operations this method returns the document name property 
+
+\hypertarget{interface_search_result_entry_a45308588bd1d2dc05240a9e1852d0da2}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!document\-Name@{document\-Name}}
+\index{document\-Name@{document\-Name}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{document\-Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) document\-Name 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a45308588bd1d2dc05240a9e1852d0da2}
+\hypertarget{interface_search_result_entry_a24195ea4f27dc591671f326321ed42a4}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!document\-Score@{document\-Score}}
+\index{document\-Score@{document\-Score}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{document\-Score}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Number $\ast$) document\-Score 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a24195ea4f27dc591671f326321ed42a4}
+\hypertarget{interface_search_result_entry_a4213bb26f5207ee3f402fe463badc691}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!init@{init}}
+\index{init@{init}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a4213bb26f5207ee3f402fe463badc691}
+\hypertarget{interface_search_result_entry_afdb9de914d97184d0f9f4acd5ce4b018}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!init\-With\-Dictionary\-:@{init\-With\-Dictionary\-:}}
+\index{init\-With\-Dictionary\-:@{init\-With\-Dictionary\-:}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{init\-With\-Dictionary\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Dictionary\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Dictionary $\ast$)}]{a\-Dict}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_afdb9de914d97184d0f9f4acd5ce4b018}
+\hypertarget{interface_search_result_entry_aab0f64e5fd258b6193914b0d1a9c591b}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!key\-String@{key\-String}}
+\index{key\-String@{key\-String}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{key\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) key\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_aab0f64e5fd258b6193914b0d1a9c591b}
+\hypertarget{interface_search_result_entry_a8ecdbc0eaa1b5fe4468f0300cb8c3b2b}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!object\-For\-Key\-:@{object\-For\-Key\-:}}
+\index{object\-For\-Key\-:@{object\-For\-Key\-:}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{object\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) object\-For\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Object $\ast$)}]{key}
+\end{DoxyParamCaption}
+}}\label{interface_search_result_entry_a8ecdbc0eaa1b5fe4468f0300cb8c3b2b}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_search_result_entry_a3cd567b9b84b4cbb41925286fc273925}{\index{Search\-Result\-Entry@{Search\-Result\-Entry}!properties@{properties}}
+\index{properties@{properties}!SearchResultEntry@{Search\-Result\-Entry}}
+\subsubsection[{properties}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) properties\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_search_result_entry_a3cd567b9b84b4cbb41925286fc273925}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Indexing/\hyperlink{_search_result_entry_8h}{Search\-Result\-Entry.\-h}\item 
+src/\-Indexing/\hyperlink{_search_result_entry_8m}{Search\-Result\-Entry.\-m}\end{DoxyCompactItemize}

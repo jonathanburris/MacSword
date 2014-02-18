@@ -1,0 +1,215 @@
+\hypertarget{interface_gen_book_view_controller}{\section{Gen\-Book\-View\-Controller Class Reference}
+\label{interface_gen_book_view_controller}\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Gen\-Book\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Gen\-Book\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.750000cm]{interface_gen_book_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_gen_book_view_controller_a0f1b0abe7143e44c899d26cb3bca3ca1}{init\-With\-Module\-:}
+\item 
+(id) -\/ \hyperlink{interface_gen_book_view_controller_a461586be13fdd403ddadcb93fd4a6ae2}{init\-With\-Module\-:delegate\-:}
+\item 
+(id) -\/ \hyperlink{interface_gen_book_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_gen_book_view_controller_a726ea6c924bda6200d37751ca723d7b5}{list\-Content\-View}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_acda22137b423344be66ad81dd4efc461}{adapt\-U\-I\-To\-Host}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{set\-Status\-Text\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}{display\-Text\-For\-Reference\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}{display\-Text\-For\-Reference\-:search\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}{module\-Selection\-Changed\-:}
+\item 
+(id) -\/ \hyperlink{interface_gen_book_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_gen_book_view_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}{module\-Selection\-Changed\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Pop\-Up\-Button $\ast$ \hyperlink{interface_gen_book_view_controller_ac26a552d00e75a61fd95bac15be69da1}{module\-Pop\-Btn}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_gen_book_view_controller_aacfe6b58ab19b07b9d9c68dcc1f6ddd9}{status\-Line}
+\item 
+I\-B\-Outlet N\-S\-Outline\-View $\ast$ \hyperlink{interface_gen_book_view_controller_a073aab4e9ed83ef6dd68e2b6733ca03b}{entries\-Outline\-View}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_gen_book_view_controller_aa72b3a5a83d00a2e0730daf4cda357ee}{selection}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+the view of this view controller is a \hyperlink{interface_scroll_synchronizable_view}{Scroll\-Synchronizable\-View} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_gen_book_view_controller_acda22137b423344be66ad81dd4efc461}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!adapt\-U\-I\-To\-Host@{adapt\-U\-I\-To\-Host}}
+\index{adapt\-U\-I\-To\-Host@{adapt\-U\-I\-To\-Host}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{adapt\-U\-I\-To\-Host}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) adapt\-U\-I\-To\-Host 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_acda22137b423344be66ad81dd4efc461}
+
+
+Reimplemented from \hyperlink{interface_hostable_view_controller_acda22137b423344be66ad81dd4efc461}{Hostable\-View\-Controller}.
+
+\hypertarget{interface_gen_book_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a0bd73ec236f8055ac6566b39ddf66add}
+
+
+Reimplemented from \hyperlink{interface_module_view_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{Module\-View\-Controller}.
+
+\hypertarget{interface_gen_book_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!display\-Text\-For\-Reference\-:@{display\-Text\-For\-Reference\-:}}
+\index{display\-Text\-For\-Reference\-:@{display\-Text\-For\-Reference\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{display\-Text\-For\-Reference\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) display\-Text\-For\-Reference\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Reference}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}
+
+
+Reimplemented from \hyperlink{protocol_text_displayable-p_aee0469066a38e5b41b9de3e4e87fe05b}{$<$\-Text\-Displayable$>$}.
+
+\hypertarget{interface_gen_book_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!display\-Text\-For\-Reference\-:search\-Type\-:@{display\-Text\-For\-Reference\-:search\-Type\-:}}
+\index{display\-Text\-For\-Reference\-:search\-Type\-:@{display\-Text\-For\-Reference\-:search\-Type\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{display\-Text\-For\-Reference\-:search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf display\-Text\-For\-Reference\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Reference}
+\item[{searchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}
+
+
+Reimplemented from \hyperlink{protocol_text_displayable-p_aee0f4fccfed1c999da9746c4a8ed6fc0}{$<$\-Text\-Displayable$>$}.
+
+\hypertarget{interface_gen_book_view_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented from \hyperlink{interface_module_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Module\-View\-Controller}.
+
+\hypertarget{interface_gen_book_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented from \hyperlink{interface_module_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Module\-View\-Controller}.
+
+\hypertarget{interface_gen_book_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a31987d71b58e0520588676a4f6896d2c}
+\hypertarget{interface_gen_book_view_controller_a0f1b0abe7143e44c899d26cb3bca3ca1}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!init\-With\-Module\-:@{init\-With\-Module\-:}}
+\index{init\-With\-Module\-:@{init\-With\-Module\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{init\-With\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Book} $\ast$)}]{a\-Module}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a0f1b0abe7143e44c899d26cb3bca3ca1}
+\hypertarget{interface_gen_book_view_controller_a461586be13fdd403ddadcb93fd4a6ae2}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!init\-With\-Module\-:delegate\-:@{init\-With\-Module\-:delegate\-:}}
+\index{init\-With\-Module\-:delegate\-:@{init\-With\-Module\-:delegate\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{init\-With\-Module\-:delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Module\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Book} $\ast$)}]{a\-Module}
+\item[{delegate:(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a461586be13fdd403ddadcb93fd4a6ae2}
+\hypertarget{interface_gen_book_view_controller_a726ea6c924bda6200d37751ca723d7b5}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!list\-Content\-View@{list\-Content\-View}}
+\index{list\-Content\-View@{list\-Content\-View}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{list\-Content\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) list\-Content\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a726ea6c924bda6200d37751ca723d7b5}
+\hypertarget{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!module\-Selection\-Changed\-:@{module\-Selection\-Changed\-:}}
+\index{module\-Selection\-Changed\-:@{module\-Selection\-Changed\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{module\-Selection\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-Selection\-Changed\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}
+\hypertarget{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!module\-Selection\-Changed\-:@{module\-Selection\-Changed\-:}}
+\index{module\-Selection\-Changed\-:@{module\-Selection\-Changed\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{module\-Selection\-Changed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-Selection\-Changed\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a97e40f01cf327aaf426740112764e170}
+\hypertarget{interface_gen_book_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_gen_book_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!set\-Status\-Text\-:@{set\-Status\-Text\-:}}
+\index{set\-Status\-Text\-:@{set\-Status\-Text\-:}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{set\-Status\-Text\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Status\-Text\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Text}
+\end{DoxyParamCaption}
+}}\label{interface_gen_book_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}
+abstract method to be overriden by subclasses 
+
+Reimplemented from \hyperlink{interface_module_view_controller_a86f5fa035efb2e0d568cf4cf9e621358}{Module\-View\-Controller}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_gen_book_view_controller_a073aab4e9ed83ef6dd68e2b6733ca03b}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!entries\-Outline\-View@{entries\-Outline\-View}}
+\index{entries\-Outline\-View@{entries\-Outline\-View}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{entries\-Outline\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Outline\-View$\ast$) entries\-Outline\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_gen_book_view_controller_a073aab4e9ed83ef6dd68e2b6733ca03b}
+\hypertarget{interface_gen_book_view_controller_ac26a552d00e75a61fd95bac15be69da1}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!module\-Pop\-Btn@{module\-Pop\-Btn}}
+\index{module\-Pop\-Btn@{module\-Pop\-Btn}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{module\-Pop\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Pop\-Up\-Button$\ast$) module\-Pop\-Btn\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_gen_book_view_controller_ac26a552d00e75a61fd95bac15be69da1}
+\hypertarget{interface_gen_book_view_controller_aa72b3a5a83d00a2e0730daf4cda357ee}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!selection@{selection}}
+\index{selection@{selection}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) selection\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_gen_book_view_controller_aa72b3a5a83d00a2e0730daf4cda357ee}
+\hypertarget{interface_gen_book_view_controller_aacfe6b58ab19b07b9d9c68dcc1f6ddd9}{\index{Gen\-Book\-View\-Controller@{Gen\-Book\-View\-Controller}!status\-Line@{status\-Line}}
+\index{status\-Line@{status\-Line}!GenBookViewController@{Gen\-Book\-View\-Controller}}
+\subsubsection[{status\-Line}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) status\-Line\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_gen_book_view_controller_aacfe6b58ab19b07b9d9c68dcc1f6ddd9}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_gen_book_view_controller_8h}{Gen\-Book\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_gen_book_view_controller_8m}{Gen\-Book\-View\-Controller.\-m}\end{DoxyCompactItemize}

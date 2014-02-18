@@ -1,0 +1,194 @@
+\hypertarget{interface_sword_install_source_controller}{\section{Sword\-Install\-Source\-Controller Class Reference}
+\label{interface_sword_install_source_controller}\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Install\-Source\-Controller.\-h$>$}
+
+Inheritance diagram for Sword\-Install\-Source\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_sword_install_source_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_sword_install_source_controller_a4213bb26f5207ee3f402fe463badc691}{init}
+\item 
+(id) -\/ \hyperlink{interface_sword_install_source_controller_a1c7586c200f27d254bc5f87a642f9d98}{init\-With\-Path\-:create\-Path\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_install_source_controller_ad9882f00bb27345adbf4a46a7ac4124e}{reinitialize}
+\item 
+(int) -\/ \hyperlink{interface_sword_install_source_controller_a1b68464f8a8a00e7723b83206fa66d15}{install\-Module\-:from\-Source\-:with\-Manager\-:}
+\item 
+(int) -\/ \hyperlink{interface_sword_install_source_controller_aac5b6f9e2c3c252208c8aa8c37c308b3}{uninstall\-Module\-:from\-Manager\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_install_source_controller_a9fcda3748b03ff5d5be26a88650bdb0b}{add\-Install\-Source\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_install_source_controller_a740957e920ffb62d23ef07f8eaf55850}{remove\-Install\-Source\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_install_source_controller_aa51ec2e7308a6e712c4c0bf51a64c634}{update\-Install\-Source\-:}
+\item 
+(int) -\/ \hyperlink{interface_sword_install_source_controller_af21ad528181938a899e9ebca5fad59f5}{refresh\-Master\-Remote\-Install\-Source\-List}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_install_source_controller_a226132888becfb860c7aebefc433070d}{user\-Disclaimer\-Confirmed}
+\item 
+(void) -\/ \hyperlink{interface_sword_install_source_controller_a64c94dd1b2827b993c2845de98c8412c}{set\-User\-Disclainer\-Confirmed\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_install_source_controller_a3ed29be1759755d5096b0c42fc67184c}{list\-Modules\-For\-Source\-:}
+\item 
+(int) -\/ \hyperlink{interface_sword_install_source_controller_a906eb9828c017101ea26f1de0aed9084}{refresh\-Install\-Source\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_install_source_controller_a47de4810e407c27e5903c9a02464055a}{module\-Status\-In\-Install\-Source\-:base\-Manager\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_sword_install_source_controller}{Sword\-Install\-Source\-Controller} $\ast$) + \hyperlink{interface_sword_install_source_controller_ad91c60ea8ac4a1b80466a6048ceffd79}{default\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_sword_install_source_controller_af8b3f30b6c3f4595b757aa47d85b2b34}{config\-Path}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_sword_install_source_controller_a001267c1b513311fb775043643a39564}{config\-File\-Path}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_sword_install_source_controller_ab323d28629b6cfc7b2a4569c687a7bde}{install\-Sources}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_sword_install_source_controller_ad14f2d05f83cbfc9485a8a83a0005401}{install\-Source\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_sword_install_source_controller_a9fcda3748b03ff5d5be26a88650bdb0b}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!add\-Install\-Source\-:@{add\-Install\-Source\-:}}
+\index{add\-Install\-Source\-:@{add\-Install\-Source\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{add\-Install\-Source\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Install\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a9fcda3748b03ff5d5be26a88650bdb0b}
+\hypertarget{interface_sword_install_source_controller_ad91c60ea8ac4a1b80466a6048ceffd79}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!default\-Controller@{default\-Controller}}
+\index{default\-Controller@{default\-Controller}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{default\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Sword\-Install\-Source\-Controller} $\ast$) default\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_ad91c60ea8ac4a1b80466a6048ceffd79}
+\hypertarget{interface_sword_install_source_controller_a4213bb26f5207ee3f402fe463badc691}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!init@{init}}
+\index{init@{init}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a4213bb26f5207ee3f402fe463badc691}
+base path of the module installation \hypertarget{interface_sword_install_source_controller_a1c7586c200f27d254bc5f87a642f9d98}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!init\-With\-Path\-:create\-Path\-:@{init\-With\-Path\-:create\-Path\-:}}
+\index{init\-With\-Path\-:create\-Path\-:@{init\-With\-Path\-:create\-Path\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{init\-With\-Path\-:create\-Path\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Path\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Path}
+\item[{createPath:(B\-O\-O\-L)}]{create}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a1c7586c200f27d254bc5f87a642f9d98}
+initialize with given path \hypertarget{interface_sword_install_source_controller_a1b68464f8a8a00e7723b83206fa66d15}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!install\-Module\-:from\-Source\-:with\-Manager\-:@{install\-Module\-:from\-Source\-:with\-Manager\-:}}
+\index{install\-Module\-:from\-Source\-:with\-Manager\-:@{install\-Module\-:from\-Source\-:with\-Manager\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{install\-Module\-:from\-Source\-:with\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) install\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{a\-Module}
+\item[{fromSource:({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\item[{withManager:({\bf Sword\-Manager} $\ast$)}]{manager}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a1b68464f8a8a00e7723b83206fa66d15}
+\hypertarget{interface_sword_install_source_controller_a3ed29be1759755d5096b0c42fc67184c}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!list\-Modules\-For\-Source\-:@{list\-Modules\-For\-Source\-:}}
+\index{list\-Modules\-For\-Source\-:@{list\-Modules\-For\-Source\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{list\-Modules\-For\-Source\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) list\-Modules\-For\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a3ed29be1759755d5096b0c42fc67184c}
+\hypertarget{interface_sword_install_source_controller_a47de4810e407c27e5903c9a02464055a}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!module\-Status\-In\-Install\-Source\-:base\-Manager\-:@{module\-Status\-In\-Install\-Source\-:base\-Manager\-:}}
+\index{module\-Status\-In\-Install\-Source\-:base\-Manager\-:@{module\-Status\-In\-Install\-Source\-:base\-Manager\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{module\-Status\-In\-Install\-Source\-:base\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Status\-In\-Install\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\item[{baseManager:({\bf Sword\-Manager} $\ast$)}]{base\-Mgr}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a47de4810e407c27e5903c9a02464055a}
+returns an array of Modules with status set, nil on error \hypertarget{interface_sword_install_source_controller_a906eb9828c017101ea26f1de0aed9084}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!refresh\-Install\-Source\-:@{refresh\-Install\-Source\-:}}
+\index{refresh\-Install\-Source\-:@{refresh\-Install\-Source\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{refresh\-Install\-Source\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) refresh\-Install\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a906eb9828c017101ea26f1de0aed9084}
+refresh modules of this source refreshing the install source is necessary before installation of \hypertarget{interface_sword_install_source_controller_af21ad528181938a899e9ebca5fad59f5}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!refresh\-Master\-Remote\-Install\-Source\-List@{refresh\-Master\-Remote\-Install\-Source\-List}}
+\index{refresh\-Master\-Remote\-Install\-Source\-List@{refresh\-Master\-Remote\-Install\-Source\-List}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{refresh\-Master\-Remote\-Install\-Source\-List}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) refresh\-Master\-Remote\-Install\-Source\-List 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_af21ad528181938a899e9ebca5fad59f5}
+\hypertarget{interface_sword_install_source_controller_ad9882f00bb27345adbf4a46a7ac4124e}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!reinitialize@{reinitialize}}
+\index{reinitialize@{reinitialize}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{reinitialize}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) reinitialize 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_ad9882f00bb27345adbf4a46a7ac4124e}
+re-\/init after adding or removing new modules \hypertarget{interface_sword_install_source_controller_a740957e920ffb62d23ef07f8eaf55850}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!remove\-Install\-Source\-:@{remove\-Install\-Source\-:}}
+\index{remove\-Install\-Source\-:@{remove\-Install\-Source\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{remove\-Install\-Source\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Install\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a740957e920ffb62d23ef07f8eaf55850}
+\hypertarget{interface_sword_install_source_controller_a64c94dd1b2827b993c2845de98c8412c}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!set\-User\-Disclainer\-Confirmed\-:@{set\-User\-Disclainer\-Confirmed\-:}}
+\index{set\-User\-Disclainer\-Confirmed\-:@{set\-User\-Disclainer\-Confirmed\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{set\-User\-Disclainer\-Confirmed\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-User\-Disclainer\-Confirmed\-: 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{flag}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a64c94dd1b2827b993c2845de98c8412c}
+\hypertarget{interface_sword_install_source_controller_aac5b6f9e2c3c252208c8aa8c37c308b3}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!uninstall\-Module\-:from\-Manager\-:@{uninstall\-Module\-:from\-Manager\-:}}
+\index{uninstall\-Module\-:from\-Manager\-:@{uninstall\-Module\-:from\-Manager\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{uninstall\-Module\-:from\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) uninstall\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{a\-Module}
+\item[{fromManager:({\bf Sword\-Manager} $\ast$)}]{sw\-Manager}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_aac5b6f9e2c3c252208c8aa8c37c308b3}
+uninstalls a module from a \hyperlink{interface_sword_manager}{Sword\-Manager} \hypertarget{interface_sword_install_source_controller_aa51ec2e7308a6e712c4c0bf51a64c634}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!update\-Install\-Source\-:@{update\-Install\-Source\-:}}
+\index{update\-Install\-Source\-:@{update\-Install\-Source\-:}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{update\-Install\-Source\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) update\-Install\-Source\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Install\-Source} $\ast$)}]{is}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_aa51ec2e7308a6e712c4c0bf51a64c634}
+\hypertarget{interface_sword_install_source_controller_a226132888becfb860c7aebefc433070d}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!user\-Disclaimer\-Confirmed@{user\-Disclaimer\-Confirmed}}
+\index{user\-Disclaimer\-Confirmed@{user\-Disclaimer\-Confirmed}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{user\-Disclaimer\-Confirmed}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) user\-Disclaimer\-Confirmed 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_install_source_controller_a226132888becfb860c7aebefc433070d}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_sword_install_source_controller_a001267c1b513311fb775043643a39564}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!config\-File\-Path@{config\-File\-Path}}
+\index{config\-File\-Path@{config\-File\-Path}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{config\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) config\-File\-Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_install_source_controller_a001267c1b513311fb775043643a39564}
+\hypertarget{interface_sword_install_source_controller_af8b3f30b6c3f4595b757aa47d85b2b34}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!config\-Path@{config\-Path}}
+\index{config\-Path@{config\-Path}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{config\-Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) config\-Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_install_source_controller_af8b3f30b6c3f4595b757aa47d85b2b34}
+\hypertarget{interface_sword_install_source_controller_ad14f2d05f83cbfc9485a8a83a0005401}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!install\-Source\-List@{install\-Source\-List}}
+\index{install\-Source\-List@{install\-Source\-List}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{install\-Source\-List}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) install\-Source\-List\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_install_source_controller_ad14f2d05f83cbfc9485a8a83a0005401}
+\hypertarget{interface_sword_install_source_controller_ab323d28629b6cfc7b2a4569c687a7bde}{\index{Sword\-Install\-Source\-Controller@{Sword\-Install\-Source\-Controller}!install\-Sources@{install\-Sources}}
+\index{install\-Sources@{install\-Sources}!SwordInstallSourceController@{Sword\-Install\-Source\-Controller}}
+\subsubsection[{install\-Sources}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary $\ast$) install\-Sources\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_install_source_controller_ab323d28629b6cfc7b2a4569c687a7bde}
+the dictionary holding the install sources. caption is the key 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_install_source_controller_8h}{Sword\-Install\-Source\-Controller.\-h}\item 
+src/\-Sword/\hyperlink{_sword_install_source_controller_8mm}{Sword\-Install\-Source\-Controller.\-mm}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{interface_side_bar_view_controller}{\section{Side\-Bar\-View\-Controller Class Reference}
+\label{interface_side_bar_view_controller}\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Side\-Bar\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Side\-Bar\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_side_bar_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_side_bar_view_controller_a52f43ff88aa47f4a6b383e5133932ea4}{resize\-Control}
+\item 
+(void) -\/ \hyperlink{interface_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Outline\-View $\ast$ \hyperlink{interface_side_bar_view_controller_a2df5f78f79ebb8f68653c3b54304e6e8}{outline\-View}
+\item 
+I\-B\-Outlet N\-S\-View $\ast$ \hyperlink{interface_side_bar_view_controller_ac444dd01ffca31423ba3dff609928afb}{sidebar\-Resize\-Control}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}
+called from subview when it has fully loaded 
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_a0bd73ec236f8055ac6566b39ddf66add}{$<$\-Subview\-Hosting$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_left_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{Left\-Side\-Bar\-View\-Controller}, and \hyperlink{interface_right_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{Right\-Side\-Bar\-View\-Controller}.
+
+\hypertarget{interface_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}
+
+
+Reimplemented in \hyperlink{interface_left_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{Left\-Side\-Bar\-View\-Controller}, and \hyperlink{interface_right_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{Right\-Side\-Bar\-View\-Controller}.
+
+\hypertarget{interface_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_left_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{Left\-Side\-Bar\-View\-Controller}, and \hyperlink{interface_right_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{Right\-Side\-Bar\-View\-Controller}.
+
+\hypertarget{interface_side_bar_view_controller_a52f43ff88aa47f4a6b383e5133932ea4}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!resize\-Control@{resize\-Control}}
+\index{resize\-Control@{resize\-Control}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{resize\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) resize\-Control 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_side_bar_view_controller_a52f43ff88aa47f4a6b383e5133932ea4}
+view of control rect 
+
+\subsection{Field Documentation}
+\hypertarget{interface_side_bar_view_controller_a2df5f78f79ebb8f68653c3b54304e6e8}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!outline\-View@{outline\-View}}
+\index{outline\-View@{outline\-View}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{outline\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Outline\-View$\ast$) outline\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_side_bar_view_controller_a2df5f78f79ebb8f68653c3b54304e6e8}
+\hypertarget{interface_side_bar_view_controller_ac444dd01ffca31423ba3dff609928afb}{\index{Side\-Bar\-View\-Controller@{Side\-Bar\-View\-Controller}!sidebar\-Resize\-Control@{sidebar\-Resize\-Control}}
+\index{sidebar\-Resize\-Control@{sidebar\-Resize\-Control}!SideBarViewController@{Side\-Bar\-View\-Controller}}
+\subsubsection[{sidebar\-Resize\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-View$\ast$) sidebar\-Resize\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_side_bar_view_controller_ac444dd01ffca31423ba3dff609928afb}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_side_bar_view_controller_8h}{Side\-Bar\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_side_bar_view_controller_8m}{Side\-Bar\-View\-Controller.\-m}\end{DoxyCompactItemize}

@@ -1,0 +1,224 @@
+\hypertarget{interface_confirmation_sheet_controller}{\section{Confirmation\-Sheet\-Controller Class Reference}
+\label{interface_confirmation_sheet_controller}\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Confirmation\-Sheet\-Controller.\-h$>$}
+
+Inheritance diagram for Confirmation\-Sheet\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_confirmation_sheet_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_confirmation_sheet_controller_a990c892f214027b444e49d48b441535c}{init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:}
+\item 
+(void) -\/ \hyperlink{interface_confirmation_sheet_controller_a4c8a147a5f86c949017d735c1097a016}{set\-Sheet\-Title\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_confirmation_sheet_controller_ae21afc63120fc54f21af093b48dbd3a4}{sheet\-Title}
+\item 
+(int) -\/ \hyperlink{interface_confirmation_sheet_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}{sheet\-Return\-Code}
+\item 
+(void) -\/ \hyperlink{interface_confirmation_sheet_controller_ab2bc9af004e55b53e6776a60139bd9da}{begin\-Sheet}
+\begin{DoxyCompactList}\small\item\em begin sheet \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_confirmation_sheet_controller_ad73bf69ade5214ad7f61681509587167}{end\-Sheet}
+\item 
+(int) -\/ \hyperlink{interface_confirmation_sheet_controller_a912082d1644fa81e07d87ce9b4e34a53}{run\-Modal}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_confirmation_sheet_controller_a7040b71e01a6dd1b38469460acd92821}{default\-Button\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_confirmation_sheet_controller_a4830200c86cd298cbf84693cf078f840}{alternate\-Button\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_confirmation_sheet_controller_ab83f53dc3a85c113fc14d48af59a0221}{other\-Button\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_confirmation_sheet_controller_ac5c94ad3b2ce0b041659a382a4ebbf7b}{title\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_confirmation_sheet_controller_a4d426337207c2de434679201b283dbba}{text\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_confirmation_sheet_controller_aca88509267ea6dffabe5cdd20c6d0c46}{ask\-Again\-Button}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_confirmation_sheet_controller_a1f7cdca8c07525dad680249f16567787}{default\-Button}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_confirmation_sheet_controller_ac5ee34067e73403580d94a8208d0ebbb}{alternate\-Button}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_confirmation_sheet_controller_a27baa098bba9010a532f6bc6b16d4371}{other\-Button}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_confirmation_sheet_controller_a1dc27473f45c0381d0db971e87498ecf}{context\-Info}
+\item 
+int \hyperlink{interface_confirmation_sheet_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}{sheet\-Return\-Code}
+\item 
+id \hyperlink{interface_confirmation_sheet_controller_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_a1a21057b4b9576370d426feffd44d65a}{defaults\-Ask\-Again\-Key}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_ae1e92fa581da0eee62954e9e8d2a31d8}{confirmation\-Title}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_a058fe1286ed9e8b1166bc5e2719ecc5a}{confirmation\-Text}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_aa5eda274d0f7593581a5963f28cb7efa}{default\-Button\-Text}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_a007c6d38dc8a9ae9065e73bdbea52d3f}{alternate\-Button\-Text}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_af037696a8b4cd94f65fbdb8a1104499d}{other\-Button\-Text}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_confirmation_sheet_controller_a7febe5e5d594cfc8116521126dfe164a}{ask\-Again\-Button\-Text}
+\item 
+N\-S\-Window $\ast$ \hyperlink{interface_confirmation_sheet_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}{sheet\-Window}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_confirmation_sheet_controller_a4830200c86cd298cbf84693cf078f840}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!alternate\-Button\-:@{alternate\-Button\-:}}
+\index{alternate\-Button\-:@{alternate\-Button\-:}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{alternate\-Button\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) alternate\-Button\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_a4830200c86cd298cbf84693cf078f840}
+\hypertarget{interface_confirmation_sheet_controller_ab2bc9af004e55b53e6776a60139bd9da}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!begin\-Sheet@{begin\-Sheet}}
+\index{begin\-Sheet@{begin\-Sheet}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{begin\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) begin\-Sheet 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_ab2bc9af004e55b53e6776a60139bd9da}
+
+
+begin sheet 
+
+\hypertarget{interface_confirmation_sheet_controller_a7040b71e01a6dd1b38469460acd92821}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!default\-Button\-:@{default\-Button\-:}}
+\index{default\-Button\-:@{default\-Button\-:}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{default\-Button\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) default\-Button\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_a7040b71e01a6dd1b38469460acd92821}
+\hypertarget{interface_confirmation_sheet_controller_ad73bf69ade5214ad7f61681509587167}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!end\-Sheet@{end\-Sheet}}
+\index{end\-Sheet@{end\-Sheet}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{end\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\-Sheet 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_ad73bf69ade5214ad7f61681509587167}
+\hypertarget{interface_confirmation_sheet_controller_a990c892f214027b444e49d48b441535c}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:@{init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:}}
+\index{init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:@{init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{init\-With\-Sheet\-Title\-:message\-:default\-Button\-:alternate\-Button\-:other\-Button\-:ask\-Again\-Button\-:defaults\-Ask\-Again\-Key\-:context\-Info\-:doc\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Sheet\-Title\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Title}
+\item[{message:(N\-S\-String $\ast$)}]{msg}
+\item[{defaultButton:(N\-S\-String $\ast$)}]{default\-Txt}
+\item[{alternateButton:(N\-S\-String $\ast$)}]{alternate\-Txt}
+\item[{otherButton:(N\-S\-String $\ast$)}]{other\-Txt}
+\item[{askAgainButton:(N\-S\-String $\ast$)}]{ask\-Again\-Txt}
+\item[{defaultsAskAgainKey:(N\-S\-String $\ast$)}]{defaults\-Key}
+\item[{contextInfo:(id)}]{a\-Context\-Info}
+\item[{docWindow:(N\-S\-Window $\ast$)}]{a\-Window}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_a990c892f214027b444e49d48b441535c}
+\hypertarget{interface_confirmation_sheet_controller_ab83f53dc3a85c113fc14d48af59a0221}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!other\-Button\-:@{other\-Button\-:}}
+\index{other\-Button\-:@{other\-Button\-:}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{other\-Button\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) other\-Button\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_ab83f53dc3a85c113fc14d48af59a0221}
+\hypertarget{interface_confirmation_sheet_controller_a912082d1644fa81e07d87ce9b4e34a53}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!run\-Modal@{run\-Modal}}
+\index{run\-Modal@{run\-Modal}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{run\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) run\-Modal 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_a912082d1644fa81e07d87ce9b4e34a53}
+run modal as window \hypertarget{interface_confirmation_sheet_controller_a4c8a147a5f86c949017d735c1097a016}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!set\-Sheet\-Title\-:@{set\-Sheet\-Title\-:}}
+\index{set\-Sheet\-Title\-:@{set\-Sheet\-Title\-:}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{set\-Sheet\-Title\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Sheet\-Title\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Title}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_a4c8a147a5f86c949017d735c1097a016}
+\hypertarget{interface_confirmation_sheet_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!sheet\-Return\-Code@{sheet\-Return\-Code}}
+\index{sheet\-Return\-Code@{sheet\-Return\-Code}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{sheet\-Return\-Code}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) sheet\-Return\-Code 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}
+\hypertarget{interface_confirmation_sheet_controller_ae21afc63120fc54f21af093b48dbd3a4}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!sheet\-Title@{sheet\-Title}}
+\index{sheet\-Title@{sheet\-Title}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{sheet\-Title}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) sheet\-Title 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_confirmation_sheet_controller_ae21afc63120fc54f21af093b48dbd3a4}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_confirmation_sheet_controller_ac5ee34067e73403580d94a8208d0ebbb}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!alternate\-Button@{alternate\-Button}}
+\index{alternate\-Button@{alternate\-Button}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{alternate\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) alternate\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_ac5ee34067e73403580d94a8208d0ebbb}
+\hypertarget{interface_confirmation_sheet_controller_aca88509267ea6dffabe5cdd20c6d0c46}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!ask\-Again\-Button@{ask\-Again\-Button}}
+\index{ask\-Again\-Button@{ask\-Again\-Button}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{ask\-Again\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) ask\-Again\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_aca88509267ea6dffabe5cdd20c6d0c46}
+\hypertarget{interface_confirmation_sheet_controller_a1f7cdca8c07525dad680249f16567787}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!default\-Button@{default\-Button}}
+\index{default\-Button@{default\-Button}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{default\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) default\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_a1f7cdca8c07525dad680249f16567787}
+\hypertarget{interface_confirmation_sheet_controller_a27baa098bba9010a532f6bc6b16d4371}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!other\-Button@{other\-Button}}
+\index{other\-Button@{other\-Button}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{other\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) other\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_a27baa098bba9010a532f6bc6b16d4371}
+\hypertarget{interface_confirmation_sheet_controller_a4d426337207c2de434679201b283dbba}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!text\-Text\-Field@{text\-Text\-Field}}
+\index{text\-Text\-Field@{text\-Text\-Field}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{text\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) text\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_a4d426337207c2de434679201b283dbba}
+\hypertarget{interface_confirmation_sheet_controller_ac5c94ad3b2ce0b041659a382a4ebbf7b}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!title\-Text\-Field@{title\-Text\-Field}}
+\index{title\-Text\-Field@{title\-Text\-Field}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{title\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) title\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_confirmation_sheet_controller_ac5c94ad3b2ce0b041659a382a4ebbf7b}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_confirmation_sheet_controller_a007c6d38dc8a9ae9065e73bdbea52d3f}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!alternate\-Button\-Text@{alternate\-Button\-Text}}
+\index{alternate\-Button\-Text@{alternate\-Button\-Text}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{alternate\-Button\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) alternate\-Button\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a007c6d38dc8a9ae9065e73bdbea52d3f}
+\hypertarget{interface_confirmation_sheet_controller_a7febe5e5d594cfc8116521126dfe164a}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!ask\-Again\-Button\-Text@{ask\-Again\-Button\-Text}}
+\index{ask\-Again\-Button\-Text@{ask\-Again\-Button\-Text}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{ask\-Again\-Button\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) ask\-Again\-Button\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a7febe5e5d594cfc8116521126dfe164a}
+\hypertarget{interface_confirmation_sheet_controller_a058fe1286ed9e8b1166bc5e2719ecc5a}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!confirmation\-Text@{confirmation\-Text}}
+\index{confirmation\-Text@{confirmation\-Text}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{confirmation\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) confirmation\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a058fe1286ed9e8b1166bc5e2719ecc5a}
+\hypertarget{interface_confirmation_sheet_controller_ae1e92fa581da0eee62954e9e8d2a31d8}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!confirmation\-Title@{confirmation\-Title}}
+\index{confirmation\-Title@{confirmation\-Title}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{confirmation\-Title}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) confirmation\-Title\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_ae1e92fa581da0eee62954e9e8d2a31d8}
+\hypertarget{interface_confirmation_sheet_controller_a1dc27473f45c0381d0db971e87498ecf}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!context\-Info@{context\-Info}}
+\index{context\-Info@{context\-Info}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{context\-Info}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) context\-Info\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a1dc27473f45c0381d0db971e87498ecf}
+\hypertarget{interface_confirmation_sheet_controller_aa5eda274d0f7593581a5963f28cb7efa}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!default\-Button\-Text@{default\-Button\-Text}}
+\index{default\-Button\-Text@{default\-Button\-Text}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{default\-Button\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) default\-Button\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_aa5eda274d0f7593581a5963f28cb7efa}
+\hypertarget{interface_confirmation_sheet_controller_a1a21057b4b9576370d426feffd44d65a}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!defaults\-Ask\-Again\-Key@{defaults\-Ask\-Again\-Key}}
+\index{defaults\-Ask\-Again\-Key@{defaults\-Ask\-Again\-Key}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{defaults\-Ask\-Again\-Key}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) defaults\-Ask\-Again\-Key\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a1a21057b4b9576370d426feffd44d65a}
+\hypertarget{interface_confirmation_sheet_controller_a8d9332fcd23523b1e2520b8765577423}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_confirmation_sheet_controller_a8d9332fcd23523b1e2520b8765577423}
+\hypertarget{interface_confirmation_sheet_controller_af037696a8b4cd94f65fbdb8a1104499d}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!other\-Button\-Text@{other\-Button\-Text}}
+\index{other\-Button\-Text@{other\-Button\-Text}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{other\-Button\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) other\-Button\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_af037696a8b4cd94f65fbdb8a1104499d}
+\hypertarget{interface_confirmation_sheet_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!sheet\-Return\-Code@{sheet\-Return\-Code}}
+\index{sheet\-Return\-Code@{sheet\-Return\-Code}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{sheet\-Return\-Code}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) sheet\-Return\-Code\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_confirmation_sheet_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}
+\hypertarget{interface_confirmation_sheet_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}{\index{Confirmation\-Sheet\-Controller@{Confirmation\-Sheet\-Controller}!sheet\-Window@{sheet\-Window}}
+\index{sheet\-Window@{sheet\-Window}!ConfirmationSheetController@{Confirmation\-Sheet\-Controller}}
+\subsubsection[{sheet\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Window $\ast$) sheet\-Window\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_confirmation_sheet_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Confirmation\-Dialog/\hyperlink{_confirmation_sheet_controller_8h}{Confirmation\-Sheet\-Controller.\-h}\item 
+src/\-Confirmation\-Dialog/\hyperlink{_confirmation_sheet_controller_8m}{Confirmation\-Sheet\-Controller.\-m}\end{DoxyCompactItemize}

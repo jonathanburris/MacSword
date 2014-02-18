@@ -1,0 +1,104 @@
+\hypertarget{interface_reference_cache_manager}{\section{Reference\-Cache\-Manager Class Reference}
+\label{interface_reference_cache_manager}\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}}
+}
+
+
+{\ttfamily \#import $<$Reference\-Cache\-Manager.\-h$>$}
+
+Inheritance diagram for Reference\-Cache\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_reference_cache_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_reference_cache_manager_af47eaefadf41368497a163141b9c8ff6}{add\-Cache\-Object\-:search\-Type\-:}
+\item 
+(\hyperlink{interface_reference_cache_object}{Reference\-Cache\-Object} $\ast$) -\/ \hyperlink{interface_reference_cache_manager_aa813df3855a6783aa971c9d3444ddddc}{cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_reference_cache_manager_a655828f5e0358af7462394eaa8be2fdd}{clean\-Cache}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_reference_cache_manager_afa5ea945a1806464a933e165d4ce7b4f}{contains\-:for\-Search\-Type\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_reference_cache_manager}{Reference\-Cache\-Manager} $\ast$) + \hyperlink{interface_reference_cache_manager_add4ed372c05247d062db4c19da40e1a4}{default\-Cache\-Manager}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_reference_cache_manager_aaec0cd743cb0ecc7e1c6699c494b8781}{index\-Cache}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_reference_cache_manager_a4e814c2d19262e5df73f96cd06b0ba76}{ref\-Cache}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{interface_reference_cache_manager_abf7683f360927e39bc1d76b1554b22e0}{keep\-Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_reference_cache_manager_af47eaefadf41368497a163141b9c8ff6}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!add\-Cache\-Object\-:search\-Type\-:@{add\-Cache\-Object\-:search\-Type\-:}}
+\index{add\-Cache\-Object\-:search\-Type\-:@{add\-Cache\-Object\-:search\-Type\-:}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{add\-Cache\-Object\-:search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-Cache\-Object\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Reference\-Cache\-Object} $\ast$)}]{cache\-Object}
+\item[{searchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_reference_cache_manager_af47eaefadf41368497a163141b9c8ff6}
+\hypertarget{interface_reference_cache_manager_aa813df3855a6783aa971c9d3444ddddc}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:@{cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:}}
+\index{cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:@{cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{cache\-Object\-For\-Reference\-:for\-Module\-Name\-:and\-Search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Reference\-Cache\-Object} $\ast$) cache\-Object\-For\-Reference\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{ref}
+\item[{forModuleName:(N\-S\-String $\ast$)}]{a\-Name}
+\item[{andSearchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_reference_cache_manager_aa813df3855a6783aa971c9d3444ddddc}
+\hypertarget{interface_reference_cache_manager_a655828f5e0358af7462394eaa8be2fdd}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!clean\-Cache@{clean\-Cache}}
+\index{clean\-Cache@{clean\-Cache}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{clean\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clean\-Cache 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_reference_cache_manager_a655828f5e0358af7462394eaa8be2fdd}
+\hypertarget{interface_reference_cache_manager_afa5ea945a1806464a933e165d4ce7b4f}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!contains\-:for\-Search\-Type\-:@{contains\-:for\-Search\-Type\-:}}
+\index{contains\-:for\-Search\-Type\-:@{contains\-:for\-Search\-Type\-:}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{contains\-:for\-Search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) contains\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Reference\-Cache\-Object} $\ast$)}]{an\-Object}
+\item[{forSearchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_reference_cache_manager_afa5ea945a1806464a933e165d4ce7b4f}
+\hypertarget{interface_reference_cache_manager_add4ed372c05247d062db4c19da40e1a4}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!default\-Cache\-Manager@{default\-Cache\-Manager}}
+\index{default\-Cache\-Manager@{default\-Cache\-Manager}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{default\-Cache\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Reference\-Cache\-Manager} $\ast$) default\-Cache\-Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_reference_cache_manager_add4ed372c05247d062db4c19da40e1a4}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_reference_cache_manager_aaec0cd743cb0ecc7e1c6699c494b8781}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!index\-Cache@{index\-Cache}}
+\index{index\-Cache@{index\-Cache}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{index\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) index\-Cache\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_reference_cache_manager_aaec0cd743cb0ecc7e1c6699c494b8781}
+\hypertarget{interface_reference_cache_manager_a4e814c2d19262e5df73f96cd06b0ba76}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!ref\-Cache@{ref\-Cache}}
+\index{ref\-Cache@{ref\-Cache}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{ref\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) ref\-Cache\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_reference_cache_manager_a4e814c2d19262e5df73f96cd06b0ba76}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_reference_cache_manager_abf7683f360927e39bc1d76b1554b22e0}{\index{Reference\-Cache\-Manager@{Reference\-Cache\-Manager}!keep\-Size@{keep\-Size}}
+\index{keep\-Size@{keep\-Size}!ReferenceCacheManager@{Reference\-Cache\-Manager}}
+\subsubsection[{keep\-Size}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) keep\-Size\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_reference_cache_manager_abf7683f360927e39bc1d76b1554b22e0}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_reference_cache_manager_8h}{Reference\-Cache\-Manager.\-h}\item 
+src/\-User\-Interface/\hyperlink{_reference_cache_manager_8m}{Reference\-Cache\-Manager.\-m}\end{DoxyCompactItemize}

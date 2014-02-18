@@ -1,0 +1,107 @@
+\hypertarget{_sword_module_8h}{\section{src/\-Sword/\-Sword\-Module.h File Reference}
+\label{_sword_module_8h}\index{src/\-Sword/\-Sword\-Module.\-h@{src/\-Sword/\-Sword\-Module.\-h}}
+}
+{\ttfamily \#import $<$Cocoa/\-Cocoa.\-h$>$}\\*
+{\ttfamily \#import $<$Coco\-Logger/\-Coco\-Logger.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+protocol \hyperlink{protocol_sword_module_access-p}{$<$\-Sword\-Module\-Access$>$}
+\item 
+class \hyperlink{interface_sword_module}{Sword\-Module}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_sword_module_8h_ad05e9429173104df85769aafdd1763a6}{My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T}(class\-Name, object)~(sword\-::class\-Name $\ast$)((object)?((object-\/$>$get\-Class()-\/$>$is\-Assignable\-From(\#class\-Name))?object\-:0)\-:0)
+\item 
+\#define \hyperlink{_sword_module_8h_a5499f651793d8e8f039ad1e82d6fe8f4}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E}~@\char`\"{}type\char`\"{}
+\item 
+\#define \hyperlink{_sword_module_8h_a7c78160e79e91684ec5e8fc5260e2607}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E}~@\char`\"{}passage\char`\"{}
+\item 
+\#define \hyperlink{_sword_module_8h_a44c8a88e21dbf3cffb1265060be42fac}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E}~@\char`\"{}modulename\char`\"{}
+\item 
+\#define \hyperlink{_sword_module_8h_a00c26dbc1870390aeaeeb35338066352}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R}~@\char`\"{}notenumber\char`\"{}
+\item 
+\#define \hyperlink{_sword_module_8h_a11bb78e0f997307e7466008e558f858c}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N}~@\char`\"{}action\char`\"{}
+\item 
+\#define \hyperlink{_sword_module_8h_a43bbd5642c158f9476d178e79e0933f2}{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E}~@\char`\"{}value\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67}{Text\-Pull\-Type} \{ \hyperlink{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67a460289572b62e286885eb04680884391}{Text\-Type\-Stripped} = 1, 
+\hyperlink{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67ad53c5d1478b78bda18374f50aeec7272}{Text\-Type\-Rendered}
+ \}
+\item 
+enum \hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type} \{ \\*
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a75b313ac5acb531d7e44d042839688a4}{bible} = 0x0001, 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a1741cce9084949febe837de5a01952da}{commentary} = 0x0002, 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a996544b838f9aaf038dbbe0e8f4a47a1}{dictionary} = 0x0004, 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1ae6245355c13f19f462a69364e4a68c43}{genbook} = 0x0008, 
+\\*
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a33c8e1ab2b42965c97928cc1d5c90857}{devotional} = 0x0010
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_sword_module_8h_a11bb78e0f997307e7466008e558f858c}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-A\-C\-T\-I\-O\-N~@\char`\"{}action\char`\"{}}}\label{_sword_module_8h_a11bb78e0f997307e7466008e558f858c}
+\hypertarget{_sword_module_8h_a44c8a88e21dbf3cffb1265060be42fac}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-M\-O\-D\-U\-L\-E~@\char`\"{}modulename\char`\"{}}}\label{_sword_module_8h_a44c8a88e21dbf3cffb1265060be42fac}
+\hypertarget{_sword_module_8h_a00c26dbc1870390aeaeeb35338066352}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-N\-O\-T\-E\-N\-U\-M\-B\-E\-R~@\char`\"{}notenumber\char`\"{}}}\label{_sword_module_8h_a00c26dbc1870390aeaeeb35338066352}
+\hypertarget{_sword_module_8h_a7c78160e79e91684ec5e8fc5260e2607}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-P\-A\-S\-S\-A\-G\-E~@\char`\"{}passage\char`\"{}}}\label{_sword_module_8h_a7c78160e79e91684ec5e8fc5260e2607}
+\hypertarget{_sword_module_8h_a5499f651793d8e8f039ad1e82d6fe8f4}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-T\-Y\-P\-E~@\char`\"{}type\char`\"{}}}\label{_sword_module_8h_a5499f651793d8e8f039ad1e82d6fe8f4}
+\hypertarget{_sword_module_8h_a43bbd5642c158f9476d178e79e0933f2}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E}}
+\index{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E@{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-T\-T\-R\-T\-Y\-P\-E\-\_\-\-V\-A\-L\-U\-E~@\char`\"{}value\char`\"{}}}\label{_sword_module_8h_a43bbd5642c158f9476d178e79e0933f2}
+\hypertarget{_sword_module_8h_ad05e9429173104df85769aafdd1763a6}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T@{My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T}}
+\index{My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T@{My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define My\-\_\-\-S\-W\-D\-Y\-N\-A\-M\-I\-C\-\_\-\-C\-A\-S\-T(
+\begin{DoxyParamCaption}
+\item[{}]{class\-Name, }
+\item[{}]{object}
+\end{DoxyParamCaption}
+)~(sword\-::class\-Name $\ast$)((object)?((object-\/$>$get\-Class()-\/$>$is\-Assignable\-From(\#class\-Name))?object\-:0)\-:0)}}\label{_sword_module_8h_ad05e9429173104df85769aafdd1763a6}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!Module\-Type@{Module\-Type}}
+\index{Module\-Type@{Module\-Type}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{Module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Module\-Type}}}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{bible@{bible}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!bible@{bible}}\item[{\em 
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a75b313ac5acb531d7e44d042839688a4}{bible}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a75b313ac5acb531d7e44d042839688a4}
+}]\index{commentary@{commentary}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!commentary@{commentary}}\item[{\em 
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a1741cce9084949febe837de5a01952da}{commentary}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a1741cce9084949febe837de5a01952da}
+}]\index{dictionary@{dictionary}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!dictionary@{dictionary}}\item[{\em 
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a996544b838f9aaf038dbbe0e8f4a47a1}{dictionary}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a996544b838f9aaf038dbbe0e8f4a47a1}
+}]\index{genbook@{genbook}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!genbook@{genbook}}\item[{\em 
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1ae6245355c13f19f462a69364e4a68c43}{genbook}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1ae6245355c13f19f462a69364e4a68c43}
+}]\index{devotional@{devotional}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!devotional@{devotional}}\item[{\em 
+\hypertarget{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a33c8e1ab2b42965c97928cc1d5c90857}{devotional}\label{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1a33c8e1ab2b42965c97928cc1d5c90857}
+}]\end{description}
+\end{Desc}
+\hypertarget{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67}{\index{Sword\-Module.\-h@{Sword\-Module.\-h}!Text\-Pull\-Type@{Text\-Pull\-Type}}
+\index{Text\-Pull\-Type@{Text\-Pull\-Type}!SwordModule.h@{Sword\-Module.\-h}}
+\subsubsection[{Text\-Pull\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Text\-Pull\-Type}}}\label{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Text\-Type\-Stripped@{Text\-Type\-Stripped}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!Text\-Type\-Stripped@{Text\-Type\-Stripped}}\item[{\em 
+\hypertarget{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67a460289572b62e286885eb04680884391}{Text\-Type\-Stripped}\label{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67a460289572b62e286885eb04680884391}
+}]\index{Text\-Type\-Rendered@{Text\-Type\-Rendered}!Sword\-Module.\-h@{Sword\-Module.\-h}}\index{Sword\-Module.\-h@{Sword\-Module.\-h}!Text\-Type\-Rendered@{Text\-Type\-Rendered}}\item[{\em 
+\hypertarget{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67ad53c5d1478b78bda18374f50aeec7272}{Text\-Type\-Rendered}\label{_sword_module_8h_ad76ea2de57fb462445d33f148d1f4d67ad53c5d1478b78bda18374f50aeec7272}
+}]\end{description}
+\end{Desc}

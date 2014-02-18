@@ -1,0 +1,58 @@
+\hypertarget{_module_list_view_controller_8m}{\section{src/\-Module\-Manager/\-Module\-List\-View\-Controller.m File Reference}
+\label{_module_list_view_controller_8m}\index{src/\-Module\-Manager/\-Module\-List\-View\-Controller.\-m@{src/\-Module\-Manager/\-Module\-List\-View\-Controller.\-m}}
+}
+{\ttfamily \#import \char`\"{}Module\-List\-View\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import $<$Module\-List\-Object.\-h$>$}\\*
+{\ttfamily \#import $<$Install\-Source\-List\-Object.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Manager.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+category \hyperlink{category_module_list_view_controller_07_private_a_p_i_08}{Module\-List\-View\-Controller(\-Private\-A\-P\-I)}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_a1438024d933d158b77a59fa916310d4f}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E}~@\char`\"{}modname\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_a18985560eeba05dc18829c966e804723}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R}~@\char`\"{}moddescr\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_adaa5212a26703b88533c3fc280d28e15}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E}~@\char`\"{}modtype\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_a70ae9ea90d5e476c96f2da95362840e2}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S}~@\char`\"{}modstatus\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_ab2bb056ce0c77c251abd3b4f1721b158}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D}~@\char`\"{}modciphered\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_ae95422055fd58ba7d6fe8a2081739d70}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N}~@\char`\"{}modrversion\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_a749a1405d004b71219d73a7f19a83236}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N}~@\char`\"{}modlversion\char`\"{}
+\item 
+\#define \hyperlink{_module_list_view_controller_8m_aa7e57739051491a1ac6a9b7a6a276a02}{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K}~@\char`\"{}task\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_module_list_view_controller_8m_ab2bb056ce0c77c251abd3b4f1721b158}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-C\-I\-P\-H\-E\-R\-E\-D~@\char`\"{}modciphered\char`\"{}}}\label{_module_list_view_controller_8m_ab2bb056ce0c77c251abd3b4f1721b158}
+\hypertarget{_module_list_view_controller_8m_a18985560eeba05dc18829c966e804723}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-D\-E\-S\-C\-R~@\char`\"{}moddescr\char`\"{}}}\label{_module_list_view_controller_8m_a18985560eeba05dc18829c966e804723}
+\hypertarget{_module_list_view_controller_8m_a749a1405d004b71219d73a7f19a83236}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-L\-V\-E\-R\-S\-I\-O\-N~@\char`\"{}modlversion\char`\"{}}}\label{_module_list_view_controller_8m_a749a1405d004b71219d73a7f19a83236}
+\hypertarget{_module_list_view_controller_8m_a1438024d933d158b77a59fa916310d4f}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-N\-A\-M\-E~@\char`\"{}modname\char`\"{}}}\label{_module_list_view_controller_8m_a1438024d933d158b77a59fa916310d4f}
+\hypertarget{_module_list_view_controller_8m_ae95422055fd58ba7d6fe8a2081739d70}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-R\-V\-E\-R\-S\-I\-O\-N~@\char`\"{}modrversion\char`\"{}}}\label{_module_list_view_controller_8m_ae95422055fd58ba7d6fe8a2081739d70}
+\hypertarget{_module_list_view_controller_8m_a70ae9ea90d5e476c96f2da95362840e2}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-S\-T\-A\-T\-U\-S~@\char`\"{}modstatus\char`\"{}}}\label{_module_list_view_controller_8m_a70ae9ea90d5e476c96f2da95362840e2}
+\hypertarget{_module_list_view_controller_8m_adaa5212a26703b88533c3fc280d28e15}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-M\-O\-D\-T\-Y\-P\-E~@\char`\"{}modtype\char`\"{}}}\label{_module_list_view_controller_8m_adaa5212a26703b88533c3fc280d28e15}
+\hypertarget{_module_list_view_controller_8m_aa7e57739051491a1ac6a9b7a6a276a02}{\index{Module\-List\-View\-Controller.\-m@{Module\-List\-View\-Controller.\-m}!T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K}}
+\index{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K@{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K}!ModuleListViewController.m@{Module\-List\-View\-Controller.\-m}}
+\subsubsection[{T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-A\-B\-L\-E\-C\-O\-L\-\_\-\-I\-D\-E\-N\-T\-I\-F\-I\-E\-R\-\_\-\-T\-A\-S\-K~@\char`\"{}task\char`\"{}}}\label{_module_list_view_controller_8m_aa7e57739051491a1ac6a9b7a6a276a02}

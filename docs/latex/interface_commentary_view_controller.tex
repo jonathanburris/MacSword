@@ -1,0 +1,108 @@
+\hypertarget{interface_commentary_view_controller}{\section{Commentary\-View\-Controller Class Reference}
+\label{interface_commentary_view_controller}\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Commentary\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Commentary\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.527273cm]{interface_commentary_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_commentary_view_controller_a99a929e343d947da053f262587ac3d4e}{init\-With\-Module\-:}
+\item 
+(id) -\/ \hyperlink{interface_commentary_view_controller_a5f35d6147a206474914a5776133a7150}{init\-With\-Module\-:delegate\-:}
+\item 
+(id) -\/ \hyperlink{interface_commentary_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_commentary_view_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_commentary_view_controller_ad7b2dedb11f071e22d7a0bb86174228d}{toggle\-Edit\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_commentary_view_controller_a45430eaab48bfbe503fccc999ace2687}{save\-Document\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_commentary_view_controller_a5c1a02e85f2ce3f7c084b9af4cadca69}{edit\-Button}
+\item 
+B\-O\-O\-L \hyperlink{interface_commentary_view_controller_a866b1fb4966c03f59bc92fbc5f39139c}{edit\-Enabled}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+the view of this view controller is a \hyperlink{interface_scroll_synchronizable_view}{Scroll\-Synchronizable\-View} 
+
+\subsection{Method Documentation}
+\hypertarget{interface_commentary_view_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented from \hyperlink{interface_bible_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Bible\-View\-Controller}.
+
+\hypertarget{interface_commentary_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented from \hyperlink{interface_bible_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Bible\-View\-Controller}.
+
+\hypertarget{interface_commentary_view_controller_a99a929e343d947da053f262587ac3d4e}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!init\-With\-Module\-:@{init\-With\-Module\-:}}
+\index{init\-With\-Module\-:@{init\-With\-Module\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{init\-With\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Commentary} $\ast$)}]{a\-Module}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_a99a929e343d947da053f262587ac3d4e}
+\hypertarget{interface_commentary_view_controller_a5f35d6147a206474914a5776133a7150}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!init\-With\-Module\-:delegate\-:@{init\-With\-Module\-:delegate\-:}}
+\index{init\-With\-Module\-:delegate\-:@{init\-With\-Module\-:delegate\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{init\-With\-Module\-:delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Module\-:} 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Commentary} $\ast$)}]{a\-Module}
+\item[{delegate:(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_a5f35d6147a206474914a5776133a7150}
+\hypertarget{interface_commentary_view_controller_a45430eaab48bfbe503fccc999ace2687}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!save\-Document\-:@{save\-Document\-:}}
+\index{save\-Document\-:@{save\-Document\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{save\-Document\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) save\-Document\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_a45430eaab48bfbe503fccc999ace2687}
+we are overriding this method so user can just press $<$\-Command$>$S to save \hypertarget{interface_commentary_view_controller_ad7b2dedb11f071e22d7a0bb86174228d}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!toggle\-Edit\-:@{toggle\-Edit\-:}}
+\index{toggle\-Edit\-:@{toggle\-Edit\-:}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{toggle\-Edit\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) toggle\-Edit\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_commentary_view_controller_ad7b2dedb11f071e22d7a0bb86174228d}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_commentary_view_controller_a5c1a02e85f2ce3f7c084b9af4cadca69}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!edit\-Button@{edit\-Button}}
+\index{edit\-Button@{edit\-Button}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{edit\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) edit\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_commentary_view_controller_a5c1a02e85f2ce3f7c084b9af4cadca69}
+\hypertarget{interface_commentary_view_controller_a866b1fb4966c03f59bc92fbc5f39139c}{\index{Commentary\-View\-Controller@{Commentary\-View\-Controller}!edit\-Enabled@{edit\-Enabled}}
+\index{edit\-Enabled@{edit\-Enabled}!CommentaryViewController@{Commentary\-View\-Controller}}
+\subsubsection[{edit\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) edit\-Enabled\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_commentary_view_controller_a866b1fb4966c03f59bc92fbc5f39139c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_commentary_view_controller_8h}{Commentary\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_commentary_view_controller_8m}{Commentary\-View\-Controller.\-m}\end{DoxyCompactItemize}

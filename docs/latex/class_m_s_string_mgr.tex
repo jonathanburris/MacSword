@@ -1,0 +1,77 @@
+\hypertarget{class_m_s_string_mgr}{\section{M\-S\-String\-Mgr Class Reference}
+\label{class_m_s_string_mgr}\index{M\-S\-String\-Mgr@{M\-S\-String\-Mgr}}
+}
+
+
+{\ttfamily \#include $<$msstringmgr.\-h$>$}
+
+Inheritance diagram for M\-S\-String\-Mgr\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_m_s_string_mgr}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual char $\ast$ \hyperlink{class_m_s_string_mgr_a34a96f3435bde28cabada6e15a235cf7}{upper\-U\-T\-F8} (char $\ast$, const unsigned int maxlen=0)
+\item 
+virtual char $\ast$ \hyperlink{class_m_s_string_mgr_a4c30f371a1add9868da8d16a21d170de}{upper\-Latin1} (char $\ast$)
+\item 
+bool \hyperlink{class_m_s_string_mgr_abf42b119579fd0cc10150d41c47db935}{is\-Utf8} (const char $\ast$buf)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_m_s_string_mgr_a883cfed929df989e5c2a7dabf92c9336}{supports\-Unicode} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_m_s_string_mgr_abf42b119579fd0cc10150d41c47db935}{\index{M\-S\-String\-Mgr@{M\-S\-String\-Mgr}!is\-Utf8@{is\-Utf8}}
+\index{is\-Utf8@{is\-Utf8}!MSStringMgr@{M\-S\-String\-Mgr}}
+\subsubsection[{is\-Utf8}]{\setlength{\rightskip}{0pt plus 5cm}bool is\-Utf8 (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}}\label{class_m_s_string_mgr_abf42b119579fd0cc10150d41c47db935}
+C\-O\-D\-E T\-A\-K\-E\-N F\-R\-O\-M K\-D\-E\-L\-I\-B\-S 3.\-2 This function checks whether a string is utf8 or not.
+
+It was taken from kdelibs so we do not depend on K\-D\-E 3.\-2. \hypertarget{class_m_s_string_mgr_a883cfed929df989e5c2a7dabf92c9336}{\index{M\-S\-String\-Mgr@{M\-S\-String\-Mgr}!supports\-Unicode@{supports\-Unicode}}
+\index{supports\-Unicode@{supports\-Unicode}!MSStringMgr@{M\-S\-String\-Mgr}}
+\subsubsection[{supports\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}bool supports\-Unicode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_m_s_string_mgr_a883cfed929df989e5c2a7dabf92c9336}
+\hypertarget{class_m_s_string_mgr_a4c30f371a1add9868da8d16a21d170de}{\index{M\-S\-String\-Mgr@{M\-S\-String\-Mgr}!upper\-Latin1@{upper\-Latin1}}
+\index{upper\-Latin1@{upper\-Latin1}!MSStringMgr@{M\-S\-String\-Mgr}}
+\subsubsection[{upper\-Latin1}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ upper\-Latin1 (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_m_s_string_mgr_a4c30f371a1add9868da8d16a21d170de}
+Converts the param to an uppercase latin1 string 
+\begin{DoxyParams}{Parameters}
+{\em The} & text encoded in latin1 which should be turned into an upper case string \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_m_s_string_mgr_a34a96f3435bde28cabada6e15a235cf7}{\index{M\-S\-String\-Mgr@{M\-S\-String\-Mgr}!upper\-U\-T\-F8@{upper\-U\-T\-F8}}
+\index{upper\-U\-T\-F8@{upper\-U\-T\-F8}!MSStringMgr@{M\-S\-String\-Mgr}}
+\subsubsection[{upper\-U\-T\-F8}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ upper\-U\-T\-F8 (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{text, }
+\item[{const unsigned int}]{maxlen = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_m_s_string_mgr_a34a96f3435bde28cabada6e15a235cf7}
+Converts the param to an upper case Utf8 string 
+\begin{DoxyParams}{Parameters}
+{\em The} & text encoded in utf8 which should be turned into an upper case string \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{msstringmgr_8h}{msstringmgr.\-h}\item 
+src/\-Sword/\hyperlink{msstringmgr_8cpp}{msstringmgr.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,180 @@
+\hypertarget{globals_8h}{\section{src/globals.h File Reference}
+\label{globals_8h}\index{src/globals.\-h@{src/globals.\-h}}
+}
+{\ttfamily \#import $<$Cocoa/\-Cocoa.\-h$>$}\\*
+{\ttfamily \#import $<$Core\-Foundation/\-Core\-Foundation.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{globals_8h_aca9b2291403bdce3b61ec5e72ea43330}{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N}~C\-F\-Bundle\-Get\-Version\-Number(C\-F\-Bundle\-Get\-Main\-Bundle())
+\item 
+\#define \hyperlink{globals_8h_a7bc867c891b598adddb75bcf56f54d89}{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G}~C\-F\-Bundle\-Get\-Value\-For\-Info\-Dictionary\-Key(C\-F\-Bundle\-Get\-Main\-Bundle(), k\-C\-F\-Bundle\-Version\-Key)
+\item 
+\#define \hyperlink{globals_8h_a237e4d19d7046d08c4cc00a45808feaf}{A\-P\-P\-N\-A\-M\-E}~@\char`\"{}Mac\-Sword\char`\"{}
+\item 
+\#define \hyperlink{globals_8h_a85437a8f177843b18f9ec3d5f8515f9a}{D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Mac\-Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_ace578682ffce373a8aac3d0b0ce951cf}{O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Mac\-Sword/Bookmarks.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a699c3344d0ce4dc1b6d9859812cbd0d9}{D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Mac\-Sword/Bookmarklist.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_ad316957dec9de35b35b264ae4b0025ca}{D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a26891c64b92ddf690d61305786e49a1e}{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Mac\-Sword/Default\-Session.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a346329d6927f7e76c859afb0247f6155}{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H}~\mbox{[}@\char`\"{}$\sim$/Library/\hyperlink{interface_application}{Application} Support/Mac\-Sword/Default\-Search\-Book\-Sets.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a42180b638d1686695b977a2e3f8fabef}{S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E}~@\char`\"{}Install\-Mgr\char`\"{}
+\item 
+\#define \hyperlink{globals_8h_a6d3fef197146b932f5ad01fce683a66b}{L\-O\-G\-F\-I\-L\-E}~\mbox{[}@\char`\"{}$\sim$/Library/Logs/Mac\-Sword2.\-log\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a13f7349ea6a92c8eaf3dc80d06dc3d02}{T\-M\-P\-F\-O\-L\-D\-E\-R}~\mbox{[}@\char`\"{}$\sim$/Library/Caches/Mac\-Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a1d0771112f94d218194aabb104d25f46}{O\-S\-V\-E\-R\-S\-I\-O\-N}~\mbox{[}\mbox{[}N\-S\-Dictionary dictionary\-With\-Contents\-Of\-File\-:@\char`\"{}/System/Library/Core\-Services/System\-Version.\-plist\char`\"{}\mbox{]} object\-For\-Key\-:@\char`\"{}Product\-Version\char`\"{}\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a68518a3181f88090b21a3f38221a8be6}{Font\-Tiny}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-:9\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a39420d90036047e4b5c5c2b51b6f1368}{Font\-Small}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-:10\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a68047a6b3156aff1d390aeacd12e305c}{Font\-Std}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 11\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_aedef30597d6c7f1a8df8fbca5d97b030}{Font\-Std\-Bold}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 11\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a80869a7b2f809173a36ca89636ae6cbc}{Font\-Large}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 12\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a11e2799c9708ddd467c1c2e70b695818}{Font\-Large\-Bold}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 12\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_aa39af8f99a7c645dffb47e7537b875bc}{Font\-More\-Large}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 14\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a64deacfb20540988779978f055d86328}{Font\-More\-Large\-Bold}~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 14\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a5cf4e34ecb56fe0b69ea351b2eb72a4e}{user\-Defaults}~\mbox{[}N\-S\-User\-Defaults standard\-User\-Defaults\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a0799ae31304be6e0b35ffdab0b566b8d}{def\-Sword\-Manager}~\mbox{[}\hyperlink{interface_sword_manager}{Sword\-Manager} default\-Manager\mbox{]}
+\item 
+\#define \hyperlink{globals_8h_a32d3bdbee09f14ea3ffef25cb058e253}{Notification\-Modules\-Changed}~@\char`\"{}Notification\-Modules\-Changed\char`\"{}
+\begin{DoxyCompactList}\small\item\em this notification is send, when the modules have changed (updated, added, removed) \end{DoxyCompactList}\item 
+\#define \hyperlink{globals_8h_ae88101babc82caebf29947a66d2099b1}{Send\-Notify\-Modules\-Changed}(\hyperlink{msstringmgr_8cpp_a207fd5507206d307cd63f95374fcd00d}{X})~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Modules\-Changed object\-:\-X\mbox{]};
+\item 
+\#define \hyperlink{globals_8h_a4efec15e76d261248ba9f82514f6f059}{Notification\-Show\-Preview\-Data}~@\char`\"{}Notification\-Show\-Preview\-Data\char`\"{}
+\begin{DoxyCompactList}\small\item\em this notification is send when the user clicks on a link in Ext\-Text\-View or the tooltip sows up \end{DoxyCompactList}\item 
+\#define \hyperlink{globals_8h_ad05d736e41b447296ffc94cccb9c9506}{Send\-Notify\-Show\-Preview\-Data}(\hyperlink{msstringmgr_8cpp_a207fd5507206d307cd63f95374fcd00d}{X})~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Show\-Preview\-Data object\-:\-X\mbox{]};
+\item 
+\#define \hyperlink{globals_8h_a3bcfe102923ead9249bbd21a75fab5d1}{Notification\-Set\-H\-U\-D\-Content\-View}~@\char`\"{}Notification\-Set\-H\-U\-D\-Content\-View\char`\"{}
+\begin{DoxyCompactList}\small\item\em this notification is send when among the currently displayed and active modules is a dictionary or genbook \end{DoxyCompactList}\item 
+\#define \hyperlink{globals_8h_aac8b673244be4a7f72135f16f161624f}{Send\-Notify\-Set\-H\-U\-D\-Content\-View}(\hyperlink{msstringmgr_8cpp_a207fd5507206d307cd63f95374fcd00d}{X})~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Set\-H\-U\-D\-Content\-View object\-:\-X\mbox{]};
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{globals_8h_a237e4d19d7046d08c4cc00a45808feaf}{\index{globals.\-h@{globals.\-h}!A\-P\-P\-N\-A\-M\-E@{A\-P\-P\-N\-A\-M\-E}}
+\index{A\-P\-P\-N\-A\-M\-E@{A\-P\-P\-N\-A\-M\-E}!globals.h@{globals.\-h}}
+\subsubsection[{A\-P\-P\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\-P\-P\-N\-A\-M\-E~@\char`\"{}Mac\-Sword\char`\"{}}}\label{globals_8h_a237e4d19d7046d08c4cc00a45808feaf}
+\hypertarget{globals_8h_aca9b2291403bdce3b61ec5e72ea43330}{\index{globals.\-h@{globals.\-h}!B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N@{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N}}
+\index{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N@{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N}!globals.h@{globals.\-h}}
+\subsubsection[{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N~C\-F\-Bundle\-Get\-Version\-Number(C\-F\-Bundle\-Get\-Main\-Bundle())}}\label{globals_8h_aca9b2291403bdce3b61ec5e72ea43330}
+\hypertarget{globals_8h_a7bc867c891b598adddb75bcf56f54d89}{\index{globals.\-h@{globals.\-h}!B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G@{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G}}
+\index{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G@{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G}!globals.h@{globals.\-h}}
+\subsubsection[{B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-U\-N\-D\-L\-E\-V\-E\-R\-S\-I\-O\-N\-S\-T\-R\-I\-N\-G~C\-F\-Bundle\-Get\-Value\-For\-Info\-Dictionary\-Key(C\-F\-Bundle\-Get\-Main\-Bundle(), k\-C\-F\-Bundle\-Version\-Key)}}\label{globals_8h_a7bc867c891b598adddb75bcf56f54d89}
+\hypertarget{globals_8h_a85437a8f177843b18f9ec3d5f8515f9a}{\index{globals.\-h@{globals.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-A\-P\-P\-S\-U\-P\-P\-O\-R\-T\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Mac\-Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a85437a8f177843b18f9ec3d5f8515f9a}
+\hypertarget{globals_8h_a699c3344d0ce4dc1b6d9859812cbd0d9}{\index{globals.\-h@{globals.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Mac\-Sword/Bookmarklist.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a699c3344d0ce4dc1b6d9859812cbd0d9}
+\hypertarget{globals_8h_ad316957dec9de35b35b264ae4b0025ca}{\index{globals.\-h@{globals.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_ad316957dec9de35b35b264ae4b0025ca}
+\hypertarget{globals_8h_a346329d6927f7e76c859afb0247f6155}{\index{globals.\-h@{globals.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-A\-R\-C\-H\-B\-O\-O\-K\-S\-E\-T\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Mac\-Sword/Default\-Search\-Book\-Sets.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a346329d6927f7e76c859afb0247f6155}
+\hypertarget{globals_8h_a26891c64b92ddf690d61305786e49a1e}{\index{globals.\-h@{globals.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H@{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-S\-E\-S\-S\-I\-O\-N\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Mac\-Sword/Default\-Session.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a26891c64b92ddf690d61305786e49a1e}
+\hypertarget{globals_8h_a0799ae31304be6e0b35ffdab0b566b8d}{\index{globals.\-h@{globals.\-h}!def\-Sword\-Manager@{def\-Sword\-Manager}}
+\index{def\-Sword\-Manager@{def\-Sword\-Manager}!globals.h@{globals.\-h}}
+\subsubsection[{def\-Sword\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}\#define def\-Sword\-Manager~\mbox{[}{\bf Sword\-Manager} default\-Manager\mbox{]}}}\label{globals_8h_a0799ae31304be6e0b35ffdab0b566b8d}
+\hypertarget{globals_8h_a80869a7b2f809173a36ca89636ae6cbc}{\index{globals.\-h@{globals.\-h}!Font\-Large@{Font\-Large}}
+\index{Font\-Large@{Font\-Large}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Large}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Large~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 12\mbox{]}}}\label{globals_8h_a80869a7b2f809173a36ca89636ae6cbc}
+\hypertarget{globals_8h_a11e2799c9708ddd467c1c2e70b695818}{\index{globals.\-h@{globals.\-h}!Font\-Large\-Bold@{Font\-Large\-Bold}}
+\index{Font\-Large\-Bold@{Font\-Large\-Bold}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Large\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Large\-Bold~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 12\mbox{]}}}\label{globals_8h_a11e2799c9708ddd467c1c2e70b695818}
+\hypertarget{globals_8h_aa39af8f99a7c645dffb47e7537b875bc}{\index{globals.\-h@{globals.\-h}!Font\-More\-Large@{Font\-More\-Large}}
+\index{Font\-More\-Large@{Font\-More\-Large}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-More\-Large}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-More\-Large~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 14\mbox{]}}}\label{globals_8h_aa39af8f99a7c645dffb47e7537b875bc}
+\hypertarget{globals_8h_a64deacfb20540988779978f055d86328}{\index{globals.\-h@{globals.\-h}!Font\-More\-Large\-Bold@{Font\-More\-Large\-Bold}}
+\index{Font\-More\-Large\-Bold@{Font\-More\-Large\-Bold}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-More\-Large\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-More\-Large\-Bold~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 14\mbox{]}}}\label{globals_8h_a64deacfb20540988779978f055d86328}
+\hypertarget{globals_8h_a39420d90036047e4b5c5c2b51b6f1368}{\index{globals.\-h@{globals.\-h}!Font\-Small@{Font\-Small}}
+\index{Font\-Small@{Font\-Small}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Small}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Small~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-:10\mbox{]}}}\label{globals_8h_a39420d90036047e4b5c5c2b51b6f1368}
+\hypertarget{globals_8h_a68047a6b3156aff1d390aeacd12e305c}{\index{globals.\-h@{globals.\-h}!Font\-Std@{Font\-Std}}
+\index{Font\-Std@{Font\-Std}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Std}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Std~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-: 11\mbox{]}}}\label{globals_8h_a68047a6b3156aff1d390aeacd12e305c}
+\hypertarget{globals_8h_aedef30597d6c7f1a8df8fbca5d97b030}{\index{globals.\-h@{globals.\-h}!Font\-Std\-Bold@{Font\-Std\-Bold}}
+\index{Font\-Std\-Bold@{Font\-Std\-Bold}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Std\-Bold}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Std\-Bold~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande Bold\char`\"{} size\-: 11\mbox{]}}}\label{globals_8h_aedef30597d6c7f1a8df8fbca5d97b030}
+\hypertarget{globals_8h_a68518a3181f88090b21a3f38221a8be6}{\index{globals.\-h@{globals.\-h}!Font\-Tiny@{Font\-Tiny}}
+\index{Font\-Tiny@{Font\-Tiny}!globals.h@{globals.\-h}}
+\subsubsection[{Font\-Tiny}]{\setlength{\rightskip}{0pt plus 5cm}\#define Font\-Tiny~\mbox{[}N\-S\-Font font\-With\-Name\-: @\char`\"{}Lucida Grande\char`\"{} size\-:9\mbox{]}}}\label{globals_8h_a68518a3181f88090b21a3f38221a8be6}
+\hypertarget{globals_8h_a6d3fef197146b932f5ad01fce683a66b}{\index{globals.\-h@{globals.\-h}!L\-O\-G\-F\-I\-L\-E@{L\-O\-G\-F\-I\-L\-E}}
+\index{L\-O\-G\-F\-I\-L\-E@{L\-O\-G\-F\-I\-L\-E}!globals.h@{globals.\-h}}
+\subsubsection[{L\-O\-G\-F\-I\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-O\-G\-F\-I\-L\-E~\mbox{[}@\char`\"{}$\sim$/Library/Logs/Mac\-Sword2.\-log\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a6d3fef197146b932f5ad01fce683a66b}
+\hypertarget{globals_8h_a32d3bdbee09f14ea3ffef25cb058e253}{\index{globals.\-h@{globals.\-h}!Notification\-Modules\-Changed@{Notification\-Modules\-Changed}}
+\index{Notification\-Modules\-Changed@{Notification\-Modules\-Changed}!globals.h@{globals.\-h}}
+\subsubsection[{Notification\-Modules\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}\#define Notification\-Modules\-Changed~@\char`\"{}Notification\-Modules\-Changed\char`\"{}}}\label{globals_8h_a32d3bdbee09f14ea3ffef25cb058e253}
+
+
+this notification is send, when the modules have changed (updated, added, removed) 
+
+\hypertarget{globals_8h_a3bcfe102923ead9249bbd21a75fab5d1}{\index{globals.\-h@{globals.\-h}!Notification\-Set\-H\-U\-D\-Content\-View@{Notification\-Set\-H\-U\-D\-Content\-View}}
+\index{Notification\-Set\-H\-U\-D\-Content\-View@{Notification\-Set\-H\-U\-D\-Content\-View}!globals.h@{globals.\-h}}
+\subsubsection[{Notification\-Set\-H\-U\-D\-Content\-View}]{\setlength{\rightskip}{0pt plus 5cm}\#define Notification\-Set\-H\-U\-D\-Content\-View~@\char`\"{}Notification\-Set\-H\-U\-D\-Content\-View\char`\"{}}}\label{globals_8h_a3bcfe102923ead9249bbd21a75fab5d1}
+
+
+this notification is send when among the currently displayed and active modules is a dictionary or genbook 
+
+\hypertarget{globals_8h_a4efec15e76d261248ba9f82514f6f059}{\index{globals.\-h@{globals.\-h}!Notification\-Show\-Preview\-Data@{Notification\-Show\-Preview\-Data}}
+\index{Notification\-Show\-Preview\-Data@{Notification\-Show\-Preview\-Data}!globals.h@{globals.\-h}}
+\subsubsection[{Notification\-Show\-Preview\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define Notification\-Show\-Preview\-Data~@\char`\"{}Notification\-Show\-Preview\-Data\char`\"{}}}\label{globals_8h_a4efec15e76d261248ba9f82514f6f059}
+
+
+this notification is send when the user clicks on a link in Ext\-Text\-View or the tooltip sows up 
+
+\hypertarget{globals_8h_ace578682ffce373a8aac3d0b0ce951cf}{\index{globals.\-h@{globals.\-h}!O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H@{O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}}
+\index{O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H@{O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}!globals.h@{globals.\-h}}
+\subsubsection[{O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-L\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-P\-A\-T\-H~\mbox{[}@\char`\"{}$\sim$/Library/{\bf Application} Support/Mac\-Sword/Bookmarks.\-plist\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_ace578682ffce373a8aac3d0b0ce951cf}
+\hypertarget{globals_8h_a1d0771112f94d218194aabb104d25f46}{\index{globals.\-h@{globals.\-h}!O\-S\-V\-E\-R\-S\-I\-O\-N@{O\-S\-V\-E\-R\-S\-I\-O\-N}}
+\index{O\-S\-V\-E\-R\-S\-I\-O\-N@{O\-S\-V\-E\-R\-S\-I\-O\-N}!globals.h@{globals.\-h}}
+\subsubsection[{O\-S\-V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\-S\-V\-E\-R\-S\-I\-O\-N~\mbox{[}\mbox{[}N\-S\-Dictionary dictionary\-With\-Contents\-Of\-File\-:@\char`\"{}/System/Library/Core\-Services/System\-Version.\-plist\char`\"{}\mbox{]} object\-For\-Key\-:@\char`\"{}Product\-Version\char`\"{}\mbox{]}}}\label{globals_8h_a1d0771112f94d218194aabb104d25f46}
+\hypertarget{globals_8h_ae88101babc82caebf29947a66d2099b1}{\index{globals.\-h@{globals.\-h}!Send\-Notify\-Modules\-Changed@{Send\-Notify\-Modules\-Changed}}
+\index{Send\-Notify\-Modules\-Changed@{Send\-Notify\-Modules\-Changed}!globals.h@{globals.\-h}}
+\subsubsection[{Send\-Notify\-Modules\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}\#define Send\-Notify\-Modules\-Changed(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf X}}
+\end{DoxyParamCaption}
+)~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Modules\-Changed object\-:\-X\mbox{]};}}\label{globals_8h_ae88101babc82caebf29947a66d2099b1}
+\hypertarget{globals_8h_aac8b673244be4a7f72135f16f161624f}{\index{globals.\-h@{globals.\-h}!Send\-Notify\-Set\-H\-U\-D\-Content\-View@{Send\-Notify\-Set\-H\-U\-D\-Content\-View}}
+\index{Send\-Notify\-Set\-H\-U\-D\-Content\-View@{Send\-Notify\-Set\-H\-U\-D\-Content\-View}!globals.h@{globals.\-h}}
+\subsubsection[{Send\-Notify\-Set\-H\-U\-D\-Content\-View}]{\setlength{\rightskip}{0pt plus 5cm}\#define Send\-Notify\-Set\-H\-U\-D\-Content\-View(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf X}}
+\end{DoxyParamCaption}
+)~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Set\-H\-U\-D\-Content\-View object\-:\-X\mbox{]};}}\label{globals_8h_aac8b673244be4a7f72135f16f161624f}
+\hypertarget{globals_8h_ad05d736e41b447296ffc94cccb9c9506}{\index{globals.\-h@{globals.\-h}!Send\-Notify\-Show\-Preview\-Data@{Send\-Notify\-Show\-Preview\-Data}}
+\index{Send\-Notify\-Show\-Preview\-Data@{Send\-Notify\-Show\-Preview\-Data}!globals.h@{globals.\-h}}
+\subsubsection[{Send\-Notify\-Show\-Preview\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define Send\-Notify\-Show\-Preview\-Data(
+\begin{DoxyParamCaption}
+\item[{}]{{\bf X}}
+\end{DoxyParamCaption}
+)~\mbox{[}\mbox{[}N\-S\-Notification\-Center default\-Center\mbox{]} post\-Notification\-Name\-:\-Notification\-Show\-Preview\-Data object\-:\-X\mbox{]};}}\label{globals_8h_ad05d736e41b447296ffc94cccb9c9506}
+\hypertarget{globals_8h_a42180b638d1686695b977a2e3f8fabef}{\index{globals.\-h@{globals.\-h}!S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E@{S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E}}
+\index{S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E@{S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E}!globals.h@{globals.\-h}}
+\subsubsection[{S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-N\-A\-M\-E~@\char`\"{}Install\-Mgr\char`\"{}}}\label{globals_8h_a42180b638d1686695b977a2e3f8fabef}
+\hypertarget{globals_8h_a13f7349ea6a92c8eaf3dc80d06dc3d02}{\index{globals.\-h@{globals.\-h}!T\-M\-P\-F\-O\-L\-D\-E\-R@{T\-M\-P\-F\-O\-L\-D\-E\-R}}
+\index{T\-M\-P\-F\-O\-L\-D\-E\-R@{T\-M\-P\-F\-O\-L\-D\-E\-R}!globals.h@{globals.\-h}}
+\subsubsection[{T\-M\-P\-F\-O\-L\-D\-E\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-M\-P\-F\-O\-L\-D\-E\-R~\mbox{[}@\char`\"{}$\sim$/Library/Caches/Mac\-Sword\char`\"{} string\-By\-Expanding\-Tilde\-In\-Path\mbox{]}}}\label{globals_8h_a13f7349ea6a92c8eaf3dc80d06dc3d02}
+\hypertarget{globals_8h_a5cf4e34ecb56fe0b69ea351b2eb72a4e}{\index{globals.\-h@{globals.\-h}!user\-Defaults@{user\-Defaults}}
+\index{user\-Defaults@{user\-Defaults}!globals.h@{globals.\-h}}
+\subsubsection[{user\-Defaults}]{\setlength{\rightskip}{0pt plus 5cm}\#define user\-Defaults~\mbox{[}N\-S\-User\-Defaults standard\-User\-Defaults\mbox{]}}}\label{globals_8h_a5cf4e34ecb56fe0b69ea351b2eb72a4e}

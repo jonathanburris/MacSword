@@ -1,0 +1,161 @@
+\hypertarget{interface_module_list_view_controller}{\section{Module\-List\-View\-Controller Class Reference}
+\label{interface_module_list_view_controller}\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Module\-List\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Module\-List\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_module_list_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_module_list_view_controller_a897d6f5486a6100c017c9cfdf31941fd}{set\-Delegate\-:}
+\item 
+(id) -\/ \hyperlink{interface_module_list_view_controller_a6c98e239b6ba279cfc95c64db9de555c}{delegate}
+\item 
+(void) -\/ \hyperlink{interface_module_list_view_controller_a16bff9e919181c8b344fd78c35bbf96c}{set\-Install\-Sources\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_module_list_view_controller_a11e9988f5938a509ce207fbd7f308237}{install\-Sources}
+\item 
+(void) -\/ \hyperlink{interface_module_list_view_controller_af7de1616045adf3cd23a42e2e9031c45}{refresh\-Modules\-List}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_list_view_controller_a38fb29b3033369f3eb19233060c9135d}{search\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_list_view_controller_a19898f3a83d5c0f0172c3e87dd317bfb}{none\-Task\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_list_view_controller_a5b27c27b85c503c117801a792e207815}{install\-Module\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_list_view_controller_aecf9e6bd6004ac6d6e0467718a88514a}{remove\-Module\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_module_list_view_controller_a8fac8758bf95a6330f1f4d7194716669}{update\-Module\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Outline\-View $\ast$ \hyperlink{interface_module_list_view_controller_abe1c0e9c5d74610660a89f165b494a89}{module\-Outline\-View}
+\item 
+I\-B\-Outlet N\-S\-Search\-Field $\ast$ \hyperlink{interface_module_list_view_controller_a979a79883da5a24697688be91ad03c52}{search\-Text\-Field}
+\item 
+I\-B\-Outlet id \hyperlink{interface_module_list_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{delegate}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_module_list_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}{module\-Menu}
+\item 
+N\-S\-Array $\ast$ \hyperlink{interface_module_list_view_controller_ae383f5001e050db1f2faa6118238a8d9}{install\-Sources}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_module_list_view_controller_acc171964aadf68f859860b18dd6d1629}{module\-Data}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_module_list_view_controller_aa6c484ad670ccdac32c09a336ce49ef0}{module\-Selection}
+\item 
+N\-S\-Array $\ast$ \hyperlink{interface_module_list_view_controller_afc6f67ddfdee4a47a1bce742b605bcd4}{sort\-Descriptors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_module_list_view_controller_a6c98e239b6ba279cfc95c64db9de555c}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a6c98e239b6ba279cfc95c64db9de555c}
+\hypertarget{interface_module_list_view_controller_a5b27c27b85c503c117801a792e207815}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!install\-Module\-:@{install\-Module\-:}}
+\index{install\-Module\-:@{install\-Module\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{install\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) install\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a5b27c27b85c503c117801a792e207815}
+\hypertarget{interface_module_list_view_controller_a11e9988f5938a509ce207fbd7f308237}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!install\-Sources@{install\-Sources}}
+\index{install\-Sources@{install\-Sources}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{install\-Sources}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) install\-Sources 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a11e9988f5938a509ce207fbd7f308237}
+\hypertarget{interface_module_list_view_controller_a19898f3a83d5c0f0172c3e87dd317bfb}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!none\-Task\-:@{none\-Task\-:}}
+\index{none\-Task\-:@{none\-Task\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{none\-Task\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) none\-Task\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a19898f3a83d5c0f0172c3e87dd317bfb}
+\hypertarget{interface_module_list_view_controller_af7de1616045adf3cd23a42e2e9031c45}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!refresh\-Modules\-List@{refresh\-Modules\-List}}
+\index{refresh\-Modules\-List@{refresh\-Modules\-List}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{refresh\-Modules\-List}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) refresh\-Modules\-List 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_af7de1616045adf3cd23a42e2e9031c45}
+update the modules with the modules in the sources list \hypertarget{interface_module_list_view_controller_aecf9e6bd6004ac6d6e0467718a88514a}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!remove\-Module\-:@{remove\-Module\-:}}
+\index{remove\-Module\-:@{remove\-Module\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{remove\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) remove\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_aecf9e6bd6004ac6d6e0467718a88514a}
+\hypertarget{interface_module_list_view_controller_a38fb29b3033369f3eb19233060c9135d}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!search\-:@{search\-:}}
+\index{search\-:@{search\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{search\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) search\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a38fb29b3033369f3eb19233060c9135d}
+\hypertarget{interface_module_list_view_controller_a897d6f5486a6100c017c9cfdf31941fd}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!set\-Delegate\-:@{set\-Delegate\-:}}
+\index{set\-Delegate\-:@{set\-Delegate\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{set\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a897d6f5486a6100c017c9cfdf31941fd}
+weak reference \hypertarget{interface_module_list_view_controller_a16bff9e919181c8b344fd78c35bbf96c}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!set\-Install\-Sources\-:@{set\-Install\-Sources\-:}}
+\index{set\-Install\-Sources\-:@{set\-Install\-Sources\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{set\-Install\-Sources\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Install\-Sources\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Array $\ast$)}]{an\-Array}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a16bff9e919181c8b344fd78c35bbf96c}
+\hypertarget{interface_module_list_view_controller_a8fac8758bf95a6330f1f4d7194716669}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!update\-Module\-:@{update\-Module\-:}}
+\index{update\-Module\-:@{update\-Module\-:}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{update\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) update\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_module_list_view_controller_a8fac8758bf95a6330f1f4d7194716669}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_module_list_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet id) delegate\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}
+\hypertarget{interface_module_list_view_controller_ae383f5001e050db1f2faa6118238a8d9}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!install\-Sources@{install\-Sources}}
+\index{install\-Sources@{install\-Sources}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{install\-Sources}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array$\ast$) install\-Sources\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_ae383f5001e050db1f2faa6118238a8d9}
+we store a retained copy of the selected install sources \hypertarget{interface_module_list_view_controller_acc171964aadf68f859860b18dd6d1629}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!module\-Data@{module\-Data}}
+\index{module\-Data@{module\-Data}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{module\-Data}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) module\-Data\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_acc171964aadf68f859860b18dd6d1629}
+our data for displaying the module data \hypertarget{interface_module_list_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!module\-Menu@{module\-Menu}}
+\index{module\-Menu@{module\-Menu}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{module\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) module\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}
+\hypertarget{interface_module_list_view_controller_abe1c0e9c5d74610660a89f165b494a89}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!module\-Outline\-View@{module\-Outline\-View}}
+\index{module\-Outline\-View@{module\-Outline\-View}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{module\-Outline\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Outline\-View$\ast$) module\-Outline\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_abe1c0e9c5d74610660a89f165b494a89}
+\hypertarget{interface_module_list_view_controller_aa6c484ad670ccdac32c09a336ce49ef0}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!module\-Selection@{module\-Selection}}
+\index{module\-Selection@{module\-Selection}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{module\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) module\-Selection\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_aa6c484ad670ccdac32c09a336ce49ef0}
+the selection \hypertarget{interface_module_list_view_controller_a979a79883da5a24697688be91ad03c52}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!search\-Text\-Field@{search\-Text\-Field}}
+\index{search\-Text\-Field@{search\-Text\-Field}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{search\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Search\-Field$\ast$) search\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_a979a79883da5a24697688be91ad03c52}
+\hypertarget{interface_module_list_view_controller_afc6f67ddfdee4a47a1bce742b605bcd4}{\index{Module\-List\-View\-Controller@{Module\-List\-View\-Controller}!sort\-Descriptors@{sort\-Descriptors}}
+\index{sort\-Descriptors@{sort\-Descriptors}!ModuleListViewController@{Module\-List\-View\-Controller}}
+\subsubsection[{sort\-Descriptors}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array$\ast$) sort\-Descriptors\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_module_list_view_controller_afc6f67ddfdee4a47a1bce742b605bcd4}
+current sort descriptors 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Module\-Manager/\hyperlink{_module_list_view_controller_8h}{Module\-List\-View\-Controller.\-h}\item 
+src/\-Module\-Manager/\hyperlink{_module_list_view_controller_8m}{Module\-List\-View\-Controller.\-m}\end{DoxyCompactItemize}

@@ -1,0 +1,185 @@
+// --------- module manager stuff -----------
+
+// Disclaimer
+"Disclaimer" = "Disclaimer";
+"DisclaimerText" = "-=+* WARNING *+=- -=+* WARNING *+= \n\n\n
+Although Install Manager provides a convenient way for installing\n
+and upgrading SWORD components, it also uses a systematic method\n
+for accessing sites which gives packet sniffers a target to lock\n
+into for singling out users. \n\n
+IF YOU LIVE IN A PERSECUTED COUNTRY AND DO NOT WISH TO RISK DETECTION,\n
+YOU SHOULD *NOT* USE INSTALL MANAGER'S REMOTE SOURCE FEATURES.\n\n
+Also, Remote Sources other than CrossWire may contain less than\n
+quality modules, module with unorthodox content, or even modules\n
+which are not legitimately distributable.  Many repositories\n
+contain wonderfully useful content.  These repositories simply\n
+are not reviewed or maintained by CrossWire and CrossWire\n
+cannot be held responsible for their content. CAVEAT EMPTOR.\n\n
+If you understand this and are willing to enable remote source features\n
+then type yes at the prompt!";
+
+// alerts
+"Alert" = "Alert";
+"Alert_AllFeeldsNeedToBeFilled" = "All feelds need to be filled!";
+
+// warnings
+"Warning" = "Warning";
+"OneOrMoreEmptyFields" = "One or more fields are empty!";
+"ISNotValid" = "The information is not valid. Please check again!";
+"ErrorOnRefreshingModules" = "An unknown problem occured while refreshing the install source!";
+"StillInEditingMode" = "You are still in editing mode!";
+"StillInEditingModeText" = "End editing mode to close or press cancel!";
+
+// informations
+"Information" = "Information";
+"PleaseMakeSelection" = "Please select something first";
+"DeleteConfirm" = "Do you really want to delete the selected item?";
+"NoPendingTasks" = "There are no pending tasks!";
+"ISValidInformation" = "Install source information is valid";
+"FirstStart" = "This is the first use of the module installer. Do you want to refresh the default install source now?";
+"AwakeCheckInstallSources" = "Do you want the remote install sources to be checked for availablility? This process can take one or two minutes if you have a slow internet connection.";
+
+// mod status strings
+"ModStatSameVersion" = "Installed";
+"ModStatNew" = "Not installed";
+"ModStatUpdated" = "Updateable";
+"ModStatOlder" = "Newer version installed";
+
+// ModuleManager Toolbar
+"SyncISFromMasterLabel" = "Sync Install Sources";
+"SyncISFromMasterToolTip" = "Sync Install Sources from master list";
+"AddInstallSourceLabel" = "Add Install Source";
+"AddInstallSourceToolTip" = "Add a new install source for installing new modules";
+"EditInstallSourceLabel" = "Edit Install Source";
+"EditInstallSourceToolTip" = "Edit the selected install source";
+"RefreshInstallSourceLabel" = "Refresh Install Source";
+"RefreshInstallSourceToolTip" = "Refresh the selected install source to sync with the server";
+"DeleteInstallSourceLabel" = "Delete Install Source";
+"DeleteInstallSourceToolTip" = "Delete the selected install source";
+"PreviewTasksLabel" = "Preview Tasks";
+"PreviewTasksToolTip" = "Preview all the changes to be made when processing";
+"ProcessTasksLabel" = "Process Tasks";
+"ProcessTasksToolTip" = "Process all the changes";
+
+// progress window strings
+"WindowTitle_Progress" = "Progress";
+
+// actions
+"Action_RemovingModules" = "Removing modules";
+"Action_InstallingModules" = "Installing modules";
+"Action_SynchingInstallSources" = "Synchronizing install sources from master list";
+"Action_RefreshingInstallSourceAction" = "Refreshing install source";
+"ActionStep_Refreshing" = "Refreshing...";
+
+
+// ------------------- MacSword --------------------------
+
+// commons
+"OK" = "OK";
+"Yes" = "Yes";
+"No" = "No";
+"Cancel" = "Cancel";
+"Information" = "Information";
+"Warning" = "Warning";
+"Error" = "Error";
+
+// toolbar
+"AddBookmarkLabel" = "Add bookmark";
+"AddBookmarkPalette" = "Add bookmark button";
+"AddBookmarkTooltip" = "Add the current reference to bookmarks";
+"ForceReloadLabel" = "Force reload";
+"ForceReloadPalette" = "Force reload button";
+"ForceReloadTooltip" = "Force reload for the currect reference or search query";
+"NavigationItemLabel" = "Navigation";
+"NavigationItemTooltip" = "Navigate back and forth through history";
+"ToggleModulesLabel" = "Sidebar";
+"ToggleModulesToolTip" = "Show Sidebar";
+"SearchTypeLabel" = "Search Type";
+"SearchTypeTooltip" = "Choose type of search";
+"TextSearchLabel" = "Search Text";
+"TextSearchTooltip" = "Enter text to search for";
+"ModuleInstallerLabel" = "Module Manager";
+"ModuleInstallerTooltip" = "Open Module Manager";
+"Reference" = "Reference";
+"Index" = "Index";
+
+// Warnings/Information
+"NoDefaultDictionarySelected" = "No default Dictionary module has been selected, please do so in Preferences!";
+"NoDefaultBibleSelected" = "No default Bible module has been selected, please do so in Preferences!";
+"IndexNotReady" = "Index not ready!";
+"IndexNotReadyBGOn" = "The index of one or more modules is not created yet. Please try again later!";
+"IndexNotReadyBGOff" = "The index of one or more modules is not created yet. Creating it can take some time!";
+"IndexBeingCreatedForModule" = "Index is now created for Module";
+"ModuleNameCannotBeEmpty" = "Empty Module name";
+"ModuleNameCannotBeEmptyText" = "Module name cannot be empty!";
+"ModuleNameExists" = "Module exists";
+"ModuleNameExistsText" = "A Module with that name exists already!";
+"NoDefaultBibleSelected" = "No default bible set";
+"NoDefaultBibleSelectedText" = "Please set your prefered default bible to be used!";
+"UnlockCodeMayNotBeEmpty" = "Empty unlock code";
+"UnlockCodeMayNotBeEmptyText" = "Unlock code may not be empty!";
+"ConfirmBookmarkDelete" = "Confirm Bookmmark remove";
+"ConfirmBookmarkDeleteText" = "Are you sure you want to remove the bookmark(s)?";
+"InitialViewLabelText" = "You have currently %d installed modules. Click below to install new ones or manage your modules.";
+
+// confirmations
+"DoNotAskAgain" = "Do not ask again!";
+"ConfirmFullScreenMode" = "Full screen mode";
+"ConfirmFullScreenModeText" = "Do you really want to enter full screen mode? You can quit by pressing OPTION-COMMAND-F";
+"SessionStillOpen" = "Open session";
+"WantToSaveTheSessionBeforeClosing" = "Do you want to save the session now?";
+
+// open panels
+"LoadMSSession" = "Load session";
+"SaveMSSession" = "Save session";
+
+// sword module categories
+"Biblical Texts" = "Biblical Texts";
+"Commentaries" = "Commentaries";
+"Lexicons / Dictionaries" = "Lexicons / Dictionaries";
+"Generic Books" = "Generic Books";
+"Daily Devotional" = "Daily Devotional";
+"Glossaries" = "Glossaries";
+"Cults / Unorthodox / Questionable Material" = "Cults / Unorthodox / Questionable Material";
+"Essays" = "Essays";
+"Maps" = "Maps";
+"Images" = "Images";
+
+// common things
+"LSBModules" = "MODULES";
+"LSBBookmarks" = "BOOKMARKS";
+
+// Module About
+"ShowModuleAbout" = "About this module";
+"AboutModuleName" = "Module name: ";
+"AboutModuleDescription" = "Description: ";
+"AboutModuleType" = "Type: ";
+"AboutModuleLang" = "Language: ";
+"AboutModuleVersion" = "Version: ";
+"AboutModuleAboutText" = "About: ";
+
+// mod options / display options menu items
+"ModOptions" = "Mod Options";
+"DisplayOptions" = "Display Options";
+"TextContext" = "Text Context";
+"FontSize" = "Font Size";
+"DisplayOptionShowStrongsNumbers" = "Show Strong\'s numbers";
+"DisplayOptionShowMorphNumbers" = "Show Morph numbers";
+"DisplayOptionShowFootnotes" = "Show Footnotes";
+"DisplayOptionShowCrossRefs" = "Show Cross-References";
+"DisplayOptionShowRedLetterWords" = "Show Jesus's words in red";
+"DisplayOptionShowHeadings" = "Show Headings";
+"DisplayOptionShowHebrewPoints" = "Show Hebrew Vovel Points";
+"DisplayOptionShowHebrewCantillation" = "Show Hebrew Cantillation";
+"DisplayOptionShowGreekAccents" = "Show Greek Accents";
+"DisplayOptionShowVOOL" = "Show Verses on one line";
+"DisplayOptionShowVerseNumberOnly" = "Show Verse numbers only";
+"DisplayOptionHighlightBookmarks" = "Highlight Bookmarks";
+
+// book sets
+"All" = "All";
+"Law" = "Law";
+"Prophets" = "Prophets";
+"Scriptures" = "Scriptures";
+"Gospels" = "Gospels";
+"Letters" = "Letters";

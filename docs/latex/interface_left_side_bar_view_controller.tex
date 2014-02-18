@@ -1,0 +1,299 @@
+\hypertarget{interface_left_side_bar_view_controller}{\section{Left\-Side\-Bar\-View\-Controller Class Reference}
+\label{interface_left_side_bar_view_controller}\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Left\-Side\-Bar\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Left\-Side\-Bar\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_left_side_bar_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_left_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(void) -\/ \hyperlink{interface_left_side_bar_view_controller_a254da93c19ddea8db470cf653b8b5354}{display\-Module\-About\-Sheet\-For\-Module\-:}
+\item 
+(void) -\/ \hyperlink{interface_left_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_left_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_left_side_bar_view_controller_ad9cd530132fccc2ff65d7a38fcde1af1}{validate\-Menu\-Item\-:}
+\item 
+(void) -\/ \hyperlink{interface_left_side_bar_view_controller_a7f5220e09cc16cd124dd9948224af798}{bookmark\-Dialog\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_a8b80eb14af29e14c1a8ab3da2290d56c}{module\-Menu\-Clicked\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_ab01419cc59d0ad5b57256c641c95125a}{bookmark\-Menu\-Clicked\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_afecdae23222ee7bdd84a7464d85a7641}{bm\-Window\-Cancel\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_a81c33b4f62894e117ad3086d55bbf6f9}{bm\-Window\-Ok\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_a2e4ec4e46ec8fbcbdb9d1a269f9fa3b7}{bm\-Folder\-Window\-Cancel\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_a473fd3c1443a5bd29433db7661dc5350}{bm\-Folder\-Window\-Ok\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_a9c4f0bca8ca5eb88e9db21f109d58fc4}{module\-About\-Close\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_ab08ab8821de1e19a8b4a5f904c9abdcc}{module\-Unlock\-Ok\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_left_side_bar_view_controller_ac167dc214a9809da53b0867db851056c}{module\-Unlock\-Cancel\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Window $\ast$ \hyperlink{interface_left_side_bar_view_controller_a1e4ea86bd5ee4a5fd7e020cee6fe9af7}{module\-About\-Window}
+\item 
+I\-B\-Outlet N\-S\-Text\-View $\ast$ \hyperlink{interface_left_side_bar_view_controller_a839025947128cd02e03a6919cd53d2ff}{module\-About\-Text\-View}
+\item 
+I\-B\-Outlet N\-S\-Window $\ast$ \hyperlink{interface_left_side_bar_view_controller_a779a4034ed4b58ecbd46b8160b66a813}{module\-Unlock\-Window}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_left_side_bar_view_controller_ad02f4a39f2d83e2f0cec6b4806814f5f}{module\-Unlock\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_left_side_bar_view_controller_ae5a86453a2ffc18776bce51a1eb735fe}{module\-Unlock\-O\-K\-Button}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_left_side_bar_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}{module\-Menu}
+\item 
+I\-B\-Outlet N\-S\-Window $\ast$ \hyperlink{interface_left_side_bar_view_controller_a0d525fffbf58da7bfc279fc81c0466b8}{bookmark\-Folder\-Window}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_left_side_bar_view_controller_a1d0054c7da6e997cbf329ff2fd2f1680}{bookmark\-Folder\-Name\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_left_side_bar_view_controller_a1fbafbd56d1c846b9c4937b6544af42b}{bookmark\-Folder\-Ok\-Button}
+\item 
+I\-B\-Outlet N\-S\-Menu $\ast$ \hyperlink{interface_left_side_bar_view_controller_a39df7026c33abdcfa5f40779333873bb}{bookmark\-Menu}
+\item 
+I\-B\-Outlet N\-S\-Window $\ast$ \hyperlink{interface_left_side_bar_view_controller_a4098077edc73aac4233d27411c9c0140}{bookmark\-Panel}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_left_side_bar_view_controller_a0cecdae5d24b004d5d43baa6a6d59cb2}{bookmark\-Name\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Object\-Controller $\ast$ \hyperlink{interface_left_side_bar_view_controller_a50b95db83f3ecb6b19c92fc0d94af603}{bm\-Object\-Controller}
+\item 
+int \hyperlink{interface_left_side_bar_view_controller_a00b1acbd6f8cdc01fdbc3809ccd358fb}{bookmark\-Action}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_left_side_bar_view_controller_a174278313f9d274b3f2a63a26fbf5229}{bookmark\-Selection}
+\item 
+N\-S\-Image $\ast$ \hyperlink{interface_left_side_bar_view_controller_a2e6bc5349e12f2159686ae9fbc8fefd1}{bookmark\-Group\-Image}
+\item 
+N\-S\-Image $\ast$ \hyperlink{interface_left_side_bar_view_controller_a5ba2bd5ece124f544078b970ae659306}{bookmark\-Image}
+\item 
+N\-S\-Image $\ast$ \hyperlink{interface_left_side_bar_view_controller_a4c2ced80a355c699b9507e796eab7dd0}{locked\-Image}
+\item 
+N\-S\-Image $\ast$ \hyperlink{interface_left_side_bar_view_controller_a358d77317f8bf0ccba15c05291f2d9bb}{unlocked\-Image}
+\item 
+\hyperlink{interface_sword_module}{Sword\-Module} $\ast$ \hyperlink{interface_left_side_bar_view_controller_acde7208b66a08cbd74063056c7f143b1}{clicked\-Mod}
+\item 
+\hyperlink{interface_three_cells_cell}{Three\-Cells\-Cell} $\ast$ \hyperlink{interface_left_side_bar_view_controller_a44d3caed8923ca666be93eebfca322b4}{three\-Cells\-Cell}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$ \hyperlink{interface_left_side_bar_view_controller_a5c5d0eea93f588d2bcc46da1b6db122e}{sword\-Manager}
+\item 
+\hyperlink{interface_bookmark_manager}{Bookmark\-Manager} $\ast$ \hyperlink{interface_left_side_bar_view_controller_aa5e67105514f413e2d129fdc60be4c6c}{bookmark\-Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_left_side_bar_view_controller_a2e4ec4e46ec8fbcbdb9d1a269f9fa3b7}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bm\-Folder\-Window\-Cancel\-:@{bm\-Folder\-Window\-Cancel\-:}}
+\index{bm\-Folder\-Window\-Cancel\-:@{bm\-Folder\-Window\-Cancel\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bm\-Folder\-Window\-Cancel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) bm\-Folder\-Window\-Cancel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a2e4ec4e46ec8fbcbdb9d1a269f9fa3b7}
+\hypertarget{interface_left_side_bar_view_controller_a473fd3c1443a5bd29433db7661dc5350}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bm\-Folder\-Window\-Ok\-:@{bm\-Folder\-Window\-Ok\-:}}
+\index{bm\-Folder\-Window\-Ok\-:@{bm\-Folder\-Window\-Ok\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bm\-Folder\-Window\-Ok\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) bm\-Folder\-Window\-Ok\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a473fd3c1443a5bd29433db7661dc5350}
+\hypertarget{interface_left_side_bar_view_controller_afecdae23222ee7bdd84a7464d85a7641}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bm\-Window\-Cancel\-:@{bm\-Window\-Cancel\-:}}
+\index{bm\-Window\-Cancel\-:@{bm\-Window\-Cancel\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bm\-Window\-Cancel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) bm\-Window\-Cancel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_afecdae23222ee7bdd84a7464d85a7641}
+\hypertarget{interface_left_side_bar_view_controller_a81c33b4f62894e117ad3086d55bbf6f9}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bm\-Window\-Ok\-:@{bm\-Window\-Ok\-:}}
+\index{bm\-Window\-Ok\-:@{bm\-Window\-Ok\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bm\-Window\-Ok\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) bm\-Window\-Ok\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a81c33b4f62894e117ad3086d55bbf6f9}
+\hypertarget{interface_left_side_bar_view_controller_a7f5220e09cc16cd124dd9948224af798}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Dialog\-:@{bookmark\-Dialog\-:}}
+\index{bookmark\-Dialog\-:@{bookmark\-Dialog\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Dialog\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) bookmark\-Dialog\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a7f5220e09cc16cd124dd9948224af798}
+\hypertarget{interface_left_side_bar_view_controller_ab01419cc59d0ad5b57256c641c95125a}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Menu\-Clicked\-:@{bookmark\-Menu\-Clicked\-:}}
+\index{bookmark\-Menu\-Clicked\-:@{bookmark\-Menu\-Clicked\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Menu\-Clicked\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) bookmark\-Menu\-Clicked\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_ab01419cc59d0ad5b57256c641c95125a}
+\hypertarget{interface_left_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a0bd73ec236f8055ac6566b39ddf66add}
+called from subview when it has fully loaded 
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_a0bd73ec236f8055ac6566b39ddf66add}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_left_side_bar_view_controller_a254da93c19ddea8db470cf653b8b5354}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!display\-Module\-About\-Sheet\-For\-Module\-:@{display\-Module\-About\-Sheet\-For\-Module\-:}}
+\index{display\-Module\-About\-Sheet\-For\-Module\-:@{display\-Module\-About\-Sheet\-For\-Module\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{display\-Module\-About\-Sheet\-For\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) display\-Module\-About\-Sheet\-For\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{a\-Mod}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a254da93c19ddea8db470cf653b8b5354}
+displays the module about sheet \hypertarget{interface_left_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}
+
+
+Reimplemented from \hyperlink{interface_side_bar_view_controller_a31987d71b58e0520588676a4f6896d2c}{Side\-Bar\-View\-Controller}.
+
+\hypertarget{interface_left_side_bar_view_controller_a9c4f0bca8ca5eb88e9db21f109d58fc4}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-About\-Close\-:@{module\-About\-Close\-:}}
+\index{module\-About\-Close\-:@{module\-About\-Close\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-About\-Close\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-About\-Close\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a9c4f0bca8ca5eb88e9db21f109d58fc4}
+\hypertarget{interface_left_side_bar_view_controller_a8b80eb14af29e14c1a8ab3da2290d56c}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Menu\-Clicked\-:@{module\-Menu\-Clicked\-:}}
+\index{module\-Menu\-Clicked\-:@{module\-Menu\-Clicked\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Menu\-Clicked\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-Menu\-Clicked\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_a8b80eb14af29e14c1a8ab3da2290d56c}
+\hypertarget{interface_left_side_bar_view_controller_ac167dc214a9809da53b0867db851056c}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Unlock\-Cancel\-:@{module\-Unlock\-Cancel\-:}}
+\index{module\-Unlock\-Cancel\-:@{module\-Unlock\-Cancel\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Unlock\-Cancel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-Unlock\-Cancel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_ac167dc214a9809da53b0867db851056c}
+\hypertarget{interface_left_side_bar_view_controller_ab08ab8821de1e19a8b4a5f904c9abdcc}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Unlock\-Ok\-:@{module\-Unlock\-Ok\-:}}
+\index{module\-Unlock\-Ok\-:@{module\-Unlock\-Ok\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Unlock\-Ok\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) module\-Unlock\-Ok\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_ab08ab8821de1e19a8b4a5f904c9abdcc}
+\hypertarget{interface_left_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_left_side_bar_view_controller_ad9cd530132fccc2ff65d7a38fcde1af1}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!validate\-Menu\-Item\-:@{validate\-Menu\-Item\-:}}
+\index{validate\-Menu\-Item\-:@{validate\-Menu\-Item\-:}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{validate\-Menu\-Item\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) validate\-Menu\-Item\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Menu\-Item $\ast$)}]{menu\-Item}
+\end{DoxyParamCaption}
+}}\label{interface_left_side_bar_view_controller_ad9cd530132fccc2ff65d7a38fcde1af1}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_left_side_bar_view_controller_a50b95db83f3ecb6b19c92fc0d94af603}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bm\-Object\-Controller@{bm\-Object\-Controller}}
+\index{bm\-Object\-Controller@{bm\-Object\-Controller}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bm\-Object\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Object\-Controller$\ast$) bm\-Object\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a50b95db83f3ecb6b19c92fc0d94af603}
+the bookmark binding interface controller \hypertarget{interface_left_side_bar_view_controller_a00b1acbd6f8cdc01fdbc3809ccd358fb}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Action@{bookmark\-Action}}
+\index{bookmark\-Action@{bookmark\-Action}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) bookmark\-Action\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a00b1acbd6f8cdc01fdbc3809ccd358fb}
+the action in sheet \hypertarget{interface_left_side_bar_view_controller_a1d0054c7da6e997cbf329ff2fd2f1680}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Folder\-Name\-Text\-Field@{bookmark\-Folder\-Name\-Text\-Field}}
+\index{bookmark\-Folder\-Name\-Text\-Field@{bookmark\-Folder\-Name\-Text\-Field}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Folder\-Name\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) bookmark\-Folder\-Name\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a1d0054c7da6e997cbf329ff2fd2f1680}
+\hypertarget{interface_left_side_bar_view_controller_a1fbafbd56d1c846b9c4937b6544af42b}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Folder\-Ok\-Button@{bookmark\-Folder\-Ok\-Button}}
+\index{bookmark\-Folder\-Ok\-Button@{bookmark\-Folder\-Ok\-Button}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Folder\-Ok\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) bookmark\-Folder\-Ok\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a1fbafbd56d1c846b9c4937b6544af42b}
+\hypertarget{interface_left_side_bar_view_controller_a0d525fffbf58da7bfc279fc81c0466b8}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Folder\-Window@{bookmark\-Folder\-Window}}
+\index{bookmark\-Folder\-Window@{bookmark\-Folder\-Window}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Folder\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Window$\ast$) bookmark\-Folder\-Window\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a0d525fffbf58da7bfc279fc81c0466b8}
+\hypertarget{interface_left_side_bar_view_controller_a2e6bc5349e12f2159686ae9fbc8fefd1}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Group\-Image@{bookmark\-Group\-Image}}
+\index{bookmark\-Group\-Image@{bookmark\-Group\-Image}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Group\-Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Image$\ast$) bookmark\-Group\-Image\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a2e6bc5349e12f2159686ae9fbc8fefd1}
+\hypertarget{interface_left_side_bar_view_controller_a5ba2bd5ece124f544078b970ae659306}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Image@{bookmark\-Image}}
+\index{bookmark\-Image@{bookmark\-Image}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Image$\ast$) bookmark\-Image\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a5ba2bd5ece124f544078b970ae659306}
+\hypertarget{interface_left_side_bar_view_controller_a39df7026c33abdcfa5f40779333873bb}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Menu@{bookmark\-Menu}}
+\index{bookmark\-Menu@{bookmark\-Menu}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) bookmark\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a39df7026c33abdcfa5f40779333873bb}
+\hypertarget{interface_left_side_bar_view_controller_a0cecdae5d24b004d5d43baa6a6d59cb2}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Name\-Text\-Field@{bookmark\-Name\-Text\-Field}}
+\index{bookmark\-Name\-Text\-Field@{bookmark\-Name\-Text\-Field}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Name\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) bookmark\-Name\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a0cecdae5d24b004d5d43baa6a6d59cb2}
+\hypertarget{interface_left_side_bar_view_controller_a4098077edc73aac4233d27411c9c0140}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Panel@{bookmark\-Panel}}
+\index{bookmark\-Panel@{bookmark\-Panel}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Window$\ast$) bookmark\-Panel\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a4098077edc73aac4233d27411c9c0140}
+\hypertarget{interface_left_side_bar_view_controller_a174278313f9d274b3f2a63a26fbf5229}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Selection@{bookmark\-Selection}}
+\index{bookmark\-Selection@{bookmark\-Selection}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) bookmark\-Selection\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a174278313f9d274b3f2a63a26fbf5229}
+bookmark selection \hypertarget{interface_left_side_bar_view_controller_acde7208b66a08cbd74063056c7f143b1}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!clicked\-Mod@{clicked\-Mod}}
+\index{clicked\-Mod@{clicked\-Mod}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{clicked\-Mod}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Module}$\ast$) clicked\-Mod\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_acde7208b66a08cbd74063056c7f143b1}
+\hypertarget{interface_left_side_bar_view_controller_a4c2ced80a355c699b9507e796eab7dd0}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!locked\-Image@{locked\-Image}}
+\index{locked\-Image@{locked\-Image}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{locked\-Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Image$\ast$) locked\-Image\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a4c2ced80a355c699b9507e796eab7dd0}
+\hypertarget{interface_left_side_bar_view_controller_a839025947128cd02e03a6919cd53d2ff}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-About\-Text\-View@{module\-About\-Text\-View}}
+\index{module\-About\-Text\-View@{module\-About\-Text\-View}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-About\-Text\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-View$\ast$) module\-About\-Text\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a839025947128cd02e03a6919cd53d2ff}
+\hypertarget{interface_left_side_bar_view_controller_a1e4ea86bd5ee4a5fd7e020cee6fe9af7}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-About\-Window@{module\-About\-Window}}
+\index{module\-About\-Window@{module\-About\-Window}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-About\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Window$\ast$) module\-About\-Window\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a1e4ea86bd5ee4a5fd7e020cee6fe9af7}
+\hypertarget{interface_left_side_bar_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Menu@{module\-Menu}}
+\index{module\-Menu@{module\-Menu}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Menu$\ast$) module\-Menu\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a7db6a582718e6fb4b4bf7d4e483e4c85}
+\hypertarget{interface_left_side_bar_view_controller_ae5a86453a2ffc18776bce51a1eb735fe}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Unlock\-O\-K\-Button@{module\-Unlock\-O\-K\-Button}}
+\index{module\-Unlock\-O\-K\-Button@{module\-Unlock\-O\-K\-Button}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Unlock\-O\-K\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) module\-Unlock\-O\-K\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_ae5a86453a2ffc18776bce51a1eb735fe}
+\hypertarget{interface_left_side_bar_view_controller_ad02f4a39f2d83e2f0cec6b4806814f5f}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Unlock\-Text\-Field@{module\-Unlock\-Text\-Field}}
+\index{module\-Unlock\-Text\-Field@{module\-Unlock\-Text\-Field}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Unlock\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) module\-Unlock\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_ad02f4a39f2d83e2f0cec6b4806814f5f}
+\hypertarget{interface_left_side_bar_view_controller_a779a4034ed4b58ecbd46b8160b66a813}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!module\-Unlock\-Window@{module\-Unlock\-Window}}
+\index{module\-Unlock\-Window@{module\-Unlock\-Window}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{module\-Unlock\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Window$\ast$) module\-Unlock\-Window\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a779a4034ed4b58ecbd46b8160b66a813}
+\hypertarget{interface_left_side_bar_view_controller_a44d3caed8923ca666be93eebfca322b4}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!three\-Cells\-Cell@{three\-Cells\-Cell}}
+\index{three\-Cells\-Cell@{three\-Cells\-Cell}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{three\-Cells\-Cell}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Three\-Cells\-Cell}$\ast$) three\-Cells\-Cell\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a44d3caed8923ca666be93eebfca322b4}
+\hypertarget{interface_left_side_bar_view_controller_a358d77317f8bf0ccba15c05291f2d9bb}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!unlocked\-Image@{unlocked\-Image}}
+\index{unlocked\-Image@{unlocked\-Image}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{unlocked\-Image}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Image$\ast$) unlocked\-Image\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_left_side_bar_view_controller_a358d77317f8bf0ccba15c05291f2d9bb}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_left_side_bar_view_controller_aa5e67105514f413e2d129fdc60be4c6c}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!bookmark\-Manager@{bookmark\-Manager}}
+\index{bookmark\-Manager@{bookmark\-Manager}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{bookmark\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Bookmark\-Manager} $\ast$) bookmark\-Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_left_side_bar_view_controller_aa5e67105514f413e2d129fdc60be4c6c}
+\hypertarget{interface_left_side_bar_view_controller_a5c5d0eea93f588d2bcc46da1b6db122e}{\index{Left\-Side\-Bar\-View\-Controller@{Left\-Side\-Bar\-View\-Controller}!sword\-Manager@{sword\-Manager}}
+\index{sword\-Manager@{sword\-Manager}!LeftSideBarViewController@{Left\-Side\-Bar\-View\-Controller}}
+\subsubsection[{sword\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Manager} $\ast$) sword\-Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_left_side_bar_view_controller_a5c5d0eea93f588d2bcc46da1b6db122e}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_left_side_bar_view_controller_8h}{Left\-Side\-Bar\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_left_side_bar_view_controller_8m}{Left\-Side\-Bar\-View\-Controller.\-m}\end{DoxyCompactItemize}

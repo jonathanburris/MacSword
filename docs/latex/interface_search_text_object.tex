@@ -1,0 +1,108 @@
+\hypertarget{interface_search_text_object}{\section{Search\-Text\-Object Class Reference}
+\label{interface_search_text_object}\index{Search\-Text\-Object@{Search\-Text\-Object}}
+}
+
+
+{\ttfamily \#import $<$Search\-Text\-Object.\-h$>$}
+
+Inheritance diagram for Search\-Text\-Object\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_search_text_object}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_search_text_object_abbd96d5ccc280eac334e8d126ca73baa}{search\-Text\-For\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_search_text_object_a0f6652753796600584cd7e943ee1c6d4}{set\-Search\-Text\-:for\-Search\-Type\-:}
+\item 
+(N\-S\-Mutable\-Array $\ast$) -\/ \hyperlink{interface_search_text_object_a2fa5bd4c4e64170eafc7d25ef0599a87}{recent\-Searchs\-For\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_search_text_object_a86a1d1c48ae31a2ebd68c6c4e9e058ea}{set\-Recent\-Searches\-:for\-Search\-Type\-:}
+\item 
+(id) -\/ \hyperlink{interface_search_text_object_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_search_text_object_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_search_text_object_abea89e3a5b49f70a84ce07c6afb792c0}{search\-Texts\-For\-Types}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_search_text_object_a65254cbf048116b9c6e83c8837f00aa5}{recent\-Searches\-For\-Types}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520}{Search\-Type} \hyperlink{interface_search_text_object_ac3a1fa49924063258d425f116eb8b687}{search\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_search_text_object_a958c5e82e2f22a1a132161999b5d1704}{\index{Search\-Text\-Object@{Search\-Text\-Object}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_a958c5e82e2f22a1a132161999b5d1704}
+\hypertarget{interface_search_text_object_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Search\-Text\-Object@{Search\-Text\-Object}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+\hypertarget{interface_search_text_object_a2fa5bd4c4e64170eafc7d25ef0599a87}{\index{Search\-Text\-Object@{Search\-Text\-Object}!recent\-Searchs\-For\-Type\-:@{recent\-Searchs\-For\-Type\-:}}
+\index{recent\-Searchs\-For\-Type\-:@{recent\-Searchs\-For\-Type\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{recent\-Searchs\-For\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) recent\-Searchs\-For\-Type\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_a2fa5bd4c4e64170eafc7d25ef0599a87}
+\hypertarget{interface_search_text_object_abbd96d5ccc280eac334e8d126ca73baa}{\index{Search\-Text\-Object@{Search\-Text\-Object}!search\-Text\-For\-Type\-:@{search\-Text\-For\-Type\-:}}
+\index{search\-Text\-For\-Type\-:@{search\-Text\-For\-Type\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{search\-Text\-For\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) search\-Text\-For\-Type\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_abbd96d5ccc280eac334e8d126ca73baa}
+return the search text for the given type \hypertarget{interface_search_text_object_a86a1d1c48ae31a2ebd68c6c4e9e058ea}{\index{Search\-Text\-Object@{Search\-Text\-Object}!set\-Recent\-Searches\-:for\-Search\-Type\-:@{set\-Recent\-Searches\-:for\-Search\-Type\-:}}
+\index{set\-Recent\-Searches\-:for\-Search\-Type\-:@{set\-Recent\-Searches\-:for\-Search\-Type\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{set\-Recent\-Searches\-:for\-Search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Recent\-Searches\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Mutable\-Array $\ast$)}]{searches}
+\item[{forSearchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_a86a1d1c48ae31a2ebd68c6c4e9e058ea}
+\hypertarget{interface_search_text_object_a0f6652753796600584cd7e943ee1c6d4}{\index{Search\-Text\-Object@{Search\-Text\-Object}!set\-Search\-Text\-:for\-Search\-Type\-:@{set\-Search\-Text\-:for\-Search\-Type\-:}}
+\index{set\-Search\-Text\-:for\-Search\-Type\-:@{set\-Search\-Text\-:for\-Search\-Type\-:}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{set\-Search\-Text\-:for\-Search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Search\-Text\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Text}
+\item[{forSearchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_search_text_object_a0f6652753796600584cd7e943ee1c6d4}
+sets search text for search type 
+
+\subsection{Field Documentation}
+\hypertarget{interface_search_text_object_a65254cbf048116b9c6e83c8837f00aa5}{\index{Search\-Text\-Object@{Search\-Text\-Object}!recent\-Searches\-For\-Types@{recent\-Searches\-For\-Types}}
+\index{recent\-Searches\-For\-Types@{recent\-Searches\-For\-Types}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{recent\-Searches\-For\-Types}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) recent\-Searches\-For\-Types\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_search_text_object_a65254cbf048116b9c6e83c8837f00aa5}
+\hypertarget{interface_search_text_object_abea89e3a5b49f70a84ce07c6afb792c0}{\index{Search\-Text\-Object@{Search\-Text\-Object}!search\-Texts\-For\-Types@{search\-Texts\-For\-Types}}
+\index{search\-Texts\-For\-Types@{search\-Texts\-For\-Types}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{search\-Texts\-For\-Types}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) search\-Texts\-For\-Types\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_search_text_object_abea89e3a5b49f70a84ce07c6afb792c0}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_search_text_object_ac3a1fa49924063258d425f116eb8b687}{\index{Search\-Text\-Object@{Search\-Text\-Object}!search\-Type@{search\-Type}}
+\index{search\-Type@{search\-Type}!SearchTextObject@{Search\-Text\-Object}}
+\subsubsection[{search\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Search\-Type}) search\-Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_search_text_object_ac3a1fa49924063258d425f116eb8b687}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_search_text_object_8h}{Search\-Text\-Object.\-h}\item 
+src/\-User\-Interface/\hyperlink{_search_text_object_8m}{Search\-Text\-Object.\-m}\end{DoxyCompactItemize}

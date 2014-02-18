@@ -1,0 +1,303 @@
+\hypertarget{interface_app_controller}{\section{App\-Controller Class Reference}
+\label{interface_app_controller}\index{App\-Controller@{App\-Controller}}
+}
+
+
+{\ttfamily \#import $<$App\-Controller.\-h$>$}
+
+Inheritance diagram for App\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_app_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_single_view_host_controller}{Single\-View\-Host\-Controller} $\ast$) -\/ \hyperlink{interface_app_controller_accffd91b00f6b5aeb08330cc609aee86}{open\-Single\-Host\-Window\-For\-Module\-:}
+\item 
+(\hyperlink{interface_workspace_view_host_controller}{Workspace\-View\-Host\-Controller} $\ast$) -\/ \hyperlink{interface_app_controller_a55dfc114e92acbe7bd08b7ee40cce7a2}{open\-Workspace\-Host\-Window\-For\-Module\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a49e32bfd5a391d220c10d79bbd06eec8}{save\-Session\-As\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a293c3e2f4696fd296d73ad0c0eb220ff}{save\-As\-Default\-Session\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_af59521d7cc8746312deb89b9127cdd81}{open\-Session\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a2007805ff3a7df6ead5de45d89d71b5a}{open\-Default\-Session\-:}
+\item 
+(void) -\/ \hyperlink{interface_app_controller_a284929cdebde6753975af6ffebc60385}{application\-:open\-Files\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_ad931ff9d54355b502c379cc05e441bb8}{open\-New\-Single\-Bible\-Host\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_ac3a5b476b8b913997019f5b50110890d}{open\-New\-Single\-Commentary\-Host\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_af3aaba0d02adcf04c082d0e33a02560d}{open\-New\-Single\-Dictionary\-Host\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_ad77df322b22ef445c5527c8efd41e979}{open\-New\-Single\-Gen\-Book\-Host\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_adcc586ceba279d1ba9ce6b565fe7e474}{open\-New\-Workspace\-Host\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_abd2d7d361a93c6f4f256271f15d8e6ae}{show\-Preference\-Sheet\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a4dcbdf721b023c9908336ba5ba996f78}{show\-About\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_ad7000ea8fca0e24c3e154b905d5ccd8f}{show\-Module\-Manager\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a58014b22d1debc00ee0d1bb7c857d3fd}{show\-Preview\-Panel\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a12337c18445e066f08924a58b127116c}{show\-Create\-Module\-Window\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_a2a65d82a2eba35796d006f2291157eb6}{create\-Commentary\-Ok\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_app_controller_ab1ce98642396211c903bf18aabd9ae47}{create\-Commentary\-Cancel\-:}
+\item 
+(void) -\/ \hyperlink{interface_app_controller_a29c13f7ff3ba193aae39edcaf91338c9}{host\-Closing\-:}
+\item 
+(void) -\/ \hyperlink{interface_app_controller_a6c2d6c7439fdc73485e88552e54c77dd}{aux\-Window\-Closing\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_app_controller}{App\-Controller} $\ast$) + \hyperlink{interface_app_controller_ad0ca7dc8d747c27d2034326bc9d20d6c}{default\-App\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_m_b_preference_controller}{M\-B\-Preference\-Controller} $\ast$ \hyperlink{interface_app_controller_a5bc4f1ca156721d705b78556b7be79e0}{preference\-Controller}
+\item 
+B\-O\-O\-L \hyperlink{interface_app_controller_a45274a50821c76ff5f24e1c1aa5553d0}{is\-Preferences\-Showing}
+\item 
+\hyperlink{interface_module_manager}{Module\-Manager} $\ast$ \hyperlink{interface_app_controller_aa4c387b05931fd96bd4b98577cf4da1a}{module\-Manager}
+\item 
+B\-O\-O\-L \hyperlink{interface_app_controller_a41fe0a359f090352756784fb19e2d4e3}{is\-Module\-Manager\-Showing}
+\item 
+I\-B\-Outlet \hyperlink{interface_h_u_d_preview_controller}{H\-U\-D\-Preview\-Controller} $\ast$ \hyperlink{interface_app_controller_ad76eba40dc893c5abde5dca7c58ed85c}{preview\-Controller}
+\item 
+B\-O\-O\-L \hyperlink{interface_app_controller_a6c22ed5e2dd56ef128c54de665a1bba5}{is\-Preview\-Showing}
+\item 
+I\-B\-Outlet H\-U\-D\-Content\-View\-Controller $\ast$ \hyperlink{interface_app_controller_add8b8156fae5882baadbc970259be514}{content\-Controller}
+\item 
+B\-O\-O\-L \hyperlink{interface_app_controller_ad2ea5ca2afc734929f4942020d043a4b}{is\-Content\-Showing}
+\item 
+\hyperlink{interface_m_b_about_window_controller}{M\-B\-About\-Window\-Controller} $\ast$ \hyperlink{interface_app_controller_a996d28463c3bd7cb51fbc3ec2715d474}{about\-Window\-Controller}
+\item 
+I\-B\-Outlet N\-S\-Window $\ast$ \hyperlink{interface_app_controller_aeff9b552867367894c25ef7fc41661bc}{create\-Module\-Window}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_app_controller_a4560b8a317e31fc0089a7b22012c7cda}{create\-Module\-Name\-Text\-Field}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_app_controller_a39de0726ae67c4b54adfe94c003e6096}{create\-Module\-O\-K\-Button}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_app_controller_a7c0f9ff6d61aace19ae403c73acbc518}{window\-Hosts}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_app_controller_a2bc77f00fb3042642694252f4cb00da5}{session\-Path}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_app_controller_a284929cdebde6753975af6ffebc60385}{\index{App\-Controller@{App\-Controller}!application\-:open\-Files\-:@{application\-:open\-Files\-:}}
+\index{application\-:open\-Files\-:@{application\-:open\-Files\-:}!AppController@{App\-Controller}}
+\subsubsection[{application\-:open\-Files\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) application\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Application $\ast$)}]{sender}
+\item[{openFiles:(N\-S\-Array $\ast$)}]{filenames}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a284929cdebde6753975af6ffebc60385}
+\hypertarget{interface_app_controller_a6c2d6c7439fdc73485e88552e54c77dd}{\index{App\-Controller@{App\-Controller}!aux\-Window\-Closing\-:@{aux\-Window\-Closing\-:}}
+\index{aux\-Window\-Closing\-:@{aux\-Window\-Closing\-:}!AppController@{App\-Controller}}
+\subsubsection[{aux\-Window\-Closing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) aux\-Window\-Closing\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Window\-Controller $\ast$)}]{a\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a6c2d6c7439fdc73485e88552e54c77dd}
+\hypertarget{interface_app_controller_ab1ce98642396211c903bf18aabd9ae47}{\index{App\-Controller@{App\-Controller}!create\-Commentary\-Cancel\-:@{create\-Commentary\-Cancel\-:}}
+\index{create\-Commentary\-Cancel\-:@{create\-Commentary\-Cancel\-:}!AppController@{App\-Controller}}
+\subsubsection[{create\-Commentary\-Cancel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) create\-Commentary\-Cancel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ab1ce98642396211c903bf18aabd9ae47}
+\hypertarget{interface_app_controller_a2a65d82a2eba35796d006f2291157eb6}{\index{App\-Controller@{App\-Controller}!create\-Commentary\-Ok\-:@{create\-Commentary\-Ok\-:}}
+\index{create\-Commentary\-Ok\-:@{create\-Commentary\-Ok\-:}!AppController@{App\-Controller}}
+\subsubsection[{create\-Commentary\-Ok\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) create\-Commentary\-Ok\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a2a65d82a2eba35796d006f2291157eb6}
+\hypertarget{interface_app_controller_ad0ca7dc8d747c27d2034326bc9d20d6c}{\index{App\-Controller@{App\-Controller}!default\-App\-Controller@{default\-App\-Controller}}
+\index{default\-App\-Controller@{default\-App\-Controller}!AppController@{App\-Controller}}
+\subsubsection[{default\-App\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf App\-Controller} $\ast$) default\-App\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ad0ca7dc8d747c27d2034326bc9d20d6c}
+\hypertarget{interface_app_controller_a29c13f7ff3ba193aae39edcaf91338c9}{\index{App\-Controller@{App\-Controller}!host\-Closing\-:@{host\-Closing\-:}}
+\index{host\-Closing\-:@{host\-Closing\-:}!AppController@{App\-Controller}}
+\subsubsection[{host\-Closing\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) host\-Closing\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Window\-Controller $\ast$)}]{a\-Host}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a29c13f7ff3ba193aae39edcaf91338c9}
+\hypertarget{interface_app_controller_a2007805ff3a7df6ead5de45d89d71b5a}{\index{App\-Controller@{App\-Controller}!open\-Default\-Session\-:@{open\-Default\-Session\-:}}
+\index{open\-Default\-Session\-:@{open\-Default\-Session\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-Default\-Session\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-Default\-Session\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a2007805ff3a7df6ead5de45d89d71b5a}
+open the default session \hypertarget{interface_app_controller_ad931ff9d54355b502c379cc05e441bb8}{\index{App\-Controller@{App\-Controller}!open\-New\-Single\-Bible\-Host\-Window\-:@{open\-New\-Single\-Bible\-Host\-Window\-:}}
+\index{open\-New\-Single\-Bible\-Host\-Window\-:@{open\-New\-Single\-Bible\-Host\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-New\-Single\-Bible\-Host\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-New\-Single\-Bible\-Host\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ad931ff9d54355b502c379cc05e441bb8}
+\hypertarget{interface_app_controller_ac3a5b476b8b913997019f5b50110890d}{\index{App\-Controller@{App\-Controller}!open\-New\-Single\-Commentary\-Host\-Window\-:@{open\-New\-Single\-Commentary\-Host\-Window\-:}}
+\index{open\-New\-Single\-Commentary\-Host\-Window\-:@{open\-New\-Single\-Commentary\-Host\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-New\-Single\-Commentary\-Host\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-New\-Single\-Commentary\-Host\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ac3a5b476b8b913997019f5b50110890d}
+\hypertarget{interface_app_controller_af3aaba0d02adcf04c082d0e33a02560d}{\index{App\-Controller@{App\-Controller}!open\-New\-Single\-Dictionary\-Host\-Window\-:@{open\-New\-Single\-Dictionary\-Host\-Window\-:}}
+\index{open\-New\-Single\-Dictionary\-Host\-Window\-:@{open\-New\-Single\-Dictionary\-Host\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-New\-Single\-Dictionary\-Host\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-New\-Single\-Dictionary\-Host\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_af3aaba0d02adcf04c082d0e33a02560d}
+\hypertarget{interface_app_controller_ad77df322b22ef445c5527c8efd41e979}{\index{App\-Controller@{App\-Controller}!open\-New\-Single\-Gen\-Book\-Host\-Window\-:@{open\-New\-Single\-Gen\-Book\-Host\-Window\-:}}
+\index{open\-New\-Single\-Gen\-Book\-Host\-Window\-:@{open\-New\-Single\-Gen\-Book\-Host\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-New\-Single\-Gen\-Book\-Host\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-New\-Single\-Gen\-Book\-Host\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ad77df322b22ef445c5527c8efd41e979}
+\hypertarget{interface_app_controller_adcc586ceba279d1ba9ce6b565fe7e474}{\index{App\-Controller@{App\-Controller}!open\-New\-Workspace\-Host\-Window\-:@{open\-New\-Workspace\-Host\-Window\-:}}
+\index{open\-New\-Workspace\-Host\-Window\-:@{open\-New\-Workspace\-Host\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-New\-Workspace\-Host\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-New\-Workspace\-Host\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_adcc586ceba279d1ba9ce6b565fe7e474}
+\hypertarget{interface_app_controller_af59521d7cc8746312deb89b9127cdd81}{\index{App\-Controller@{App\-Controller}!open\-Session\-:@{open\-Session\-:}}
+\index{open\-Session\-:@{open\-Session\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-Session\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-Session\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_af59521d7cc8746312deb89b9127cdd81}
+loads session from file \hypertarget{interface_app_controller_accffd91b00f6b5aeb08330cc609aee86}{\index{App\-Controller@{App\-Controller}!open\-Single\-Host\-Window\-For\-Module\-:@{open\-Single\-Host\-Window\-For\-Module\-:}}
+\index{open\-Single\-Host\-Window\-For\-Module\-:@{open\-Single\-Host\-Window\-For\-Module\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-Single\-Host\-Window\-For\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Single\-View\-Host\-Controller} $\ast$) open\-Single\-Host\-Window\-For\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{mod}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_accffd91b00f6b5aeb08330cc609aee86}
+opens a new single host window for the given module \hypertarget{interface_app_controller_a55dfc114e92acbe7bd08b7ee40cce7a2}{\index{App\-Controller@{App\-Controller}!open\-Workspace\-Host\-Window\-For\-Module\-:@{open\-Workspace\-Host\-Window\-For\-Module\-:}}
+\index{open\-Workspace\-Host\-Window\-For\-Module\-:@{open\-Workspace\-Host\-Window\-For\-Module\-:}!AppController@{App\-Controller}}
+\subsubsection[{open\-Workspace\-Host\-Window\-For\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Workspace\-View\-Host\-Controller} $\ast$) open\-Workspace\-Host\-Window\-For\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{mod}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a55dfc114e92acbe7bd08b7ee40cce7a2}
+\hypertarget{interface_app_controller_a293c3e2f4696fd296d73ad0c0eb220ff}{\index{App\-Controller@{App\-Controller}!save\-As\-Default\-Session\-:@{save\-As\-Default\-Session\-:}}
+\index{save\-As\-Default\-Session\-:@{save\-As\-Default\-Session\-:}!AppController@{App\-Controller}}
+\subsubsection[{save\-As\-Default\-Session\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) save\-As\-Default\-Session\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a293c3e2f4696fd296d73ad0c0eb220ff}
+stores as default session \hypertarget{interface_app_controller_a49e32bfd5a391d220c10d79bbd06eec8}{\index{App\-Controller@{App\-Controller}!save\-Session\-As\-:@{save\-Session\-As\-:}}
+\index{save\-Session\-As\-:@{save\-Session\-As\-:}!AppController@{App\-Controller}}
+\subsubsection[{save\-Session\-As\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) save\-Session\-As\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a49e32bfd5a391d220c10d79bbd06eec8}
+stores the session to file \hypertarget{interface_app_controller_a4dcbdf721b023c9908336ba5ba996f78}{\index{App\-Controller@{App\-Controller}!show\-About\-Window\-:@{show\-About\-Window\-:}}
+\index{show\-About\-Window\-:@{show\-About\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{show\-About\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) show\-About\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a4dcbdf721b023c9908336ba5ba996f78}
+\hypertarget{interface_app_controller_a12337c18445e066f08924a58b127116c}{\index{App\-Controller@{App\-Controller}!show\-Create\-Module\-Window\-:@{show\-Create\-Module\-Window\-:}}
+\index{show\-Create\-Module\-Window\-:@{show\-Create\-Module\-Window\-:}!AppController@{App\-Controller}}
+\subsubsection[{show\-Create\-Module\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) show\-Create\-Module\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a12337c18445e066f08924a58b127116c}
+\hypertarget{interface_app_controller_ad7000ea8fca0e24c3e154b905d5ccd8f}{\index{App\-Controller@{App\-Controller}!show\-Module\-Manager\-:@{show\-Module\-Manager\-:}}
+\index{show\-Module\-Manager\-:@{show\-Module\-Manager\-:}!AppController@{App\-Controller}}
+\subsubsection[{show\-Module\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) show\-Module\-Manager\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_ad7000ea8fca0e24c3e154b905d5ccd8f}
+init module manager window controller \hypertarget{interface_app_controller_abd2d7d361a93c6f4f256271f15d8e6ae}{\index{App\-Controller@{App\-Controller}!show\-Preference\-Sheet\-:@{show\-Preference\-Sheet\-:}}
+\index{show\-Preference\-Sheet\-:@{show\-Preference\-Sheet\-:}!AppController@{App\-Controller}}
+\subsubsection[{show\-Preference\-Sheet\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) show\-Preference\-Sheet\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_abd2d7d361a93c6f4f256271f15d8e6ae}
+\hypertarget{interface_app_controller_a58014b22d1debc00ee0d1bb7c857d3fd}{\index{App\-Controller@{App\-Controller}!show\-Preview\-Panel\-:@{show\-Preview\-Panel\-:}}
+\index{show\-Preview\-Panel\-:@{show\-Preview\-Panel\-:}!AppController@{App\-Controller}}
+\subsubsection[{show\-Preview\-Panel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) show\-Preview\-Panel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_app_controller_a58014b22d1debc00ee0d1bb7c857d3fd}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_app_controller_a996d28463c3bd7cb51fbc3ec2715d474}{\index{App\-Controller@{App\-Controller}!about\-Window\-Controller@{about\-Window\-Controller}}
+\index{about\-Window\-Controller@{about\-Window\-Controller}!AppController@{App\-Controller}}
+\subsubsection[{about\-Window\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-B\-About\-Window\-Controller}$\ast$) about\-Window\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a996d28463c3bd7cb51fbc3ec2715d474}
+\hypertarget{interface_app_controller_add8b8156fae5882baadbc970259be514}{\index{App\-Controller@{App\-Controller}!content\-Controller@{content\-Controller}}
+\index{content\-Controller@{content\-Controller}!AppController@{App\-Controller}}
+\subsubsection[{content\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet H\-U\-D\-Content\-View\-Controller$\ast$) content\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_add8b8156fae5882baadbc970259be514}
+\hypertarget{interface_app_controller_a4560b8a317e31fc0089a7b22012c7cda}{\index{App\-Controller@{App\-Controller}!create\-Module\-Name\-Text\-Field@{create\-Module\-Name\-Text\-Field}}
+\index{create\-Module\-Name\-Text\-Field@{create\-Module\-Name\-Text\-Field}!AppController@{App\-Controller}}
+\subsubsection[{create\-Module\-Name\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) create\-Module\-Name\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a4560b8a317e31fc0089a7b22012c7cda}
+\hypertarget{interface_app_controller_a39de0726ae67c4b54adfe94c003e6096}{\index{App\-Controller@{App\-Controller}!create\-Module\-O\-K\-Button@{create\-Module\-O\-K\-Button}}
+\index{create\-Module\-O\-K\-Button@{create\-Module\-O\-K\-Button}!AppController@{App\-Controller}}
+\subsubsection[{create\-Module\-O\-K\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) create\-Module\-O\-K\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a39de0726ae67c4b54adfe94c003e6096}
+\hypertarget{interface_app_controller_aeff9b552867367894c25ef7fc41661bc}{\index{App\-Controller@{App\-Controller}!create\-Module\-Window@{create\-Module\-Window}}
+\index{create\-Module\-Window@{create\-Module\-Window}!AppController@{App\-Controller}}
+\subsubsection[{create\-Module\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Window$\ast$) create\-Module\-Window\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_aeff9b552867367894c25ef7fc41661bc}
+\hypertarget{interface_app_controller_ad2ea5ca2afc734929f4942020d043a4b}{\index{App\-Controller@{App\-Controller}!is\-Content\-Showing@{is\-Content\-Showing}}
+\index{is\-Content\-Showing@{is\-Content\-Showing}!AppController@{App\-Controller}}
+\subsubsection[{is\-Content\-Showing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Content\-Showing\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_ad2ea5ca2afc734929f4942020d043a4b}
+\hypertarget{interface_app_controller_a41fe0a359f090352756784fb19e2d4e3}{\index{App\-Controller@{App\-Controller}!is\-Module\-Manager\-Showing@{is\-Module\-Manager\-Showing}}
+\index{is\-Module\-Manager\-Showing@{is\-Module\-Manager\-Showing}!AppController@{App\-Controller}}
+\subsubsection[{is\-Module\-Manager\-Showing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Module\-Manager\-Showing\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a41fe0a359f090352756784fb19e2d4e3}
+\hypertarget{interface_app_controller_a45274a50821c76ff5f24e1c1aa5553d0}{\index{App\-Controller@{App\-Controller}!is\-Preferences\-Showing@{is\-Preferences\-Showing}}
+\index{is\-Preferences\-Showing@{is\-Preferences\-Showing}!AppController@{App\-Controller}}
+\subsubsection[{is\-Preferences\-Showing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Preferences\-Showing\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a45274a50821c76ff5f24e1c1aa5553d0}
+\hypertarget{interface_app_controller_a6c22ed5e2dd56ef128c54de665a1bba5}{\index{App\-Controller@{App\-Controller}!is\-Preview\-Showing@{is\-Preview\-Showing}}
+\index{is\-Preview\-Showing@{is\-Preview\-Showing}!AppController@{App\-Controller}}
+\subsubsection[{is\-Preview\-Showing}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Preview\-Showing\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a6c22ed5e2dd56ef128c54de665a1bba5}
+\hypertarget{interface_app_controller_aa4c387b05931fd96bd4b98577cf4da1a}{\index{App\-Controller@{App\-Controller}!module\-Manager@{module\-Manager}}
+\index{module\-Manager@{module\-Manager}!AppController@{App\-Controller}}
+\subsubsection[{module\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Manager}$\ast$) module\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_aa4c387b05931fd96bd4b98577cf4da1a}
+\hypertarget{interface_app_controller_a5bc4f1ca156721d705b78556b7be79e0}{\index{App\-Controller@{App\-Controller}!preference\-Controller@{preference\-Controller}}
+\index{preference\-Controller@{preference\-Controller}!AppController@{App\-Controller}}
+\subsubsection[{preference\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-B\-Preference\-Controller}$\ast$) preference\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a5bc4f1ca156721d705b78556b7be79e0}
+\hypertarget{interface_app_controller_ad76eba40dc893c5abde5dca7c58ed85c}{\index{App\-Controller@{App\-Controller}!preview\-Controller@{preview\-Controller}}
+\index{preview\-Controller@{preview\-Controller}!AppController@{App\-Controller}}
+\subsubsection[{preview\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet {\bf H\-U\-D\-Preview\-Controller}$\ast$) preview\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_ad76eba40dc893c5abde5dca7c58ed85c}
+\hypertarget{interface_app_controller_a2bc77f00fb3042642694252f4cb00da5}{\index{App\-Controller@{App\-Controller}!session\-Path@{session\-Path}}
+\index{session\-Path@{session\-Path}!AppController@{App\-Controller}}
+\subsubsection[{session\-Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String$\ast$) session\-Path\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a2bc77f00fb3042642694252f4cb00da5}
+\hypertarget{interface_app_controller_a7c0f9ff6d61aace19ae403c73acbc518}{\index{App\-Controller@{App\-Controller}!window\-Hosts@{window\-Hosts}}
+\index{window\-Hosts@{window\-Hosts}!AppController@{App\-Controller}}
+\subsubsection[{window\-Hosts}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) window\-Hosts\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_app_controller_a7c0f9ff6d61aace19ae403c73acbc518}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{_app_controller_8h}{App\-Controller.\-h}\item 
+src/\hyperlink{_app_controller_8m}{App\-Controller.\-m}\end{DoxyCompactItemize}

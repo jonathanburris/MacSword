@@ -1,0 +1,69 @@
+\hypertarget{_indexer_8h}{\section{src/\-Indexing/\-Indexer.h File Reference}
+\label{_indexer_8h}\index{src/\-Indexing/\-Indexer.\-h@{src/\-Indexing/\-Indexer.\-h}}
+}
+{\ttfamily \#import $<$Cocoa/\-Cocoa.\-h$>$}\\*
+{\ttfamily \#import $<$Foundation/\-Foundation.\-h$>$}\\*
+{\ttfamily \#import $<$Coco\-Logger/\-Coco\-Logger.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Module.\-h$>$}\\*
+{\ttfamily \#import $<$App\-Kit/\-N\-S\-Application.\-h$>$}\\*
+{\ttfamily \#import $<$Core\-Services/\-Core\-Services.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_indexer}{Indexer}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_indexer_8h_a49e806f326b8901af583e19493572e20}{k\-Max\-Search\-Results}~1000
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520}{Search\-Type} \{ \hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a23d8f8d1ac9f6c019689d552ae8241f0}{Reference\-Search\-Type}, 
+\hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a430637513fec8d17c68f4576f176593d}{Index\-Search\-Type}, 
+\hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a0adf5f5b6d00bd69c606367861ca9a01}{View\-Search\-Type}
+ \}
+\item 
+enum \hyperlink{_indexer_8h_a92b97bc74abdb83fcf57d1634912775f}{Index\-Text\-Type} \{ \hyperlink{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fae3587c843f998b419b302b37d6d26d8b}{Verse\-Key\-Index\-Text\-Type}, 
+\hyperlink{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fabecc9124387da6362e816233062ff7e6}{Content\-Text\-Type}, 
+\hyperlink{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fa894b00b3bb7c7c7395fa18862395e871}{Strong\-Text\-Type}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_indexer_8h_a49e806f326b8901af583e19493572e20}{\index{Indexer.\-h@{Indexer.\-h}!k\-Max\-Search\-Results@{k\-Max\-Search\-Results}}
+\index{k\-Max\-Search\-Results@{k\-Max\-Search\-Results}!Indexer.h@{Indexer.\-h}}
+\subsubsection[{k\-Max\-Search\-Results}]{\setlength{\rightskip}{0pt plus 5cm}\#define k\-Max\-Search\-Results~1000}}\label{_indexer_8h_a49e806f326b8901af583e19493572e20}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_indexer_8h_a92b97bc74abdb83fcf57d1634912775f}{\index{Indexer.\-h@{Indexer.\-h}!Index\-Text\-Type@{Index\-Text\-Type}}
+\index{Index\-Text\-Type@{Index\-Text\-Type}!Indexer.h@{Indexer.\-h}}
+\subsubsection[{Index\-Text\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Index\-Text\-Type}}}\label{_indexer_8h_a92b97bc74abdb83fcf57d1634912775f}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Verse\-Key\-Index\-Text\-Type@{Verse\-Key\-Index\-Text\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!Verse\-Key\-Index\-Text\-Type@{Verse\-Key\-Index\-Text\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fae3587c843f998b419b302b37d6d26d8b}{Verse\-Key\-Index\-Text\-Type}\label{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fae3587c843f998b419b302b37d6d26d8b}
+}]\index{Content\-Text\-Type@{Content\-Text\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!Content\-Text\-Type@{Content\-Text\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fabecc9124387da6362e816233062ff7e6}{Content\-Text\-Type}\label{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fabecc9124387da6362e816233062ff7e6}
+}]\index{Strong\-Text\-Type@{Strong\-Text\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!Strong\-Text\-Type@{Strong\-Text\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fa894b00b3bb7c7c7395fa18862395e871}{Strong\-Text\-Type}\label{_indexer_8h_a92b97bc74abdb83fcf57d1634912775fa894b00b3bb7c7c7395fa18862395e871}
+}]\end{description}
+\end{Desc}
+\hypertarget{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520}{\index{Indexer.\-h@{Indexer.\-h}!Search\-Type@{Search\-Type}}
+\index{Search\-Type@{Search\-Type}!Indexer.h@{Indexer.\-h}}
+\subsubsection[{Search\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Search\-Type}}}\label{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Reference\-Search\-Type@{Reference\-Search\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!Reference\-Search\-Type@{Reference\-Search\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a23d8f8d1ac9f6c019689d552ae8241f0}{Reference\-Search\-Type}\label{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a23d8f8d1ac9f6c019689d552ae8241f0}
+}]\index{Index\-Search\-Type@{Index\-Search\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!Index\-Search\-Type@{Index\-Search\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a430637513fec8d17c68f4576f176593d}{Index\-Search\-Type}\label{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a430637513fec8d17c68f4576f176593d}
+}]\index{View\-Search\-Type@{View\-Search\-Type}!Indexer.\-h@{Indexer.\-h}}\index{Indexer.\-h@{Indexer.\-h}!View\-Search\-Type@{View\-Search\-Type}}\item[{\em 
+\hypertarget{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a0adf5f5b6d00bd69c606367861ca9a01}{View\-Search\-Type}\label{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520a0adf5f5b6d00bd69c606367861ca9a01}
+}]\end{description}
+\end{Desc}

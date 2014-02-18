@@ -1,0 +1,95 @@
+\hypertarget{interface_sword_dictionary}{\section{Sword\-Dictionary Class Reference}
+\label{interface_sword_dictionary}\index{Sword\-Dictionary@{Sword\-Dictionary}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Dictionary.\-h$>$}
+
+Inheritance diagram for Sword\-Dictionary\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_sword_dictionary}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_sword_dictionary_a59d9654a2481d74c2f4d08c15a4910ce}{init\-With\-Name\-:sword\-Manager\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_dictionary_a28b5fcb19b63755f3b6ba483a837ac03}{all\-Keys}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_dictionary_ab2060ce6708b36d5a8c31db9b458a2b4}{entry\-For\-Key\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_dictionary_a10679ec30bd00acfb4e6d643c89f5af6}{full\-Ref\-Name\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_dictionary_ac27de8546781130724ef5aed32a4ec13}{index\-Contents\-Into\-Index\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_sword_dictionary_a55ba70453314bdf10337607cfe31279b}{keys}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_sword_dictionary_a28b5fcb19b63755f3b6ba483a837ac03}{\index{Sword\-Dictionary@{Sword\-Dictionary}!all\-Keys@{all\-Keys}}
+\index{all\-Keys@{all\-Keys}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{all\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) all\-Keys 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_dictionary_a28b5fcb19b63755f3b6ba483a837ac03}
+\hypertarget{interface_sword_dictionary_ab2060ce6708b36d5a8c31db9b458a2b4}{\index{Sword\-Dictionary@{Sword\-Dictionary}!entry\-For\-Key\-:@{entry\-For\-Key\-:}}
+\index{entry\-For\-Key\-:@{entry\-For\-Key\-:}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{entry\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) entry\-For\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Key}
+\end{DoxyParamCaption}
+}}\label{interface_sword_dictionary_ab2060ce6708b36d5a8c31db9b458a2b4}
+returns stripped text for key. nil if the key does not exist. \hypertarget{interface_sword_dictionary_a10679ec30bd00acfb4e6d643c89f5af6}{\index{Sword\-Dictionary@{Sword\-Dictionary}!full\-Ref\-Name\-:@{full\-Ref\-Name\-:}}
+\index{full\-Ref\-Name\-:@{full\-Ref\-Name\-:}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{full\-Ref\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) full\-Ref\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{ref}
+\end{DoxyParamCaption}
+}}\label{interface_sword_dictionary_a10679ec30bd00acfb4e6d643c89f5af6}
+\hypertarget{interface_sword_dictionary_ac27de8546781130724ef5aed32a4ec13}{\index{Sword\-Dictionary@{Sword\-Dictionary}!index\-Contents\-Into\-Index\-:@{index\-Contents\-Into\-Index\-:}}
+\index{index\-Contents\-Into\-Index\-:@{index\-Contents\-Into\-Index\-:}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{index\-Contents\-Into\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) index\-Contents\-Into\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Indexer} $\ast$)}]{indexer}
+\end{DoxyParamCaption}
+}}\label{interface_sword_dictionary_ac27de8546781130724ef5aed32a4ec13}
+abstract method 
+
+Reimplemented from \hyperlink{interface_sword_module_ac27de8546781130724ef5aed32a4ec13}{Sword\-Module}.
+
+
+
+Provided by category \hyperlink{category_sword_dictionary_07_searching_08_ac27de8546781130724ef5aed32a4ec13}{Sword\-Dictionary(\-Searching)}.
+
+\hypertarget{interface_sword_dictionary_a59d9654a2481d74c2f4d08c15a4910ce}{\index{Sword\-Dictionary@{Sword\-Dictionary}!init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}}
+\index{init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{init\-With\-Name\-:sword\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Name}
+\item[{swordManager:({\bf Sword\-Manager} $\ast$)}]{a\-Manager}
+\end{DoxyParamCaption}
+}}\label{interface_sword_dictionary_a59d9654a2481d74c2f4d08c15a4910ce}
+
+
+Reimplemented from \hyperlink{interface_sword_module_a59d9654a2481d74c2f4d08c15a4910ce}{Sword\-Module}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_sword_dictionary_a55ba70453314bdf10337607cfe31279b}{\index{Sword\-Dictionary@{Sword\-Dictionary}!keys@{keys}}
+\index{keys@{keys}!SwordDictionary@{Sword\-Dictionary}}
+\subsubsection[{keys}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) keys\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_sword_dictionary_a55ba70453314bdf10337607cfe31279b}
+only keys are buffered here 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_dictionary_8h}{Sword\-Dictionary.\-h}\item 
+src/\-Sword/\hyperlink{_sword_dictionary_8mm}{Sword\-Dictionary.\-mm}\end{DoxyCompactItemize}

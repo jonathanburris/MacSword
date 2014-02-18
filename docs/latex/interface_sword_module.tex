@@ -1,0 +1,469 @@
+\hypertarget{interface_sword_module}{\section{Sword\-Module Class Reference}
+\label{interface_sword_module}\index{Sword\-Module@{Sword\-Module}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Module.\-h$>$}
+
+Inheritance diagram for Sword\-Module\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_sword_module}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_sword_module_a59d9654a2481d74c2f4d08c15a4910ce}{init\-With\-Name\-:sword\-Manager\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_a32d626626eee0bc4ade146973f6abb1c}{finalize}
+\item 
+(N\-S\-Integer) -\/ \hyperlink{interface_sword_module_a858c65e7444a8af0882d553c434506b0}{error}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_af4a37ce3ea3b890960a6449e74ca43a4}{descr}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_aad136d689eb81aac088afbf4c5e150aa}{lang}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_a12da8ac9bf5e99bead6882dbddf4eafb}{type\-String}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_a806fdedd0e4bb74dd72852de6e4b25e2}{version}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_a7871356ed4013fe0e3e97a1d8a6420a6}{min\-Version}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_afc5e2e8c8cb92b65c1c6787b4ea150b9}{about\-Text}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_a63345e3292386bca3dea93ea966e577a}{versification}
+\item 
+(N\-S\-Attributed\-String $\ast$) -\/ \hyperlink{interface_sword_module_adbc45ab9c8faf2c956ac6be354918831}{full\-About\-Text}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a1b924225e17c0d4a682211415b52920f}{is\-Unicode}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_acf7e3b99952dabff9846958618582472}{is\-Encrypted}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a4951c13cfe4c35669ec31259e4967e7c}{is\-Locked}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_adc1929ecf46112716a28547541474e72}{is\-Editable}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a62a3b2a99468ef6bc2aeda272af20400}{is\-R\-T\-L}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a1ce0d4f7681d6073c3e32cd97bedfe1c}{unlock\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_aa7102d452cc68b75ef5ee5a3f7fb2467}{aquire\-Module\-Lock}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_aea71bd5671add694c914b764806ecb77}{release\-Module\-Lock}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a396c0303270a24b89836a65cd0c5b84a}{has\-Feature\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_sword_module_a2041c1236ea280b9764c69a5cc66fed5}{config\-Entry\-For\-Key\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_a0394b3637e7dae37f772dae419f1d552}{set\-Position\-From\-Key\-String\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_a82a57b6dfd02a6ed95d0bda509ae757b}{set\-Position\-From\-Verse\-Key\-:}
+\item 
+(id) -\/ \hyperlink{interface_sword_module_acadfeed535fa998343149e7bd33bb9d3}{attribute\-Value\-For\-Parsed\-Link\-Data\-:}
+\item 
+(\hyperlink{interface_sword_module_text_entry}{Sword\-Module\-Text\-Entry} $\ast$) -\/ \hyperlink{interface_sword_module_acb8ace921739306c4e8b0ac96cc0b172}{text\-Entry\-For\-Key\-:text\-Type\-:}
+\item 
+(long) -\/ \hyperlink{interface_sword_module_abee894396dd4355fb4d0a1c613f028c5}{entry\-Count}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_module_a7f841144cca13041d14f64f8fc2e14f2}{stripped\-Text\-Entries\-For\-Ref\-:}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_sword_module_a3f1c8e8237f4055fdc0b431d83bd35e0}{rendered\-Text\-Entries\-For\-Ref\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_af12cda3e69ebf7baffa24da55fdf82d1}{write\-Entry\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_sword_module_a726d42d0c52fe9804e02eba26ce34544}{has\-Index}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_a23ece6525a46de8cd6ecea85d509c137}{create\-Index}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_a5b9ad4c4b82328c7da6a5d34f07e2691}{create\-Index\-Threaded\-With\-Delegate\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_module_ac27de8546781130724ef5aed32a4ec13}{index\-Contents\-Into\-Index\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type}) + \hyperlink{interface_sword_module_a27dfdaad96c169472cfdcb19216cf0cb}{module\-Type\-For\-Module\-Type\-String\-:}
+\begin{DoxyCompactList}\small\item\em maps type string to Module\-Type enum \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_sword_module_aac92b28c82e8e90e1f41471b3f3d65dc}{config\-Entries}
+\item 
+id \hyperlink{interface_sword_module_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type} \hyperlink{interface_sword_module_a69cc06aed2c7e6cbe7b4c09b62e4a57d}{type}
+\item 
+int \hyperlink{interface_sword_module_a6e27f49150e9a14580fb313cc2777e00}{status}
+\item 
+N\-S\-Recursive\-Lock $\ast$ \hyperlink{interface_sword_module_aa2dfd95c39168ffc06d703d959384b2c}{module\-Lock}
+\item 
+N\-S\-Lock $\ast$ \hyperlink{interface_sword_module_a115e80b1eaefdb1701dfa8f108df190c}{index\-Lock}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_sword_module_afc8ccc6676addc3b49a494b2bf969c68}{name}
+\item 
+\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$ \hyperlink{interface_sword_module_a387446958708000f3a5ea20ff5f340db}{sw\-Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_sword_module_afc5e2e8c8cb92b65c1c6787b4ea150b9}{\index{Sword\-Module@{Sword\-Module}!about\-Text@{about\-Text}}
+\index{about\-Text@{about\-Text}!SwordModule@{Sword\-Module}}
+\subsubsection[{about\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) about\-Text 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_afc5e2e8c8cb92b65c1c6787b4ea150b9}
+this might be R\-T\-F string \hypertarget{interface_sword_module_aa7102d452cc68b75ef5ee5a3f7fb2467}{\index{Sword\-Module@{Sword\-Module}!aquire\-Module\-Lock@{aquire\-Module\-Lock}}
+\index{aquire\-Module\-Lock@{aquire\-Module\-Lock}!SwordModule@{Sword\-Module}}
+\subsubsection[{aquire\-Module\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) aquire\-Module\-Lock 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_aa7102d452cc68b75ef5ee5a3f7fb2467}
+\hypertarget{interface_sword_module_acadfeed535fa998343149e7bd33bb9d3}{\index{Sword\-Module@{Sword\-Module}!attribute\-Value\-For\-Parsed\-Link\-Data\-:@{attribute\-Value\-For\-Parsed\-Link\-Data\-:}}
+\index{attribute\-Value\-For\-Parsed\-Link\-Data\-:@{attribute\-Value\-For\-Parsed\-Link\-Data\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{attribute\-Value\-For\-Parsed\-Link\-Data\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) attribute\-Value\-For\-Parsed\-Link\-Data\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Dictionary $\ast$)}]{data}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_acadfeed535fa998343149e7bd33bb9d3}
+returns attribute values from the engine for notes, cross-\/refs and such for the given link type \begin{DoxyReturn}{Returns}
+N\-S\-Array for references 
+
+N\-S\-String for text data 
+\end{DoxyReturn}
+\hypertarget{interface_sword_module_a2041c1236ea280b9764c69a5cc66fed5}{\index{Sword\-Module@{Sword\-Module}!config\-Entry\-For\-Key\-:@{config\-Entry\-For\-Key\-:}}
+\index{config\-Entry\-For\-Key\-:@{config\-Entry\-For\-Key\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{config\-Entry\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) config\-Entry\-For\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{entry\-Key}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a2041c1236ea280b9764c69a5cc66fed5}
+wrapper around get\-Config\-Entry() \hypertarget{interface_sword_module_a23ece6525a46de8cd6ecea85d509c137}{\index{Sword\-Module@{Sword\-Module}!create\-Index@{create\-Index}}
+\index{create\-Index@{create\-Index}!SwordModule@{Sword\-Module}}
+\subsubsection[{create\-Index}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-Index 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a23ece6525a46de8cd6ecea85d509c137}
+
+
+Provided by category \hyperlink{category_sword_module_07_searching_08_a23ece6525a46de8cd6ecea85d509c137}{Sword\-Module(\-Searching)}.
+
+\hypertarget{interface_sword_module_a5b9ad4c4b82328c7da6a5d34f07e2691}{\index{Sword\-Module@{Sword\-Module}!create\-Index\-Threaded\-With\-Delegate\-:@{create\-Index\-Threaded\-With\-Delegate\-:}}
+\index{create\-Index\-Threaded\-With\-Delegate\-:@{create\-Index\-Threaded\-With\-Delegate\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{create\-Index\-Threaded\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) create\-Index\-Threaded\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a5b9ad4c4b82328c7da6a5d34f07e2691}
+
+
+Provided by category \hyperlink{category_sword_module_07_searching_08_a5b9ad4c4b82328c7da6a5d34f07e2691}{Sword\-Module(\-Searching)}.
+
+\hypertarget{interface_sword_module_af4a37ce3ea3b890960a6449e74ca43a4}{\index{Sword\-Module@{Sword\-Module}!descr@{descr}}
+\index{descr@{descr}!SwordModule@{Sword\-Module}}
+\subsubsection[{descr}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) descr 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_af4a37ce3ea3b890960a6449e74ca43a4}
+\hypertarget{interface_sword_module_abee894396dd4355fb4d0a1c613f028c5}{\index{Sword\-Module@{Sword\-Module}!entry\-Count@{entry\-Count}}
+\index{entry\-Count@{entry\-Count}!SwordModule@{Sword\-Module}}
+\subsubsection[{entry\-Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (long) entry\-Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_abee894396dd4355fb4d0a1c613f028c5}
+number of entries abstract method, should be overriden by subclasses 
+
+Reimplemented from \hyperlink{protocol_sword_module_access-p_abee894396dd4355fb4d0a1c613f028c5}{$<$\-Sword\-Module\-Access$>$}.
+
+\hypertarget{interface_sword_module_a858c65e7444a8af0882d553c434506b0}{\index{Sword\-Module@{Sword\-Module}!error@{error}}
+\index{error@{error}!SwordModule@{Sword\-Module}}
+\subsubsection[{error}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) error 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a858c65e7444a8af0882d553c434506b0}
+\hypertarget{interface_sword_module_a32d626626eee0bc4ade146973f6abb1c}{\index{Sword\-Module@{Sword\-Module}!finalize@{finalize}}
+\index{finalize@{finalize}!SwordModule@{Sword\-Module}}
+\subsubsection[{finalize}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) finalize 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a32d626626eee0bc4ade146973f6abb1c}
+gc will cleanup \hypertarget{interface_sword_module_adbc45ab9c8faf2c956ac6be354918831}{\index{Sword\-Module@{Sword\-Module}!full\-About\-Text@{full\-About\-Text}}
+\index{full\-About\-Text@{full\-About\-Text}!SwordModule@{Sword\-Module}}
+\subsubsection[{full\-About\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Attributed\-String $\ast$) full\-About\-Text 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_adbc45ab9c8faf2c956ac6be354918831}
+\hypertarget{interface_sword_module_a396c0303270a24b89836a65cd0c5b84a}{\index{Sword\-Module@{Sword\-Module}!has\-Feature\-:@{has\-Feature\-:}}
+\index{has\-Feature\-:@{has\-Feature\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{has\-Feature\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) has\-Feature\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{feature}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a396c0303270a24b89836a65cd0c5b84a}
+\hypertarget{interface_sword_module_a726d42d0c52fe9804e02eba26ce34544}{\index{Sword\-Module@{Sword\-Module}!has\-Index@{has\-Index}}
+\index{has\-Index@{has\-Index}!SwordModule@{Sword\-Module}}
+\subsubsection[{has\-Index}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) has\-Index 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a726d42d0c52fe9804e02eba26ce34544}
+
+
+Provided by category \hyperlink{category_sword_module_07_searching_08_a726d42d0c52fe9804e02eba26ce34544}{Sword\-Module(\-Searching)}.
+
+\hypertarget{interface_sword_module_ac27de8546781130724ef5aed32a4ec13}{\index{Sword\-Module@{Sword\-Module}!index\-Contents\-Into\-Index\-:@{index\-Contents\-Into\-Index\-:}}
+\index{index\-Contents\-Into\-Index\-:@{index\-Contents\-Into\-Index\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{index\-Contents\-Into\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) index\-Contents\-Into\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Indexer} $\ast$)}]{indexer}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_ac27de8546781130724ef5aed32a4ec13}
+abstract method 
+
+Reimplemented in \hyperlink{interface_sword_dictionary_ac27de8546781130724ef5aed32a4ec13}{Sword\-Dictionary}.
+
+
+
+Provided by category \hyperlink{category_sword_module_07_searching_08_ac27de8546781130724ef5aed32a4ec13}{Sword\-Module(\-Searching)}.
+
+\hypertarget{interface_sword_module_a59d9654a2481d74c2f4d08c15a4910ce}{\index{Sword\-Module@{Sword\-Module}!init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}}
+\index{init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{init\-With\-Name\-:sword\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Name}
+\item[{swordManager:({\bf Sword\-Manager} $\ast$)}]{a\-Manager}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a59d9654a2481d74c2f4d08c15a4910ce}
+
+
+Reimplemented in \hyperlink{interface_sword_book_a59d9654a2481d74c2f4d08c15a4910ce}{Sword\-Book}, and \hyperlink{interface_sword_dictionary_a59d9654a2481d74c2f4d08c15a4910ce}{Sword\-Dictionary}.
+
+\hypertarget{interface_sword_module_adc1929ecf46112716a28547541474e72}{\index{Sword\-Module@{Sword\-Module}!is\-Editable@{is\-Editable}}
+\index{is\-Editable@{is\-Editable}!SwordModule@{Sword\-Module}}
+\subsubsection[{is\-Editable}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Editable 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_adc1929ecf46112716a28547541474e72}
+\hypertarget{interface_sword_module_acf7e3b99952dabff9846958618582472}{\index{Sword\-Module@{Sword\-Module}!is\-Encrypted@{is\-Encrypted}}
+\index{is\-Encrypted@{is\-Encrypted}!SwordModule@{Sword\-Module}}
+\subsubsection[{is\-Encrypted}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Encrypted 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_acf7e3b99952dabff9846958618582472}
+\hypertarget{interface_sword_module_a4951c13cfe4c35669ec31259e4967e7c}{\index{Sword\-Module@{Sword\-Module}!is\-Locked@{is\-Locked}}
+\index{is\-Locked@{is\-Locked}!SwordModule@{Sword\-Module}}
+\subsubsection[{is\-Locked}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Locked 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a4951c13cfe4c35669ec31259e4967e7c}
+is module locked/has cipherkey config entry but cipherkey entry is empty \hypertarget{interface_sword_module_a62a3b2a99468ef6bc2aeda272af20400}{\index{Sword\-Module@{Sword\-Module}!is\-R\-T\-L@{is\-R\-T\-L}}
+\index{is\-R\-T\-L@{is\-R\-T\-L}!SwordModule@{Sword\-Module}}
+\subsubsection[{is\-R\-T\-L}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-R\-T\-L 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a62a3b2a99468ef6bc2aeda272af20400}
+\hypertarget{interface_sword_module_a1b924225e17c0d4a682211415b52920f}{\index{Sword\-Module@{Sword\-Module}!is\-Unicode@{is\-Unicode}}
+\index{is\-Unicode@{is\-Unicode}!SwordModule@{Sword\-Module}}
+\subsubsection[{is\-Unicode}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Unicode 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a1b924225e17c0d4a682211415b52920f}
+\hypertarget{interface_sword_module_aad136d689eb81aac088afbf4c5e150aa}{\index{Sword\-Module@{Sword\-Module}!lang@{lang}}
+\index{lang@{lang}!SwordModule@{Sword\-Module}}
+\subsubsection[{lang}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) lang 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_aad136d689eb81aac088afbf4c5e150aa}
+\hypertarget{interface_sword_module_a7871356ed4013fe0e3e97a1d8a6420a6}{\index{Sword\-Module@{Sword\-Module}!min\-Version@{min\-Version}}
+\index{min\-Version@{min\-Version}!SwordModule@{Sword\-Module}}
+\subsubsection[{min\-Version}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) min\-Version 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a7871356ed4013fe0e3e97a1d8a6420a6}
+\hypertarget{interface_sword_module_a27dfdaad96c169472cfdcb19216cf0cb}{\index{Sword\-Module@{Sword\-Module}!module\-Type\-For\-Module\-Type\-String\-:@{module\-Type\-For\-Module\-Type\-String\-:}}
+\index{module\-Type\-For\-Module\-Type\-String\-:@{module\-Type\-For\-Module\-Type\-String\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{module\-Type\-For\-Module\-Type\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Module\-Type}) module\-Type\-For\-Module\-Type\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{type\-Str}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a27dfdaad96c169472cfdcb19216cf0cb}
+
+
+maps type string to Module\-Type enum 
+
+maps type string to Module\-Type enum 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type\-Str} & type String as in -\/type(\hyperlink{interface_sword_module}{Sword\-Module}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type according to Module\-Type enum
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em type\-Str} & type String as in -\/module\-Type(\hyperlink{interface_sword_module}{Sword\-Module}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type according to Module\-Type enum 
+\end{DoxyReturn}
+\hypertarget{interface_sword_module_aea71bd5671add694c914b764806ecb77}{\index{Sword\-Module@{Sword\-Module}!release\-Module\-Lock@{release\-Module\-Lock}}
+\index{release\-Module\-Lock@{release\-Module\-Lock}!SwordModule@{Sword\-Module}}
+\subsubsection[{release\-Module\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) release\-Module\-Lock 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_aea71bd5671add694c914b764806ecb77}
+\hypertarget{interface_sword_module_a3f1c8e8237f4055fdc0b431d83bd35e0}{\index{Sword\-Module@{Sword\-Module}!rendered\-Text\-Entries\-For\-Ref\-:@{rendered\-Text\-Entries\-For\-Ref\-:}}
+\index{rendered\-Text\-Entries\-For\-Ref\-:@{rendered\-Text\-Entries\-For\-Ref\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{rendered\-Text\-Entries\-For\-Ref\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) rendered\-Text\-Entries\-For\-Ref\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{reference}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a3f1c8e8237f4055fdc0b431d83bd35e0}
+abstract method, override in subclass This method generates H\-T\-M\-L string for a given reference. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & bible reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of \hyperlink{interface_sword_module_text_entry}{Sword\-Module\-Text\-Entry} instances 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{protocol_sword_module_access-p_a3f1c8e8237f4055fdc0b431d83bd35e0}{$<$\-Sword\-Module\-Access$>$}.
+
+\hypertarget{interface_sword_module_a0394b3637e7dae37f772dae419f1d552}{\index{Sword\-Module@{Sword\-Module}!set\-Position\-From\-Key\-String\-:@{set\-Position\-From\-Key\-String\-:}}
+\index{set\-Position\-From\-Key\-String\-:@{set\-Position\-From\-Key\-String\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{set\-Position\-From\-Key\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Position\-From\-Key\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Key\-String}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a0394b3637e7dae37f772dae419f1d552}
+\hypertarget{interface_sword_module_a82a57b6dfd02a6ed95d0bda509ae757b}{\index{Sword\-Module@{Sword\-Module}!set\-Position\-From\-Verse\-Key\-:@{set\-Position\-From\-Verse\-Key\-:}}
+\index{set\-Position\-From\-Verse\-Key\-:@{set\-Position\-From\-Verse\-Key\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{set\-Position\-From\-Verse\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Position\-From\-Verse\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Verse\-Key} $\ast$)}]{a\-Verse\-Key}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a82a57b6dfd02a6ed95d0bda509ae757b}
+\hypertarget{interface_sword_module_a7f841144cca13041d14f64f8fc2e14f2}{\index{Sword\-Module@{Sword\-Module}!stripped\-Text\-Entries\-For\-Ref\-:@{stripped\-Text\-Entries\-For\-Ref\-:}}
+\index{stripped\-Text\-Entries\-For\-Ref\-:@{stripped\-Text\-Entries\-For\-Ref\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{stripped\-Text\-Entries\-For\-Ref\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) stripped\-Text\-Entries\-For\-Ref\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{reference}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a7f841144cca13041d14f64f8fc2e14f2}
+abstract method, override in subclass This method generates stripped text string for a given reference. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reference} & bible reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of \hyperlink{interface_sword_module_text_entry}{Sword\-Module\-Text\-Entry} instances 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{protocol_sword_module_access-p_a7f841144cca13041d14f64f8fc2e14f2}{$<$\-Sword\-Module\-Access$>$}.
+
+\hypertarget{interface_sword_module_acb8ace921739306c4e8b0ac96cc0b172}{\index{Sword\-Module@{Sword\-Module}!text\-Entry\-For\-Key\-:text\-Type\-:@{text\-Entry\-For\-Key\-:text\-Type\-:}}
+\index{text\-Entry\-For\-Key\-:text\-Type\-:@{text\-Entry\-For\-Key\-:text\-Type\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{text\-Entry\-For\-Key\-:text\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Module\-Text\-Entry} $\ast$) text\-Entry\-For\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Key}
+\item[{textType:({\bf Text\-Pull\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_acb8ace921739306c4e8b0ac96cc0b172}
+return a dictionary with key and text type can be\-: \char`\"{}rendered\char`\"{} or \char`\"{}stripped\char`\"{} \hypertarget{interface_sword_module_a12da8ac9bf5e99bead6882dbddf4eafb}{\index{Sword\-Module@{Sword\-Module}!type\-String@{type\-String}}
+\index{type\-String@{type\-String}!SwordModule@{Sword\-Module}}
+\subsubsection[{type\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) type\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a12da8ac9bf5e99bead6882dbddf4eafb}
+\hypertarget{interface_sword_module_a1ce0d4f7681d6073c3e32cd97bedfe1c}{\index{Sword\-Module@{Sword\-Module}!unlock\-:@{unlock\-:}}
+\index{unlock\-:@{unlock\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{unlock\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) unlock\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{unlock\-Key}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a1ce0d4f7681d6073c3e32cd97bedfe1c}
+\hypertarget{interface_sword_module_a63345e3292386bca3dea93ea966e577a}{\index{Sword\-Module@{Sword\-Module}!versification@{versification}}
+\index{versification@{versification}!SwordModule@{Sword\-Module}}
+\subsubsection[{versification}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) versification 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a63345e3292386bca3dea93ea966e577a}
+versification scheme in config \hypertarget{interface_sword_module_a806fdedd0e4bb74dd72852de6e4b25e2}{\index{Sword\-Module@{Sword\-Module}!version@{version}}
+\index{version@{version}!SwordModule@{Sword\-Module}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) version 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_a806fdedd0e4bb74dd72852de6e4b25e2}
+\hypertarget{interface_sword_module_af12cda3e69ebf7baffa24da55fdf82d1}{\index{Sword\-Module@{Sword\-Module}!write\-Entry\-:@{write\-Entry\-:}}
+\index{write\-Entry\-:@{write\-Entry\-:}!SwordModule@{Sword\-Module}}
+\subsubsection[{write\-Entry\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) write\-Entry\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module\-Text\-Entry} $\ast$)}]{an\-Entry}
+\end{DoxyParamCaption}
+}}\label{interface_sword_module_af12cda3e69ebf7baffa24da55fdf82d1}
+subclasses need to implement this 
+
+Reimplemented from \hyperlink{protocol_sword_module_access-p_af12cda3e69ebf7baffa24da55fdf82d1}{$<$\-Sword\-Module\-Access$>$}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_sword_module_aac92b28c82e8e90e1f41471b3f3d65dc}{\index{Sword\-Module@{Sword\-Module}!config\-Entries@{config\-Entries}}
+\index{config\-Entries@{config\-Entries}!SwordModule@{Sword\-Module}}
+\subsubsection[{config\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) config\-Entries\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_sword_module_aac92b28c82e8e90e1f41471b3f3d65dc}
+\hypertarget{interface_sword_module_a8d9332fcd23523b1e2520b8765577423}{\index{Sword\-Module@{Sword\-Module}!delegate@{delegate}}
+\index{delegate@{delegate}!SwordModule@{Sword\-Module}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_sword_module_a8d9332fcd23523b1e2520b8765577423}
+yes, we have a delegate to report any action to 
+
+\subsection{Property Documentation}
+\hypertarget{interface_sword_module_a115e80b1eaefdb1701dfa8f108df190c}{\index{Sword\-Module@{Sword\-Module}!index\-Lock@{index\-Lock}}
+\index{index\-Lock@{index\-Lock}!SwordModule@{Sword\-Module}}
+\subsubsection[{index\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Lock $\ast$) index\-Lock\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_module_a115e80b1eaefdb1701dfa8f108df190c}
+\hypertarget{interface_sword_module_aa2dfd95c39168ffc06d703d959384b2c}{\index{Sword\-Module@{Sword\-Module}!module\-Lock@{module\-Lock}}
+\index{module\-Lock@{module\-Lock}!SwordModule@{Sword\-Module}}
+\subsubsection[{module\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Recursive\-Lock $\ast$) module\-Lock\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_module_aa2dfd95c39168ffc06d703d959384b2c}
+\hypertarget{interface_sword_module_afc8ccc6676addc3b49a494b2bf969c68}{\index{Sword\-Module@{Sword\-Module}!name@{name}}
+\index{name@{name}!SwordModule@{Sword\-Module}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_module_afc8ccc6676addc3b49a494b2bf969c68}
+we store the name separately \hypertarget{interface_sword_module_a6e27f49150e9a14580fb313cc2777e00}{\index{Sword\-Module@{Sword\-Module}!status@{status}}
+\index{status@{status}!SwordModule@{Sword\-Module}}
+\subsubsection[{status}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) status\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_sword_module_a6e27f49150e9a14580fb313cc2777e00}
+\hypertarget{interface_sword_module_a387446958708000f3a5ea20ff5f340db}{\index{Sword\-Module@{Sword\-Module}!sw\-Manager@{sw\-Manager}}
+\index{sw\-Manager@{sw\-Manager}!SwordModule@{Sword\-Module}}
+\subsubsection[{sw\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Manager} $\ast$) sw\-Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_module_a387446958708000f3a5ea20ff5f340db}
+\hypertarget{interface_sword_module_a69cc06aed2c7e6cbe7b4c09b62e4a57d}{\index{Sword\-Module@{Sword\-Module}!type@{type}}
+\index{type@{type}!SwordModule@{Sword\-Module}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Type}) type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_sword_module_a69cc06aed2c7e6cbe7b4c09b62e4a57d}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_module_8h}{Sword\-Module.\-h}\item 
+src/\-Sword/\hyperlink{_sword_module_8mm}{Sword\-Module.\-mm}\end{DoxyCompactItemize}

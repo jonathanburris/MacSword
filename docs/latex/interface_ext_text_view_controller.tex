@@ -1,0 +1,247 @@
+\hypertarget{interface_ext_text_view_controller}{\section{Ext\-Text\-View\-Controller Class Reference}
+\label{interface_ext_text_view_controller}\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Ext\-Text\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Ext\-Text\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_ext_text_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_ext_text_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(\hyperlink{interface_m_b_text_view}{M\-B\-Text\-View} $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_ae377a6dfd690bdd8e5662452e8911c19}{text\-View}
+\item 
+(\hyperlink{interface_mouse_tracking_scroll_view}{Mouse\-Tracking\-Scroll\-View} $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_a951b021a8f12c410233c7d5848b505b2}{scroll\-View}
+\item 
+(N\-S\-Menu $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_a14434144f47d2ff967d87e42abbff1d8}{menu\-For\-Event\-:}
+\item 
+(N\-S\-Range) -\/ \hyperlink{interface_ext_text_view_controller_aa29a23961e9c80dcb747e64d4cc8f127}{range\-Of\-First\-Line\-With\-Line\-Rect\-:}
+\item 
+(N\-S\-Range) -\/ \hyperlink{interface_ext_text_view_controller_aedf800615061dc6ac66fa0f5a92b19a5}{range\-Of\-Line\-At\-Index\-:}
+\item 
+(N\-S\-Rect) -\/ \hyperlink{interface_ext_text_view_controller_a31efcf5d0da9610defacf8f439ea8abe}{rect\-Of\-First\-Line}
+\item 
+(N\-S\-Rect) -\/ \hyperlink{interface_ext_text_view_controller_ab96b54468ec5e93d6576b2d25b33ac67}{rect\-Of\-Last\-Line}
+\item 
+(N\-S\-Range) -\/ \hyperlink{interface_ext_text_view_controller_ae6474f1924eb4bda0c518d9974c76f0e}{range\-Of\-Visible\-Text}
+\item 
+(N\-S\-Range) -\/ \hyperlink{interface_ext_text_view_controller_a4937bd2e2e0f7f11ad529863d7d50db5}{range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:}
+\item 
+(N\-S\-Rect) -\/ \hyperlink{interface_ext_text_view_controller_ae4d5de957aa10b45f4171eed7e4e9439}{rect\-For\-Text\-Range\-:}
+\item 
+(N\-S\-Rect) -\/ \hyperlink{interface_ext_text_view_controller_aa827023a2a76d2a1db4cfd361a3993d9}{rect\-For\-Attribute\-Name\-:attribute\-Value\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_ae6856868f469f0349b5d6497396479cc}{selected\-String}
+\item 
+(N\-S\-Dictionary $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_a2ae591a3effa0d9455b8149647d65852}{data\-For\-Link\-:}
+\item 
+(void) -\/ \hyperlink{interface_ext_text_view_controller_ac6a23f2001dbb833ecf793fbf9a07301}{set\-Attributed\-String\-:}
+\item 
+(void) -\/ \hyperlink{interface_ext_text_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}{mouse\-Entered\-:}
+\item 
+(void) -\/ \hyperlink{interface_ext_text_view_controller_ac229af7b37d54405d9564790876bb02d}{mouse\-Exited\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_ext_text_view_controller_aa329cd1f67204aa716529d71aca65af5}{text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_ext_text_view_controller_a8c695e12b6b541a2db6649c31f02d89a}{text\-View\-:clicked\-On\-Link\-:at\-Index\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet \hyperlink{interface_m_b_text_view}{M\-B\-Text\-View} $\ast$ \hyperlink{interface_ext_text_view_controller_abfa30436fff57bf39e679f9046d4b9bd}{text\-View}
+\item 
+I\-B\-Outlet \hyperlink{interface_mouse_tracking_scroll_view}{Mouse\-Tracking\-Scroll\-View} $\ast$ \hyperlink{interface_ext_text_view_controller_a85923391d7476cb50037cb7e79eb71de}{scroll\-View}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_ext_text_view_controller_a2ae591a3effa0d9455b8149647d65852}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!data\-For\-Link\-:@{data\-For\-Link\-:}}
+\index{data\-For\-Link\-:@{data\-For\-Link\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{data\-For\-Link\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Dictionary $\ast$) data\-For\-Link\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-U\-R\-L $\ast$)}]{a\-U\-R\-L}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a2ae591a3effa0d9455b8149647d65852}
+\hypertarget{interface_ext_text_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a31987d71b58e0520588676a4f6896d2c}
+\hypertarget{interface_ext_text_view_controller_a14434144f47d2ff967d87e42abbff1d8}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!menu\-For\-Event\-:@{menu\-For\-Event\-:}}
+\index{menu\-For\-Event\-:@{menu\-For\-Event\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{menu\-For\-Event\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Menu $\ast$) menu\-For\-Event\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Event $\ast$)}]{event}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a14434144f47d2ff967d87e42abbff1d8}
+\hypertarget{interface_ext_text_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!mouse\-Entered\-:@{mouse\-Entered\-:}}
+\index{mouse\-Entered\-:@{mouse\-Entered\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{mouse\-Entered\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) mouse\-Entered\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{the\-View}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}
+
+
+Reimplemented from \hyperlink{protocol_mouse_tracking-p_a13a1d8a374c5a945bfa34dd3058ef6ab}{$<$\-Mouse\-Tracking$>$}.
+
+\hypertarget{interface_ext_text_view_controller_ac229af7b37d54405d9564790876bb02d}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!mouse\-Exited\-:@{mouse\-Exited\-:}}
+\index{mouse\-Exited\-:@{mouse\-Exited\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{mouse\-Exited\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) mouse\-Exited\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{the\-View}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ac229af7b37d54405d9564790876bb02d}
+
+
+Reimplemented from \hyperlink{protocol_mouse_tracking-p_ac229af7b37d54405d9564790876bb02d}{$<$\-Mouse\-Tracking$>$}.
+
+\hypertarget{interface_ext_text_view_controller_aa29a23961e9c80dcb747e64d4cc8f127}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!range\-Of\-First\-Line\-With\-Line\-Rect\-:@{range\-Of\-First\-Line\-With\-Line\-Rect\-:}}
+\index{range\-Of\-First\-Line\-With\-Line\-Rect\-:@{range\-Of\-First\-Line\-With\-Line\-Rect\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{range\-Of\-First\-Line\-With\-Line\-Rect\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Range) range\-Of\-First\-Line\-With\-Line\-Rect\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Rect $\ast$)}]{line\-Rect}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_aa29a23961e9c80dcb747e64d4cc8f127}
+Delivers the range of the first visible line in the textview. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em line\-Rect} & the rect of that first line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the range of first line 
+\end{DoxyReturn}
+\hypertarget{interface_ext_text_view_controller_aedf800615061dc6ac66fa0f5a92b19a5}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!range\-Of\-Line\-At\-Index\-:@{range\-Of\-Line\-At\-Index\-:}}
+\index{range\-Of\-Line\-At\-Index\-:@{range\-Of\-Line\-At\-Index\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{range\-Of\-Line\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Range) range\-Of\-Line\-At\-Index\-: 
+\begin{DoxyParamCaption}
+\item[{(long)}]{index}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_aedf800615061dc6ac66fa0f5a92b19a5}
+Delivers the range of the line at the given character index location 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em index} & location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the range of line 
+\end{DoxyReturn}
+\hypertarget{interface_ext_text_view_controller_a4937bd2e2e0f7f11ad529863d7d50db5}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:@{range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:}}
+\index{range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:@{range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{range\-Of\-Text\-Token\-:last\-Found\-:direction\-Right\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Range) range\-Of\-Text\-Token\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{token}
+\item[{lastFound:(N\-S\-Range)}]{last\-Found\-Range}
+\item[{directionRight:(B\-O\-O\-L)}]{right}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a4937bd2e2e0f7f11ad529863d7d50db5}
+\hypertarget{interface_ext_text_view_controller_ae6474f1924eb4bda0c518d9974c76f0e}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!range\-Of\-Visible\-Text@{range\-Of\-Visible\-Text}}
+\index{range\-Of\-Visible\-Text@{range\-Of\-Visible\-Text}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{range\-Of\-Visible\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Range) range\-Of\-Visible\-Text 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ae6474f1924eb4bda0c518d9974c76f0e}
+Delivers the range of the visible text in textview. \begin{DoxyReturn}{Returns}
+the range of visible text 
+\end{DoxyReturn}
+\hypertarget{interface_ext_text_view_controller_aa827023a2a76d2a1db4cfd361a3993d9}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!rect\-For\-Attribute\-Name\-:attribute\-Value\-:@{rect\-For\-Attribute\-Name\-:attribute\-Value\-:}}
+\index{rect\-For\-Attribute\-Name\-:attribute\-Value\-:@{rect\-For\-Attribute\-Name\-:attribute\-Value\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{rect\-For\-Attribute\-Name\-:attribute\-Value\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) rect\-For\-Attribute\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{attr\-Name}
+\item[{attributeValue:(id)}]{attr\-Value}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_aa827023a2a76d2a1db4cfd361a3993d9}
+tries to find the given attribute value if not found, ret.\-origin.\-x == N\-S\-Not\-Found \hypertarget{interface_ext_text_view_controller_ae4d5de957aa10b45f4171eed7e4e9439}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!rect\-For\-Text\-Range\-:@{rect\-For\-Text\-Range\-:}}
+\index{rect\-For\-Text\-Range\-:@{rect\-For\-Text\-Range\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{rect\-For\-Text\-Range\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) rect\-For\-Text\-Range\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Range)}]{range}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ae4d5de957aa10b45f4171eed7e4e9439}
+\hypertarget{interface_ext_text_view_controller_a31efcf5d0da9610defacf8f439ea8abe}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!rect\-Of\-First\-Line@{rect\-Of\-First\-Line}}
+\index{rect\-Of\-First\-Line@{rect\-Of\-First\-Line}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{rect\-Of\-First\-Line}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) rect\-Of\-First\-Line 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a31efcf5d0da9610defacf8f439ea8abe}
+\hypertarget{interface_ext_text_view_controller_ab96b54468ec5e93d6576b2d25b33ac67}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!rect\-Of\-Last\-Line@{rect\-Of\-Last\-Line}}
+\index{rect\-Of\-Last\-Line@{rect\-Of\-Last\-Line}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{rect\-Of\-Last\-Line}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) rect\-Of\-Last\-Line 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ab96b54468ec5e93d6576b2d25b33ac67}
+\hypertarget{interface_ext_text_view_controller_a951b021a8f12c410233c7d5848b505b2}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!scroll\-View@{scroll\-View}}
+\index{scroll\-View@{scroll\-View}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{scroll\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Mouse\-Tracking\-Scroll\-View} $\ast$) scroll\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a951b021a8f12c410233c7d5848b505b2}
+\hypertarget{interface_ext_text_view_controller_ae6856868f469f0349b5d6497396479cc}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!selected\-String@{selected\-String}}
+\index{selected\-String@{selected\-String}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{selected\-String}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) selected\-String 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ae6856868f469f0349b5d6497396479cc}
+\hypertarget{interface_ext_text_view_controller_ac6a23f2001dbb833ecf793fbf9a07301}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!set\-Attributed\-String\-:@{set\-Attributed\-String\-:}}
+\index{set\-Attributed\-String\-:@{set\-Attributed\-String\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{set\-Attributed\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Attributed\-String\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Attributed\-String $\ast$)}]{a\-String}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ac6a23f2001dbb833ecf793fbf9a07301}
+\hypertarget{interface_ext_text_view_controller_ae377a6dfd690bdd8e5662452e8911c19}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!text\-View@{text\-View}}
+\index{text\-View@{text\-View}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{text\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf M\-B\-Text\-View} $\ast$) text\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_ae377a6dfd690bdd8e5662452e8911c19}
+\hypertarget{interface_ext_text_view_controller_a8c695e12b6b541a2db6649c31f02d89a}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!text\-View\-:clicked\-On\-Link\-:at\-Index\-:@{text\-View\-:clicked\-On\-Link\-:at\-Index\-:}}
+\index{text\-View\-:clicked\-On\-Link\-:at\-Index\-:@{text\-View\-:clicked\-On\-Link\-:at\-Index\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{text\-View\-:clicked\-On\-Link\-:at\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) text\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Text\-View $\ast$)}]{a\-Text\-View}
+\item[{clickedOnLink:(id)}]{link}
+\item[{atIndex:(N\-S\-U\-Integer)}]{char\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_a8c695e12b6b541a2db6649c31f02d89a}
+\hypertarget{interface_ext_text_view_controller_aa329cd1f67204aa716529d71aca65af5}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:@{text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:}}
+\index{text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:@{text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{text\-View\-:will\-Display\-Tool\-Tip\-:for\-Character\-At\-Index\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) text\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Text\-View $\ast$)}]{text\-View}
+\item[{willDisplayToolTip:(N\-S\-String $\ast$)}]{tooltip}
+\item[{forCharacterAtIndex:(N\-S\-U\-Integer)}]{character\-Index}
+\end{DoxyParamCaption}
+}}\label{interface_ext_text_view_controller_aa329cd1f67204aa716529d71aca65af5}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_ext_text_view_controller_a85923391d7476cb50037cb7e79eb71de}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!scroll\-View@{scroll\-View}}
+\index{scroll\-View@{scroll\-View}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{scroll\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet {\bf Mouse\-Tracking\-Scroll\-View}$\ast$) scroll\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_ext_text_view_controller_a85923391d7476cb50037cb7e79eb71de}
+\hypertarget{interface_ext_text_view_controller_abfa30436fff57bf39e679f9046d4b9bd}{\index{Ext\-Text\-View\-Controller@{Ext\-Text\-View\-Controller}!text\-View@{text\-View}}
+\index{text\-View@{text\-View}!ExtTextViewController@{Ext\-Text\-View\-Controller}}
+\subsubsection[{text\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet {\bf M\-B\-Text\-View}$\ast$) text\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_ext_text_view_controller_abfa30436fff57bf39e679f9046d4b9bd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_ext_text_view_controller_8h}{Ext\-Text\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_ext_text_view_controller_8m}{Ext\-Text\-View\-Controller.\-m}\end{DoxyCompactItemize}

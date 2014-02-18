@@ -1,0 +1,255 @@
+\hypertarget{interface_m_b_preference_controller}{\section{M\-B\-Preference\-Controller Class Reference}
+\label{interface_m_b_preference_controller}\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}}
+}
+
+
+{\ttfamily \#import $<$M\-B\-Preference\-Controller.\-h$>$}
+
+Inheritance diagram for M\-B\-Preference\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_m_b_preference_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_m_b_preference_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(Web\-Preferences $\ast$) -\/ \hyperlink{interface_m_b_preference_controller_ab3f268e47b895d33f1af584d308f2061}{default\-Web\-Preferences}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_m_b_preference_controller_a50822a6b4a4bb62947fc656fb343c23e}{module\-Names\-Of\-Type\-Bible}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_m_b_preference_controller_a9c6a2cd9b3428d154f9880a52d87a98f}{module\-Names\-Of\-Type\-Dictionary}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_m_b_preference_controller_a21847f01545eded49b9bd62c7f7fd7c1}{module\-Names\-Of\-Type\-Strongs\-Greek}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_m_b_preference_controller_ac965b23e462739e1a4e67d9d2fcca67f}{module\-Names\-Of\-Type\-Strongs\-Hebrew}
+\item 
+(void) -\/ \hyperlink{interface_m_b_preference_controller_a5ffece74583930f9d76d8f1e9caf4514}{begin\-Sheet\-For\-Window\-:}
+\begin{DoxyCompactList}\small\item\em bring up this sheet. if doc\-Window is nil this will be an Window \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_m_b_preference_controller_ad73bf69ade5214ad7f61681509587167}{end\-Sheet}
+\begin{DoxyCompactList}\small\item\em end this sheet \end{DoxyCompactList}\item 
+(int) -\/ \hyperlink{interface_m_b_preference_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}{sheet\-Return\-Code}
+\begin{DoxyCompactList}\small\item\em the sheet return code \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_m_b_preference_controller_aee63616e91e1e8e9c103fbbdbd2b225e}{sheet\-Did\-End\-:return\-Code\-:context\-Info\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_m_b_preference_controller_a55957e9828dfff87f60ce865dc586901}{toggle\-Background\-Indexer\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_m_b_preference_controller_afd8c10f9452e99f09b154e338773013b}{open\-Fonts\-Panel\-:}
+\begin{DoxyCompactList}\small\item\em opens the system fonts panel \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_m_b_preference_controller}{M\-B\-Preference\-Controller} $\ast$) + \hyperlink{interface_m_b_preference_controller_abde398469d7204adb7ed0e3f49e8c4ad}{default\-Prefs\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_m_b_preference_controller_ae906d0d2be2867aebc1dcf8e7236653f}{ok\-Button}
+\item 
+I\-B\-Outlet N\-S\-Tab\-View $\ast$ \hyperlink{interface_m_b_preference_controller_a3d3fc3ece5953879cc1aabe9fcf06ce6}{prefs\-Tab\-View}
+\item 
+I\-B\-Outlet N\-S\-Font\-Manager $\ast$ \hyperlink{interface_m_b_preference_controller_abd6e307159416829da39ef1943265515}{font\-Manager}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_m_b_preference_controller_a377b44af29a2a46db639dab3bb90905c}{bible\-Font\-Text\-Field}
+\item 
+N\-S\-Font $\ast$ \hyperlink{interface_m_b_preference_controller_a2773dde94ba430ad10a40b6933a792b6}{bible\-Display\-Font}
+\item 
+I\-B\-Outlet N\-S\-View $\ast$ \hyperlink{interface_m_b_preference_controller_a30b10ff27f47464ac2911aca154df50e}{general\-View}
+\item 
+N\-S\-Rect \hyperlink{interface_m_b_preference_controller_a36031b3bf0527296ba978278843898a2}{general\-View\-Rect}
+\item 
+I\-B\-Outlet N\-S\-View $\ast$ \hyperlink{interface_m_b_preference_controller_ad933f68e1fcaa0dac3bc6c7a5e28a136}{bible\-Display\-View}
+\item 
+N\-S\-Rect \hyperlink{interface_m_b_preference_controller_a5628e6feeb9cd57083260c90a2f2bb55}{bible\-Display\-View\-Rect}
+\item 
+int \hyperlink{interface_m_b_preference_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}{sheet\-Return\-Code}
+\item 
+int \hyperlink{interface_m_b_preference_controller_ac21fb19707c332e8bc16a30962348c69}{north\-Margin}
+\item 
+int \hyperlink{interface_m_b_preference_controller_ae6614676d09f14abb00e53687264cf45}{south\-Margin}
+\item 
+int \hyperlink{interface_m_b_preference_controller_aef858cb6cad37704271ab6f404343cbe}{side\-Margin}
+\item 
+int \hyperlink{interface_m_b_preference_controller_acb5386c8297dee6f89eb11511f4d41f3}{top\-Tab\-View\-Margin}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_m_b_preference_controller_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\item 
+N\-S\-Window $\ast$ \hyperlink{interface_m_b_preference_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}{sheet\-Window}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_m_b_preference_controller_a5ffece74583930f9d76d8f1e9caf4514}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!begin\-Sheet\-For\-Window\-:@{begin\-Sheet\-For\-Window\-:}}
+\index{begin\-Sheet\-For\-Window\-:@{begin\-Sheet\-For\-Window\-:}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{begin\-Sheet\-For\-Window\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) begin\-Sheet\-For\-Window\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Window $\ast$)}]{doc\-Window}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a5ffece74583930f9d76d8f1e9caf4514}
+
+
+bring up this sheet. if doc\-Window is nil this will be an Window 
+
+\hypertarget{interface_m_b_preference_controller_abde398469d7204adb7ed0e3f49e8c4ad}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!default\-Prefs\-Controller@{default\-Prefs\-Controller}}
+\index{default\-Prefs\-Controller@{default\-Prefs\-Controller}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{default\-Prefs\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf M\-B\-Preference\-Controller} $\ast$) default\-Prefs\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_abde398469d7204adb7ed0e3f49e8c4ad}
+\hypertarget{interface_m_b_preference_controller_ab3f268e47b895d33f1af584d308f2061}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!default\-Web\-Preferences@{default\-Web\-Preferences}}
+\index{default\-Web\-Preferences@{default\-Web\-Preferences}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{default\-Web\-Preferences}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (Web\-Preferences $\ast$) default\-Web\-Preferences 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_ab3f268e47b895d33f1af584d308f2061}
+returns a copy of the default web preferences \hypertarget{interface_m_b_preference_controller_ad73bf69ade5214ad7f61681509587167}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!end\-Sheet@{end\-Sheet}}
+\index{end\-Sheet@{end\-Sheet}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{end\-Sheet}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\-Sheet 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_ad73bf69ade5214ad7f61681509587167}
+
+
+end this sheet 
+
+\hypertarget{interface_m_b_preference_controller_a31987d71b58e0520588676a4f6896d2c}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a31987d71b58e0520588676a4f6896d2c}
+\hypertarget{interface_m_b_preference_controller_a50822a6b4a4bb62947fc656fb343c23e}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!module\-Names\-Of\-Type\-Bible@{module\-Names\-Of\-Type\-Bible}}
+\index{module\-Names\-Of\-Type\-Bible@{module\-Names\-Of\-Type\-Bible}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{module\-Names\-Of\-Type\-Bible}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Names\-Of\-Type\-Bible 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a50822a6b4a4bb62947fc656fb343c23e}
+\hypertarget{interface_m_b_preference_controller_a9c6a2cd9b3428d154f9880a52d87a98f}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!module\-Names\-Of\-Type\-Dictionary@{module\-Names\-Of\-Type\-Dictionary}}
+\index{module\-Names\-Of\-Type\-Dictionary@{module\-Names\-Of\-Type\-Dictionary}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{module\-Names\-Of\-Type\-Dictionary}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Names\-Of\-Type\-Dictionary 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a9c6a2cd9b3428d154f9880a52d87a98f}
+\hypertarget{interface_m_b_preference_controller_a21847f01545eded49b9bd62c7f7fd7c1}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!module\-Names\-Of\-Type\-Strongs\-Greek@{module\-Names\-Of\-Type\-Strongs\-Greek}}
+\index{module\-Names\-Of\-Type\-Strongs\-Greek@{module\-Names\-Of\-Type\-Strongs\-Greek}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{module\-Names\-Of\-Type\-Strongs\-Greek}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Names\-Of\-Type\-Strongs\-Greek 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a21847f01545eded49b9bd62c7f7fd7c1}
+\hypertarget{interface_m_b_preference_controller_ac965b23e462739e1a4e67d9d2fcca67f}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!module\-Names\-Of\-Type\-Strongs\-Hebrew@{module\-Names\-Of\-Type\-Strongs\-Hebrew}}
+\index{module\-Names\-Of\-Type\-Strongs\-Hebrew@{module\-Names\-Of\-Type\-Strongs\-Hebrew}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{module\-Names\-Of\-Type\-Strongs\-Hebrew}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) module\-Names\-Of\-Type\-Strongs\-Hebrew 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_ac965b23e462739e1a4e67d9d2fcca67f}
+\hypertarget{interface_m_b_preference_controller_afd8c10f9452e99f09b154e338773013b}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!open\-Fonts\-Panel\-:@{open\-Fonts\-Panel\-:}}
+\index{open\-Fonts\-Panel\-:@{open\-Fonts\-Panel\-:}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{open\-Fonts\-Panel\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) open\-Fonts\-Panel\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_afd8c10f9452e99f09b154e338773013b}
+
+
+opens the system fonts panel 
+
+\hypertarget{interface_m_b_preference_controller_aee63616e91e1e8e9c103fbbdbd2b225e}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!sheet\-Did\-End\-:return\-Code\-:context\-Info\-:@{sheet\-Did\-End\-:return\-Code\-:context\-Info\-:}}
+\index{sheet\-Did\-End\-:return\-Code\-:context\-Info\-:@{sheet\-Did\-End\-:return\-Code\-:context\-Info\-:}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{sheet\-Did\-End\-:return\-Code\-:context\-Info\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) sheet\-Did\-End\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Window $\ast$)}]{sheet}
+\item[{returnCode:(int)}]{return\-Code}
+\item[{contextInfo:(void $\ast$)}]{context\-Info}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_aee63616e91e1e8e9c103fbbdbd2b225e}
+\hypertarget{interface_m_b_preference_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!sheet\-Return\-Code@{sheet\-Return\-Code}}
+\index{sheet\-Return\-Code@{sheet\-Return\-Code}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{sheet\-Return\-Code}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) sheet\-Return\-Code 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_ae127de758d9bcd83bc2ddc2d8f4234c6}
+
+
+the sheet return code 
+
+\hypertarget{interface_m_b_preference_controller_a55957e9828dfff87f60ce865dc586901}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!toggle\-Background\-Indexer\-:@{toggle\-Background\-Indexer\-:}}
+\index{toggle\-Background\-Indexer\-:@{toggle\-Background\-Indexer\-:}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{toggle\-Background\-Indexer\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) toggle\-Background\-Indexer\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_m_b_preference_controller_a55957e9828dfff87f60ce865dc586901}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_m_b_preference_controller_a2773dde94ba430ad10a40b6933a792b6}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!bible\-Display\-Font@{bible\-Display\-Font}}
+\index{bible\-Display\-Font@{bible\-Display\-Font}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{bible\-Display\-Font}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Font$\ast$) bible\-Display\-Font\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a2773dde94ba430ad10a40b6933a792b6}
+\hypertarget{interface_m_b_preference_controller_ad933f68e1fcaa0dac3bc6c7a5e28a136}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!bible\-Display\-View@{bible\-Display\-View}}
+\index{bible\-Display\-View@{bible\-Display\-View}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{bible\-Display\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-View$\ast$) bible\-Display\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_ad933f68e1fcaa0dac3bc6c7a5e28a136}
+\hypertarget{interface_m_b_preference_controller_a5628e6feeb9cd57083260c90a2f2bb55}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!bible\-Display\-View\-Rect@{bible\-Display\-View\-Rect}}
+\index{bible\-Display\-View\-Rect@{bible\-Display\-View\-Rect}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{bible\-Display\-View\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) bible\-Display\-View\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a5628e6feeb9cd57083260c90a2f2bb55}
+\hypertarget{interface_m_b_preference_controller_a377b44af29a2a46db639dab3bb90905c}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!bible\-Font\-Text\-Field@{bible\-Font\-Text\-Field}}
+\index{bible\-Font\-Text\-Field@{bible\-Font\-Text\-Field}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{bible\-Font\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) bible\-Font\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a377b44af29a2a46db639dab3bb90905c}
+\hypertarget{interface_m_b_preference_controller_abd6e307159416829da39ef1943265515}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!font\-Manager@{font\-Manager}}
+\index{font\-Manager@{font\-Manager}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{font\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Font\-Manager$\ast$) font\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_abd6e307159416829da39ef1943265515}
+\hypertarget{interface_m_b_preference_controller_a30b10ff27f47464ac2911aca154df50e}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!general\-View@{general\-View}}
+\index{general\-View@{general\-View}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{general\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-View$\ast$) general\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a30b10ff27f47464ac2911aca154df50e}
+\hypertarget{interface_m_b_preference_controller_a36031b3bf0527296ba978278843898a2}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!general\-View\-Rect@{general\-View\-Rect}}
+\index{general\-View\-Rect@{general\-View\-Rect}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{general\-View\-Rect}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Rect) general\-View\-Rect\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a36031b3bf0527296ba978278843898a2}
+\hypertarget{interface_m_b_preference_controller_ac21fb19707c332e8bc16a30962348c69}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!north\-Margin@{north\-Margin}}
+\index{north\-Margin@{north\-Margin}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{north\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) north\-Margin\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_ac21fb19707c332e8bc16a30962348c69}
+\hypertarget{interface_m_b_preference_controller_ae906d0d2be2867aebc1dcf8e7236653f}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!ok\-Button@{ok\-Button}}
+\index{ok\-Button@{ok\-Button}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{ok\-Button}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) ok\-Button\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_ae906d0d2be2867aebc1dcf8e7236653f}
+\hypertarget{interface_m_b_preference_controller_a3d3fc3ece5953879cc1aabe9fcf06ce6}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!prefs\-Tab\-View@{prefs\-Tab\-View}}
+\index{prefs\-Tab\-View@{prefs\-Tab\-View}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{prefs\-Tab\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Tab\-View$\ast$) prefs\-Tab\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_a3d3fc3ece5953879cc1aabe9fcf06ce6}
+\hypertarget{interface_m_b_preference_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!sheet\-Return\-Code@{sheet\-Return\-Code}}
+\index{sheet\-Return\-Code@{sheet\-Return\-Code}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{sheet\-Return\-Code}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) sheet\-Return\-Code\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_acc507979f5b4a4d2b23f6d1a7d6c3fb1}
+\hypertarget{interface_m_b_preference_controller_aef858cb6cad37704271ab6f404343cbe}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!side\-Margin@{side\-Margin}}
+\index{side\-Margin@{side\-Margin}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{side\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) side\-Margin\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_aef858cb6cad37704271ab6f404343cbe}
+\hypertarget{interface_m_b_preference_controller_ae6614676d09f14abb00e53687264cf45}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!south\-Margin@{south\-Margin}}
+\index{south\-Margin@{south\-Margin}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{south\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) south\-Margin\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_ae6614676d09f14abb00e53687264cf45}
+\hypertarget{interface_m_b_preference_controller_acb5386c8297dee6f89eb11511f4d41f3}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!top\-Tab\-View\-Margin@{top\-Tab\-View\-Margin}}
+\index{top\-Tab\-View\-Margin@{top\-Tab\-View\-Margin}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{top\-Tab\-View\-Margin}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) top\-Tab\-View\-Margin\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_m_b_preference_controller_acb5386c8297dee6f89eb11511f4d41f3}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_m_b_preference_controller_a8d9332fcd23523b1e2520b8765577423}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_m_b_preference_controller_a8d9332fcd23523b1e2520b8765577423}
+\hypertarget{interface_m_b_preference_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}{\index{M\-B\-Preference\-Controller@{M\-B\-Preference\-Controller}!sheet\-Window@{sheet\-Window}}
+\index{sheet\-Window@{sheet\-Window}!MBPreferenceController@{M\-B\-Preference\-Controller}}
+\subsubsection[{sheet\-Window}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Window $\ast$) sheet\-Window\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_m_b_preference_controller_a6cc8fe2aebbd3a3092a3efa1a01cacb0}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Preferences/\hyperlink{_m_b_preference_controller_8h}{M\-B\-Preference\-Controller.\-h}\item 
+src/\-Preferences/\hyperlink{_m_b_preference_controller_8m}{M\-B\-Preference\-Controller.\-m}\end{DoxyCompactItemize}

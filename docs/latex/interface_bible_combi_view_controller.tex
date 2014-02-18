@@ -1,0 +1,322 @@
+\hypertarget{interface_bible_combi_view_controller}{\section{Bible\-Combi\-View\-Controller Class Reference}
+\label{interface_bible_combi_view_controller}\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Bible\-Combi\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Bible\-Combi\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.244444cm]{interface_bible_combi_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_bible_combi_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(id) -\/ \hyperlink{interface_bible_combi_view_controller_a8cbbf069a27b2a4be367303e9ebaea10}{init\-With\-Delegate\-:and\-Initial\-Module\-:}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_a726ea6c924bda6200d37751ca723d7b5}{list\-Content\-View}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_aabdc2c1972584244a444a0086e859952}{add\-New\-Bible\-View\-With\-Module\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_a396eb54ec292f2d0093387159cd2223e}{add\-New\-Comment\-View\-With\-Module\-:}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_a20e0066c6ffdb151067053c9e5b00129}{reference\-Options\-View}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_aa495b0ca74cf23490e3c2b2adc1cad40}{open\-Bible\-Modules}
+\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_a58517e2b235799e7375ff264d76800a5}{open\-Misc\-Modules}
+\item 
+(N\-S\-Number $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_ab9ee04c2c253902a138fb5e5732f98dd}{bible\-View\-Count}
+\item 
+(\hyperlink{interface_sword_module}{Sword\-Module} $\ast$) -\/ \hyperlink{interface_bible_combi_view_controller_a1f3f4f8432ddf2a3cbd896bc378b688b}{module}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}{begin\-Indicate\-Progress}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}{end\-Indicate\-Progress}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}{display\-Text\-For\-Reference\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}{display\-Text\-For\-Reference\-:search\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}{mouse\-Entered\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_ac229af7b37d54405d9564790876bb02d}{mouse\-Exited\-:}
+\item 
+(id) -\/ \hyperlink{interface_bible_combi_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_bible_combi_view_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Text\-Field $\ast$ \hyperlink{interface_bible_combi_view_controller_a583dd334c6fc179350c0040dd6d33070}{lookup\-T\-F}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_bible_combi_view_controller_a8103b2d13ca46275ee26611fe96a0d21}{ok\-Btn}
+\item 
+I\-B\-Outlet N\-S\-Split\-View $\ast$ \hyperlink{interface_bible_combi_view_controller_aacd4f740fd7ea228c8de2e2c128ccd41}{hori\-Split\-View}
+\item 
+I\-B\-Outlet N\-S\-Split\-View $\ast$ \hyperlink{interface_bible_combi_view_controller_a1156d980cfde59a1ffe0e868b3267486}{par\-Bible\-Split\-View}
+\item 
+I\-B\-Outlet N\-S\-Split\-View $\ast$ \hyperlink{interface_bible_combi_view_controller_a5386b943ad9220b8034ea6123214a0b6}{par\-Misc\-Split\-View}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_bible_combi_view_controller_ab4a5dbd9191fa1b8c79b7e80e0d24450}{par\-Bible\-View\-Controllers}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_bible_combi_view_controller_ac4b52409db6cec8114e7bf5616062458}{par\-Misc\-View\-Controllers}
+\item 
+float \hyperlink{interface_bible_combi_view_controller_ad58edad2ea97340760ca0da6cac87c0e}{default\-Misc\-View\-Height}
+\item 
+\hyperlink{interface_scroll_synchronizable_view}{Scroll\-Synchronizable\-View} $\ast$ \hyperlink{interface_bible_combi_view_controller_a8a40ec639d09979bb70eef65d0e37de2}{current\-Sync\-View}
+\item 
+M\-B\-Regex $\ast$ \hyperlink{interface_bible_combi_view_controller_aa81ab07ce626b36fec2864be2b760423}{regex}
+\item 
+B\-O\-O\-L \hyperlink{interface_bible_combi_view_controller_a520e9ef33fc5e1e0c1c2a647d1867e17}{progress\-Control}
+\item 
+int \hyperlink{interface_bible_combi_view_controller_a3be32f3227e9f29fca39bcdd786b789d}{progress\-Started\-Counter}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_bible_combi_view_controller_aabdc2c1972584244a444a0086e859952}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!add\-New\-Bible\-View\-With\-Module\-:@{add\-New\-Bible\-View\-With\-Module\-:}}
+\index{add\-New\-Bible\-View\-With\-Module\-:@{add\-New\-Bible\-View\-With\-Module\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{add\-New\-Bible\-View\-With\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-New\-Bible\-View\-With\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Bible} $\ast$)}]{a\-Module}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_aabdc2c1972584244a444a0086e859952}
+Creates a new parallel bible view and presets the given bible module. If nil is given, the first module found is taken. \hypertarget{interface_bible_combi_view_controller_a396eb54ec292f2d0093387159cd2223e}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!add\-New\-Comment\-View\-With\-Module\-:@{add\-New\-Comment\-View\-With\-Module\-:}}
+\index{add\-New\-Comment\-View\-With\-Module\-:@{add\-New\-Comment\-View\-With\-Module\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{add\-New\-Comment\-View\-With\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) add\-New\-Comment\-View\-With\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Commentary} $\ast$)}]{a\-Module}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a396eb54ec292f2d0093387159cd2223e}
+Creates a new parallel commentary view and presets the given commentary module. If nil is given, the first module found is taken. \hypertarget{interface_bible_combi_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!begin\-Indicate\-Progress@{begin\-Indicate\-Progress}}
+\index{begin\-Indicate\-Progress@{begin\-Indicate\-Progress}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{begin\-Indicate\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) begin\-Indicate\-Progress 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}
+
+
+Reimplemented from \hyperlink{protocol_progress_indicating-p_ab140e379b24385c3f31d9fd4a5fd551c}{$<$\-Progress\-Indicating$>$}.
+
+\hypertarget{interface_bible_combi_view_controller_ab9ee04c2c253902a138fb5e5732f98dd}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!bible\-View\-Count@{bible\-View\-Count}}
+\index{bible\-View\-Count@{bible\-View\-Count}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{bible\-View\-Count}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Number $\ast$) bible\-View\-Count 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_ab9ee04c2c253902a138fb5e5732f98dd}
+\hypertarget{interface_bible_combi_view_controller_a0bd73ec236f8055ac6566b39ddf66add}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a0bd73ec236f8055ac6566b39ddf66add}
+called from subview when it has fully loaded 
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_a0bd73ec236f8055ac6566b39ddf66add}{$<$\-Subview\-Hosting$>$}.
+
+\hypertarget{interface_bible_combi_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!display\-Text\-For\-Reference\-:@{display\-Text\-For\-Reference\-:}}
+\index{display\-Text\-For\-Reference\-:@{display\-Text\-For\-Reference\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{display\-Text\-For\-Reference\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) display\-Text\-For\-Reference\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Reference}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_aee0469066a38e5b41b9de3e4e87fe05b}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!display\-Text\-For\-Reference\-:search\-Type\-:@{display\-Text\-For\-Reference\-:search\-Type\-:}}
+\index{display\-Text\-For\-Reference\-:search\-Type\-:@{display\-Text\-For\-Reference\-:search\-Type\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{display\-Text\-For\-Reference\-:search\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) {\bf display\-Text\-For\-Reference\-:} 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Reference}
+\item[{searchType:({\bf Search\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_aee0f4fccfed1c999da9746c4a8ed6fc0}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a958c5e82e2f22a1a132161999b5d1704}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!end\-Indicate\-Progress@{end\-Indicate\-Progress}}
+\index{end\-Indicate\-Progress@{end\-Indicate\-Progress}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{end\-Indicate\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\-Indicate\-Progress 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}
+
+
+Reimplemented from \hyperlink{protocol_progress_indicating-p_aec838665fe7ae1c4e48312dc17d6ad87}{$<$\-Progress\-Indicating$>$}.
+
+\hypertarget{interface_bible_combi_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a31987d71b58e0520588676a4f6896d2c}
+\hypertarget{interface_bible_combi_view_controller_a8cbbf069a27b2a4be367303e9ebaea10}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!init\-With\-Delegate\-:and\-Initial\-Module\-:@{init\-With\-Delegate\-:and\-Initial\-Module\-:}}
+\index{init\-With\-Delegate\-:and\-Initial\-Module\-:@{init\-With\-Delegate\-:and\-Initial\-Module\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:and\-Initial\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) {\bf init\-With\-Delegate\-:} 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\item[{andInitialModule:({\bf Sword\-Bible} $\ast$)}]{a\-Bible}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a8cbbf069a27b2a4be367303e9ebaea10}
+\hypertarget{interface_bible_combi_view_controller_a726ea6c924bda6200d37751ca723d7b5}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!list\-Content\-View@{list\-Content\-View}}
+\index{list\-Content\-View@{list\-Content\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{list\-Content\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) list\-Content\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a726ea6c924bda6200d37751ca723d7b5}
+\hypertarget{interface_bible_combi_view_controller_a1f3f4f8432ddf2a3cbd896bc378b688b}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!module@{module}}
+\index{module@{module}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Module} $\ast$) module 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a1f3f4f8432ddf2a3cbd896bc378b688b}
+
+
+Reimplemented from \hyperlink{protocol_module_providing-p_a1f3f4f8432ddf2a3cbd896bc378b688b}{$<$\-Module\-Providing$>$}.
+
+\hypertarget{interface_bible_combi_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!mouse\-Entered\-:@{mouse\-Entered\-:}}
+\index{mouse\-Entered\-:@{mouse\-Entered\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{mouse\-Entered\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) mouse\-Entered\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{the\-View}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a13a1d8a374c5a945bfa34dd3058ef6ab}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_ac229af7b37d54405d9564790876bb02d}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!mouse\-Exited\-:@{mouse\-Exited\-:}}
+\index{mouse\-Exited\-:@{mouse\-Exited\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{mouse\-Exited\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) mouse\-Exited\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{the\-View}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_ac229af7b37d54405d9564790876bb02d}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_ac229af7b37d54405d9564790876bb02d}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_aa495b0ca74cf23490e3c2b2adc1cad40}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!open\-Bible\-Modules@{open\-Bible\-Modules}}
+\index{open\-Bible\-Modules@{open\-Bible\-Modules}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{open\-Bible\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) open\-Bible\-Modules 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_aa495b0ca74cf23490e3c2b2adc1cad40}
+\hypertarget{interface_bible_combi_view_controller_a58517e2b235799e7375ff264d76800a5}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!open\-Misc\-Modules@{open\-Misc\-Modules}}
+\index{open\-Misc\-Modules@{open\-Misc\-Modules}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{open\-Misc\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) open\-Misc\-Modules 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a58517e2b235799e7375ff264d76800a5}
+\hypertarget{interface_bible_combi_view_controller_a20e0066c6ffdb151067053c9e5b00129}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!reference\-Options\-View@{reference\-Options\-View}}
+\index{reference\-Options\-View@{reference\-Options\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{reference\-Options\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) reference\-Options\-View 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_a20e0066c6ffdb151067053c9e5b00129}
+
+
+Reimplemented from \hyperlink{interface_module_commons_view_controller_a20e0066c6ffdb151067053c9e5b00129}{Module\-Commons\-View\-Controller}.
+
+\hypertarget{interface_bible_combi_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_bible_combi_view_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_bible_combi_view_controller_a8a40ec639d09979bb70eef65d0e37de2}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!current\-Sync\-View@{current\-Sync\-View}}
+\index{current\-Sync\-View@{current\-Sync\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{current\-Sync\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Scroll\-Synchronizable\-View}$\ast$) current\-Sync\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a8a40ec639d09979bb70eef65d0e37de2}
+\hypertarget{interface_bible_combi_view_controller_ad58edad2ea97340760ca0da6cac87c0e}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!default\-Misc\-View\-Height@{default\-Misc\-View\-Height}}
+\index{default\-Misc\-View\-Height@{default\-Misc\-View\-Height}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{default\-Misc\-View\-Height}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) default\-Misc\-View\-Height\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_ad58edad2ea97340760ca0da6cac87c0e}
+\hypertarget{interface_bible_combi_view_controller_aacd4f740fd7ea228c8de2e2c128ccd41}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!hori\-Split\-View@{hori\-Split\-View}}
+\index{hori\-Split\-View@{hori\-Split\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{hori\-Split\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Split\-View$\ast$) hori\-Split\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_aacd4f740fd7ea228c8de2e2c128ccd41}
+\hypertarget{interface_bible_combi_view_controller_a583dd334c6fc179350c0040dd6d33070}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!lookup\-T\-F@{lookup\-T\-F}}
+\index{lookup\-T\-F@{lookup\-T\-F}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{lookup\-T\-F}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Text\-Field$\ast$) lookup\-T\-F\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a583dd334c6fc179350c0040dd6d33070}
+\hypertarget{interface_bible_combi_view_controller_a8103b2d13ca46275ee26611fe96a0d21}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!ok\-Btn@{ok\-Btn}}
+\index{ok\-Btn@{ok\-Btn}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{ok\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) ok\-Btn\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a8103b2d13ca46275ee26611fe96a0d21}
+\hypertarget{interface_bible_combi_view_controller_a1156d980cfde59a1ffe0e868b3267486}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!par\-Bible\-Split\-View@{par\-Bible\-Split\-View}}
+\index{par\-Bible\-Split\-View@{par\-Bible\-Split\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{par\-Bible\-Split\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Split\-View$\ast$) par\-Bible\-Split\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a1156d980cfde59a1ffe0e868b3267486}
+\hypertarget{interface_bible_combi_view_controller_ab4a5dbd9191fa1b8c79b7e80e0d24450}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!par\-Bible\-View\-Controllers@{par\-Bible\-View\-Controllers}}
+\index{par\-Bible\-View\-Controllers@{par\-Bible\-View\-Controllers}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{par\-Bible\-View\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) par\-Bible\-View\-Controllers\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_ab4a5dbd9191fa1b8c79b7e80e0d24450}
+\hypertarget{interface_bible_combi_view_controller_a5386b943ad9220b8034ea6123214a0b6}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!par\-Misc\-Split\-View@{par\-Misc\-Split\-View}}
+\index{par\-Misc\-Split\-View@{par\-Misc\-Split\-View}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{par\-Misc\-Split\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Split\-View$\ast$) par\-Misc\-Split\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a5386b943ad9220b8034ea6123214a0b6}
+\hypertarget{interface_bible_combi_view_controller_ac4b52409db6cec8114e7bf5616062458}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!par\-Misc\-View\-Controllers@{par\-Misc\-View\-Controllers}}
+\index{par\-Misc\-View\-Controllers@{par\-Misc\-View\-Controllers}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{par\-Misc\-View\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array$\ast$) par\-Misc\-View\-Controllers\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_ac4b52409db6cec8114e7bf5616062458}
+\hypertarget{interface_bible_combi_view_controller_a520e9ef33fc5e1e0c1c2a647d1867e17}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!progress\-Control@{progress\-Control}}
+\index{progress\-Control@{progress\-Control}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{progress\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) progress\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a520e9ef33fc5e1e0c1c2a647d1867e17}
+\hypertarget{interface_bible_combi_view_controller_a3be32f3227e9f29fca39bcdd786b789d}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!progress\-Started\-Counter@{progress\-Started\-Counter}}
+\index{progress\-Started\-Counter@{progress\-Started\-Counter}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{progress\-Started\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) progress\-Started\-Counter\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_a3be32f3227e9f29fca39bcdd786b789d}
+\hypertarget{interface_bible_combi_view_controller_aa81ab07ce626b36fec2864be2b760423}{\index{Bible\-Combi\-View\-Controller@{Bible\-Combi\-View\-Controller}!regex@{regex}}
+\index{regex@{regex}!BibleCombiViewController@{Bible\-Combi\-View\-Controller}}
+\subsubsection[{regex}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (M\-B\-Regex$\ast$) regex\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_bible_combi_view_controller_aa81ab07ce626b36fec2864be2b760423}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_bible_combi_view_controller_8h}{Bible\-Combi\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_bible_combi_view_controller_8m}{Bible\-Combi\-View\-Controller.\-m}\end{DoxyCompactItemize}

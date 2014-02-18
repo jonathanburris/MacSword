@@ -1,0 +1,172 @@
+\hypertarget{_m_b_preference_controller_8h}{\section{src/\-Preferences/\-M\-B\-Preference\-Controller.h File Reference}
+\label{_m_b_preference_controller_8h}\index{src/\-Preferences/\-M\-B\-Preference\-Controller.\-h@{src/\-Preferences/\-M\-B\-Preference\-Controller.\-h}}
+}
+{\ttfamily \#import $<$Cocoa/\-Cocoa.\-h$>$}\\*
+{\ttfamily \#import $<$Web\-Kit/\-Web\-Kit.\-h$>$}\\*
+{\ttfamily \#import $<$Coco\-Logger/\-Coco\-Logger.\-h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{interface_m_b_preference_controller}{M\-B\-Preference\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ada7d8bc1ee79c1941690fdb88648bf01}{P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}~@\char`\"{}Preferences\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ad9fb33f9d795eb7c305503e5db801b50}{Defaults\-Text\-Container\-Vertical\-Margins}~@\char`\"{}Defaults\-Text\-Container\-Vertical\-Margins\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a582cb3ba73b56be614775aa6ac8e4119}{Defaults\-Text\-Container\-Horizontal\-Margins}~@\char`\"{}Defaults\-Text\-Container\-Horizontal\-Margins\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ab8b5a854b835b4e0013b183727ace910}{Defaults\-Bible\-Text\-Show\-Book\-Name\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Show\-Book\-Name\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a60fa7cd62ed2ac4b3b2a591dab9e9fdf}{Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a56675548716805d8da42cd616d02afd1}{Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_af81bdea9e224b9c6296c69a789af4c2a}{Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_afa6225d622566a905bded9fd14893b69}{Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ace28adf14c106b928c60e7d0724c48df}{Defaults\-Bible\-Text\-Display\-Font\-Family\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Display\-Font\-Family\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_abcff6e311d5a995788341c15d729e716}{Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a02bedbcb13d9f699724c92c76203107d}{Defaults\-Bible\-Text\-Display\-Font\-Size\-Key}~@\char`\"{}Defaults\-Bible\-Text\-Display\-Font\-Size\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ace1eb2d92361f8ba59473da222a4704e}{Defaults\-Header\-View\-Font\-Family\-Key}~@\char`\"{}Defaults\-Header\-View\-Font\-Family\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a69140aec94d27953e285374b25660fc4}{Defaults\-Header\-View\-Font\-Size\-Key}~@\char`\"{}Defaults\-Header\-View\-Font\-Size\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a733de798871ba47addd359ef51175da9}{Defaults\-Header\-View\-Font\-Size\-Big\-Key}~@\char`\"{}Defaults\-Header\-View\-Font\-Size\-Big\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a7f19873b7d29cf8393a9fd553ffcdcde}{Defaults\-Module\-Cipher\-Keys\-Key}~@\char`\"{}Defaults\-Module\-Cipher\-Keys\-Key\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_aa0a69b0f62cfc98527f31548370091b1}{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}~@\char`\"{}Sword\-Module\-Path\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a45c81712a45fdc79cc483efa6bc45af2}{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}~@\char`\"{}Sword\-Install\-Mgr\-Path\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a63fdd08f8d2c449bcfb45a5611d5deff}{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}~@\char`\"{}Sword\-Index\-Path\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a21b16082a0fb48c567a8fff4c128f329}{Defaults\-Session\-Path}~@\char`\"{}Defaults\-Session\-Path\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a886edf1e8895233ef80d6d39010f87a3}{Defaults\-Bible\-Module}~@\char`\"{}Defaults\-Bible\-Module\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a503b58d67b1c6defe719e5b3ec8b8de3}{Defaults\-Dictionary\-Module}~@\char`\"{}Defaults\-Dictionary\-Module\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a82d7094f0da6c647c7eed5f2a77cea4b}{Defaults\-Strongs\-Hebrew\-Module}~@\char`\"{}Defaults\-Strongs\-Hebrew\-Module\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a419c2a8aa6e19179d3a5453419f894a9}{Defaults\-Strongs\-Greek\-Module}~@\char`\"{}Defaults\-Strongs\-Greek\-Module\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_aa1dc53d4105e4804e64821d11b200e62}{Defaults\-Background\-Indexer\-Enabled}~@\char`\"{}Defaults\-Background\-Indexer\-Enabled\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_aa00deb499e2a3fbd68d8ce93cec6131e}{Defaults\-Remove\-Index\-On\-Module\-Removal}~@\char`\"{}Defaults\-Remove\-Index\-On\-Module\-Removal\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_acd714dc874b43f6934191752e7044b54}{Defaults\-Indexed\-Search\-Book\-Sets}~@\char`\"{}Defaults\-Indexed\-Search\-Book\-Sets\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_ab5fabeecef955208ed0c92d48772ff72}{Defaults\-Show\-L\-S\-B}~@\char`\"{}Defaults\-Show\-L\-S\-B\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a7fcc6fc5b3c6742078d855663bb29fea}{Defaults\-Show\-R\-S\-B}~@\char`\"{}Defaults\-Show\-R\-S\-B\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a0ad7a9edb0b355382cbbe365110fdca9}{Defaults\-Show\-H\-U\-D\-Preview}~@\char`\"{}Defaults\-Show\-H\-U\-D\-Preview\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_a316e875d42f937e7eabe38c2c21fcfdb}{Defaults\-Show\-Preview\-Tool\-Tip}~@\char`\"{}Defaults\-Show\-Preview\-Tool\-Tip\char`\"{}
+\item 
+\#define \hyperlink{_m_b_preference_controller_8h_aadebd6d8b0b559e5a748acaad6677aaf}{Defaults\-Show\-Full\-Screen\-Confirm}~@\char`\"{}Defaults\-Show\-Full\-Screen\-Confirm\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_m_b_preference_controller_8h_a63fdd08f8d2c449bcfb45a5611d5deff}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}}
+\index{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-D\-E\-X\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y~@\char`\"{}Sword\-Index\-Path\char`\"{}}}\label{_m_b_preference_controller_8h_a63fdd08f8d2c449bcfb45a5611d5deff}
+\hypertarget{_m_b_preference_controller_8h_a45c81712a45fdc79cc483efa6bc45af2}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}}
+\index{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-I\-N\-S\-T\-A\-L\-L\-M\-G\-R\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y~@\char`\"{}Sword\-Install\-Mgr\-Path\char`\"{}}}\label{_m_b_preference_controller_8h_a45c81712a45fdc79cc483efa6bc45af2}
+\hypertarget{_m_b_preference_controller_8h_aa0a69b0f62cfc98527f31548370091b1}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}}
+\index{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y@{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-S\-\_\-\-S\-W\-M\-O\-D\-U\-L\-E\-\_\-\-P\-A\-T\-H\-\_\-\-K\-E\-Y~@\char`\"{}Sword\-Module\-Path\char`\"{}}}\label{_m_b_preference_controller_8h_aa0a69b0f62cfc98527f31548370091b1}
+\hypertarget{_m_b_preference_controller_8h_aa1dc53d4105e4804e64821d11b200e62}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Background\-Indexer\-Enabled@{Defaults\-Background\-Indexer\-Enabled}}
+\index{Defaults\-Background\-Indexer\-Enabled@{Defaults\-Background\-Indexer\-Enabled}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Background\-Indexer\-Enabled}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Background\-Indexer\-Enabled~@\char`\"{}Defaults\-Background\-Indexer\-Enabled\char`\"{}}}\label{_m_b_preference_controller_8h_aa1dc53d4105e4804e64821d11b200e62}
+\hypertarget{_m_b_preference_controller_8h_a886edf1e8895233ef80d6d39010f87a3}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Module@{Defaults\-Bible\-Module}}
+\index{Defaults\-Bible\-Module@{Defaults\-Bible\-Module}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Module}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Module~@\char`\"{}Defaults\-Bible\-Module\char`\"{}}}\label{_m_b_preference_controller_8h_a886edf1e8895233ef80d6d39010f87a3}
+\hypertarget{_m_b_preference_controller_8h_abcff6e311d5a995788341c15d729e716}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key@{Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key}}
+\index{Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key@{Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key~@\char`\"{}Defaults\-Bible\-Text\-Display\-Bold\-Font\-Family\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_abcff6e311d5a995788341c15d729e716}
+\hypertarget{_m_b_preference_controller_8h_ace28adf14c106b928c60e7d0724c48df}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Display\-Font\-Family\-Key@{Defaults\-Bible\-Text\-Display\-Font\-Family\-Key}}
+\index{Defaults\-Bible\-Text\-Display\-Font\-Family\-Key@{Defaults\-Bible\-Text\-Display\-Font\-Family\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Display\-Font\-Family\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Display\-Font\-Family\-Key~@\char`\"{}Defaults\-Bible\-Text\-Display\-Font\-Family\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_ace28adf14c106b928c60e7d0724c48df}
+\hypertarget{_m_b_preference_controller_8h_a02bedbcb13d9f699724c92c76203107d}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Display\-Font\-Size\-Key@{Defaults\-Bible\-Text\-Display\-Font\-Size\-Key}}
+\index{Defaults\-Bible\-Text\-Display\-Font\-Size\-Key@{Defaults\-Bible\-Text\-Display\-Font\-Size\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Display\-Font\-Size\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Display\-Font\-Size\-Key~@\char`\"{}Defaults\-Bible\-Text\-Display\-Font\-Size\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a02bedbcb13d9f699724c92c76203107d}
+\hypertarget{_m_b_preference_controller_8h_afa6225d622566a905bded9fd14893b69}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key@{Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key}}
+\index{Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key@{Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key~@\char`\"{}Defaults\-Bible\-Text\-Highlight\-Bookmarks\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_afa6225d622566a905bded9fd14893b69}
+\hypertarget{_m_b_preference_controller_8h_a60fa7cd62ed2ac4b3b2a591dab9e9fdf}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key@{Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key}}
+\index{Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key@{Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key~@\char`\"{}Defaults\-Bible\-Text\-Show\-Book\-Abbr\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a60fa7cd62ed2ac4b3b2a591dab9e9fdf}
+\hypertarget{_m_b_preference_controller_8h_ab8b5a854b835b4e0013b183727ace910}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Show\-Book\-Name\-Key@{Defaults\-Bible\-Text\-Show\-Book\-Name\-Key}}
+\index{Defaults\-Bible\-Text\-Show\-Book\-Name\-Key@{Defaults\-Bible\-Text\-Show\-Book\-Name\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Show\-Book\-Name\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Show\-Book\-Name\-Key~@\char`\"{}Defaults\-Bible\-Text\-Show\-Book\-Name\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_ab8b5a854b835b4e0013b183727ace910}
+\hypertarget{_m_b_preference_controller_8h_af81bdea9e224b9c6296c69a789af4c2a}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key@{Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key}}
+\index{Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key@{Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key~@\char`\"{}Defaults\-Bible\-Text\-Show\-Verse\-Number\-Only\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_af81bdea9e224b9c6296c69a789af4c2a}
+\hypertarget{_m_b_preference_controller_8h_a56675548716805d8da42cd616d02afd1}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key@{Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key}}
+\index{Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key@{Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key~@\char`\"{}Defaults\-Bible\-Text\-Verses\-On\-One\-Line\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a56675548716805d8da42cd616d02afd1}
+\hypertarget{_m_b_preference_controller_8h_a503b58d67b1c6defe719e5b3ec8b8de3}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Dictionary\-Module@{Defaults\-Dictionary\-Module}}
+\index{Defaults\-Dictionary\-Module@{Defaults\-Dictionary\-Module}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Dictionary\-Module}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Dictionary\-Module~@\char`\"{}Defaults\-Dictionary\-Module\char`\"{}}}\label{_m_b_preference_controller_8h_a503b58d67b1c6defe719e5b3ec8b8de3}
+\hypertarget{_m_b_preference_controller_8h_ace1eb2d92361f8ba59473da222a4704e}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Header\-View\-Font\-Family\-Key@{Defaults\-Header\-View\-Font\-Family\-Key}}
+\index{Defaults\-Header\-View\-Font\-Family\-Key@{Defaults\-Header\-View\-Font\-Family\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Header\-View\-Font\-Family\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Header\-View\-Font\-Family\-Key~@\char`\"{}Defaults\-Header\-View\-Font\-Family\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_ace1eb2d92361f8ba59473da222a4704e}
+\hypertarget{_m_b_preference_controller_8h_a733de798871ba47addd359ef51175da9}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Header\-View\-Font\-Size\-Big\-Key@{Defaults\-Header\-View\-Font\-Size\-Big\-Key}}
+\index{Defaults\-Header\-View\-Font\-Size\-Big\-Key@{Defaults\-Header\-View\-Font\-Size\-Big\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Header\-View\-Font\-Size\-Big\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Header\-View\-Font\-Size\-Big\-Key~@\char`\"{}Defaults\-Header\-View\-Font\-Size\-Big\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a733de798871ba47addd359ef51175da9}
+\hypertarget{_m_b_preference_controller_8h_a69140aec94d27953e285374b25660fc4}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Header\-View\-Font\-Size\-Key@{Defaults\-Header\-View\-Font\-Size\-Key}}
+\index{Defaults\-Header\-View\-Font\-Size\-Key@{Defaults\-Header\-View\-Font\-Size\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Header\-View\-Font\-Size\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Header\-View\-Font\-Size\-Key~@\char`\"{}Defaults\-Header\-View\-Font\-Size\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a69140aec94d27953e285374b25660fc4}
+\hypertarget{_m_b_preference_controller_8h_acd714dc874b43f6934191752e7044b54}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Indexed\-Search\-Book\-Sets@{Defaults\-Indexed\-Search\-Book\-Sets}}
+\index{Defaults\-Indexed\-Search\-Book\-Sets@{Defaults\-Indexed\-Search\-Book\-Sets}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Indexed\-Search\-Book\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Indexed\-Search\-Book\-Sets~@\char`\"{}Defaults\-Indexed\-Search\-Book\-Sets\char`\"{}}}\label{_m_b_preference_controller_8h_acd714dc874b43f6934191752e7044b54}
+\hypertarget{_m_b_preference_controller_8h_a7f19873b7d29cf8393a9fd553ffcdcde}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Module\-Cipher\-Keys\-Key@{Defaults\-Module\-Cipher\-Keys\-Key}}
+\index{Defaults\-Module\-Cipher\-Keys\-Key@{Defaults\-Module\-Cipher\-Keys\-Key}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Module\-Cipher\-Keys\-Key}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Module\-Cipher\-Keys\-Key~@\char`\"{}Defaults\-Module\-Cipher\-Keys\-Key\char`\"{}}}\label{_m_b_preference_controller_8h_a7f19873b7d29cf8393a9fd553ffcdcde}
+\hypertarget{_m_b_preference_controller_8h_aa00deb499e2a3fbd68d8ce93cec6131e}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Remove\-Index\-On\-Module\-Removal@{Defaults\-Remove\-Index\-On\-Module\-Removal}}
+\index{Defaults\-Remove\-Index\-On\-Module\-Removal@{Defaults\-Remove\-Index\-On\-Module\-Removal}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Remove\-Index\-On\-Module\-Removal}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Remove\-Index\-On\-Module\-Removal~@\char`\"{}Defaults\-Remove\-Index\-On\-Module\-Removal\char`\"{}}}\label{_m_b_preference_controller_8h_aa00deb499e2a3fbd68d8ce93cec6131e}
+\hypertarget{_m_b_preference_controller_8h_a21b16082a0fb48c567a8fff4c128f329}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Session\-Path@{Defaults\-Session\-Path}}
+\index{Defaults\-Session\-Path@{Defaults\-Session\-Path}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Session\-Path}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Session\-Path~@\char`\"{}Defaults\-Session\-Path\char`\"{}}}\label{_m_b_preference_controller_8h_a21b16082a0fb48c567a8fff4c128f329}
+\hypertarget{_m_b_preference_controller_8h_aadebd6d8b0b559e5a748acaad6677aaf}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Show\-Full\-Screen\-Confirm@{Defaults\-Show\-Full\-Screen\-Confirm}}
+\index{Defaults\-Show\-Full\-Screen\-Confirm@{Defaults\-Show\-Full\-Screen\-Confirm}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Show\-Full\-Screen\-Confirm}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Show\-Full\-Screen\-Confirm~@\char`\"{}Defaults\-Show\-Full\-Screen\-Confirm\char`\"{}}}\label{_m_b_preference_controller_8h_aadebd6d8b0b559e5a748acaad6677aaf}
+\hypertarget{_m_b_preference_controller_8h_a0ad7a9edb0b355382cbbe365110fdca9}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Show\-H\-U\-D\-Preview@{Defaults\-Show\-H\-U\-D\-Preview}}
+\index{Defaults\-Show\-H\-U\-D\-Preview@{Defaults\-Show\-H\-U\-D\-Preview}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Show\-H\-U\-D\-Preview}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Show\-H\-U\-D\-Preview~@\char`\"{}Defaults\-Show\-H\-U\-D\-Preview\char`\"{}}}\label{_m_b_preference_controller_8h_a0ad7a9edb0b355382cbbe365110fdca9}
+\hypertarget{_m_b_preference_controller_8h_ab5fabeecef955208ed0c92d48772ff72}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Show\-L\-S\-B@{Defaults\-Show\-L\-S\-B}}
+\index{Defaults\-Show\-L\-S\-B@{Defaults\-Show\-L\-S\-B}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Show\-L\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Show\-L\-S\-B~@\char`\"{}Defaults\-Show\-L\-S\-B\char`\"{}}}\label{_m_b_preference_controller_8h_ab5fabeecef955208ed0c92d48772ff72}
+\hypertarget{_m_b_preference_controller_8h_a316e875d42f937e7eabe38c2c21fcfdb}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Show\-Preview\-Tool\-Tip@{Defaults\-Show\-Preview\-Tool\-Tip}}
+\index{Defaults\-Show\-Preview\-Tool\-Tip@{Defaults\-Show\-Preview\-Tool\-Tip}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Show\-Preview\-Tool\-Tip}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Show\-Preview\-Tool\-Tip~@\char`\"{}Defaults\-Show\-Preview\-Tool\-Tip\char`\"{}}}\label{_m_b_preference_controller_8h_a316e875d42f937e7eabe38c2c21fcfdb}
+\hypertarget{_m_b_preference_controller_8h_a7fcc6fc5b3c6742078d855663bb29fea}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Show\-R\-S\-B@{Defaults\-Show\-R\-S\-B}}
+\index{Defaults\-Show\-R\-S\-B@{Defaults\-Show\-R\-S\-B}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Show\-R\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Show\-R\-S\-B~@\char`\"{}Defaults\-Show\-R\-S\-B\char`\"{}}}\label{_m_b_preference_controller_8h_a7fcc6fc5b3c6742078d855663bb29fea}
+\hypertarget{_m_b_preference_controller_8h_a419c2a8aa6e19179d3a5453419f894a9}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Strongs\-Greek\-Module@{Defaults\-Strongs\-Greek\-Module}}
+\index{Defaults\-Strongs\-Greek\-Module@{Defaults\-Strongs\-Greek\-Module}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Strongs\-Greek\-Module}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Strongs\-Greek\-Module~@\char`\"{}Defaults\-Strongs\-Greek\-Module\char`\"{}}}\label{_m_b_preference_controller_8h_a419c2a8aa6e19179d3a5453419f894a9}
+\hypertarget{_m_b_preference_controller_8h_a82d7094f0da6c647c7eed5f2a77cea4b}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Strongs\-Hebrew\-Module@{Defaults\-Strongs\-Hebrew\-Module}}
+\index{Defaults\-Strongs\-Hebrew\-Module@{Defaults\-Strongs\-Hebrew\-Module}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Strongs\-Hebrew\-Module}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Strongs\-Hebrew\-Module~@\char`\"{}Defaults\-Strongs\-Hebrew\-Module\char`\"{}}}\label{_m_b_preference_controller_8h_a82d7094f0da6c647c7eed5f2a77cea4b}
+\hypertarget{_m_b_preference_controller_8h_a582cb3ba73b56be614775aa6ac8e4119}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Text\-Container\-Horizontal\-Margins@{Defaults\-Text\-Container\-Horizontal\-Margins}}
+\index{Defaults\-Text\-Container\-Horizontal\-Margins@{Defaults\-Text\-Container\-Horizontal\-Margins}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Text\-Container\-Horizontal\-Margins}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Text\-Container\-Horizontal\-Margins~@\char`\"{}Defaults\-Text\-Container\-Horizontal\-Margins\char`\"{}}}\label{_m_b_preference_controller_8h_a582cb3ba73b56be614775aa6ac8e4119}
+\hypertarget{_m_b_preference_controller_8h_ad9fb33f9d795eb7c305503e5db801b50}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!Defaults\-Text\-Container\-Vertical\-Margins@{Defaults\-Text\-Container\-Vertical\-Margins}}
+\index{Defaults\-Text\-Container\-Vertical\-Margins@{Defaults\-Text\-Container\-Vertical\-Margins}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{Defaults\-Text\-Container\-Vertical\-Margins}]{\setlength{\rightskip}{0pt plus 5cm}\#define Defaults\-Text\-Container\-Vertical\-Margins~@\char`\"{}Defaults\-Text\-Container\-Vertical\-Margins\char`\"{}}}\label{_m_b_preference_controller_8h_ad9fb33f9d795eb7c305503e5db801b50}
+\hypertarget{_m_b_preference_controller_8h_ada7d8bc1ee79c1941690fdb88648bf01}{\index{M\-B\-Preference\-Controller.\-h@{M\-B\-Preference\-Controller.\-h}!P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E@{P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}}
+\index{P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E@{P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}!MBPreferenceController.h@{M\-B\-Preference\-Controller.\-h}}
+\subsubsection[{P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-E\-F\-E\-R\-E\-N\-C\-E\-\_\-\-C\-O\-N\-T\-R\-O\-L\-L\-E\-R\-\_\-\-N\-I\-B\-\_\-\-N\-A\-M\-E~@\char`\"{}Preferences\char`\"{}}}\label{_m_b_preference_controller_8h_ada7d8bc1ee79c1941690fdb88648bf01}

@@ -1,0 +1,219 @@
+\hypertarget{interface_indexer}{\section{Indexer Class Reference}
+\label{interface_indexer}\index{Indexer@{Indexer}}
+}
+
+
+{\ttfamily \#import $<$Indexer.\-h$>$}
+
+Inheritance diagram for Indexer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_indexer}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_indexer_ac4827c0d4b7fdffc52937b1b8403428d}{init\-With\-Module\-Name\-:module\-Type\-:}
+\begin{DoxyCompactList}\small\item\em init \hyperlink{interface_indexer}{Indexer} with the given parameters if there is no existing index available a new one is created \end{DoxyCompactList}\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_indexer_a76ddfd778cc7ddc305409635fe350fde}{add\-Document\-:text\-:text\-Type\-:store\-Dict\-:}
+\begin{DoxyCompactList}\small\item\em add a text to be indexed to this indexer \end{DoxyCompactList}\item 
+(N\-S\-Array $\ast$) -\/ \hyperlink{interface_indexer_a1dbe2f78c6a44223cc67cfdaf0a8fa37}{perform\-Search\-Operation\-:constrains\-:max\-Results\-:}
+\begin{DoxyCompactList}\small\item\em search in an this index for the given query and in the given range \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_indexer_aa8a894017e7732e2392ecd66d5602a2d}{perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_indexer_ae39bdaad9bad4b319163c3cb81ccd1ca}{flush\-Index}
+\begin{DoxyCompactList}\small\item\em flush the data to file \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_indexer_a5ae591df94fc66ccb85cbb6565368bca}{close}
+\begin{DoxyCompactList}\small\item\em closes all indexes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) + \hyperlink{interface_indexer_aad97ed9b0e34c2bf33b25b823996b245}{indexer\-With\-Module\-Name\-:module\-Type\-:}
+\begin{DoxyCompactList}\small\item\em convenient allocator for this class cluster \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\-K\-Index\-Ref \hyperlink{interface_indexer_a3b8a502187743f242c1f4f57bcf8956d}{content\-Index\-Ref}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type} \hyperlink{interface_indexer_a09d31959da036910db2e1f4a621b88d2}{mod\-Type}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_indexer_a00bdac9f17c1a48234d3c42b544b1a12}{mod\-Type\-Str}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_indexer_a208783d55c6b490ed92682b5e76d22e8}{mod\-Name}
+\item 
+N\-S\-Lock $\ast$ \hyperlink{interface_indexer_ac61c48dde87af1b51eeb32db2b2eebfb}{access\-Lock}
+\item 
+N\-S\-Integer \hyperlink{interface_indexer_a24dc56807333bd3537c6726504aa5571}{access\-Counter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_indexer_a76ddfd778cc7ddc305409635fe350fde}{\index{Indexer@{Indexer}!add\-Document\-:text\-:text\-Type\-:store\-Dict\-:@{add\-Document\-:text\-:text\-Type\-:store\-Dict\-:}}
+\index{add\-Document\-:text\-:text\-Type\-:store\-Dict\-:@{add\-Document\-:text\-:text\-Type\-:store\-Dict\-:}!Indexer@{Indexer}}
+\subsubsection[{add\-Document\-:text\-:text\-Type\-:store\-Dict\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) add\-Document\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Key}
+\item[{text:(N\-S\-String $\ast$)}]{a\-Text}
+\item[{textType:({\bf Index\-Text\-Type})}]{type}
+\item[{storeDict:(N\-S\-Dictionary $\ast$)}]{a\-Dict}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_a76ddfd778cc7ddc305409635fe350fde}
+
+
+add a text to be indexed to this indexer 
+
+add a text to be indexed to this indexer. This method is abstract and should be overriden by the subclasses
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a\-Key} & the document key (I\-D) \\
+\hline
+\mbox{\tt in}  & {\em a\-Text} & the text to be indexed \\
+\hline
+\mbox{\tt in}  & {\em type} & the type of text (see Index\-Text\-Type enum values) \\
+\hline
+\mbox{\tt in}  & {\em a\-Dict} & a dictionary to be stored in the document \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+success Y\-E\-S/\-N\-O 
+\end{DoxyReturn}
+\hypertarget{interface_indexer_a5ae591df94fc66ccb85cbb6565368bca}{\index{Indexer@{Indexer}!close@{close}}
+\index{close@{close}!Indexer@{Indexer}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) close 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_a5ae591df94fc66ccb85cbb6565368bca}
+
+
+closes all indexes 
+
+\hypertarget{interface_indexer_ae39bdaad9bad4b319163c3cb81ccd1ca}{\index{Indexer@{Indexer}!flush\-Index@{flush\-Index}}
+\index{flush\-Index@{flush\-Index}!Indexer@{Indexer}}
+\subsubsection[{flush\-Index}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) flush\-Index 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_ae39bdaad9bad4b319163c3cb81ccd1ca}
+
+
+flush the data to file 
+
+\hypertarget{interface_indexer_aad97ed9b0e34c2bf33b25b823996b245}{\index{Indexer@{Indexer}!indexer\-With\-Module\-Name\-:module\-Type\-:@{indexer\-With\-Module\-Name\-:module\-Type\-:}}
+\index{indexer\-With\-Module\-Name\-:module\-Type\-:@{indexer\-With\-Module\-Name\-:module\-Type\-:}!Indexer@{Indexer}}
+\subsubsection[{indexer\-With\-Module\-Name\-:module\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}+ (id) indexer\-With\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\item[{moduleType:({\bf Module\-Type})}]{a\-Mod\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_aad97ed9b0e34c2bf33b25b823996b245}
+
+
+convenient allocator for this class cluster 
+
+\hypertarget{interface_indexer_ac4827c0d4b7fdffc52937b1b8403428d}{\index{Indexer@{Indexer}!init\-With\-Module\-Name\-:module\-Type\-:@{init\-With\-Module\-Name\-:module\-Type\-:}}
+\index{init\-With\-Module\-Name\-:module\-Type\-:@{init\-With\-Module\-Name\-:module\-Type\-:}!Indexer@{Indexer}}
+\subsubsection[{init\-With\-Module\-Name\-:module\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\item[{moduleType:({\bf Module\-Type})}]{a\-Mod\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_ac4827c0d4b7fdffc52937b1b8403428d}
+
+
+init \hyperlink{interface_indexer}{Indexer} with the given parameters if there is no existing index available a new one is created 
+
+\hypertarget{interface_indexer_a1dbe2f78c6a44223cc67cfdaf0a8fa37}{\index{Indexer@{Indexer}!perform\-Search\-Operation\-:constrains\-:max\-Results\-:@{perform\-Search\-Operation\-:constrains\-:max\-Results\-:}}
+\index{perform\-Search\-Operation\-:constrains\-:max\-Results\-:@{perform\-Search\-Operation\-:constrains\-:max\-Results\-:}!Indexer@{Indexer}}
+\subsubsection[{perform\-Search\-Operation\-:constrains\-:max\-Results\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Array $\ast$) perform\-Search\-Operation\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{query}
+\item[{constrains:(id)}]{constrains}
+\item[{maxResults:(int)}]{max\-Results}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_a1dbe2f78c6a44223cc67cfdaf0a8fa37}
+
+
+search in an this index for the given query and in the given range 
+
+search in an this index for the given query and in the given range This method is abstract and should be overriden by the subclasses
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em query} & this query to search in \\
+\hline
+\mbox{\tt in}  & {\em constrains,search} & constrains \\
+\hline
+\mbox{\tt in}  & {\em max\-Results} & the maximum number of results \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array of N\-S\-Dictionaries with search results. the array is autoreleased, the caller has to make sure to retain it if needed. 
+\end{DoxyReturn}
+\hypertarget{interface_indexer_aa8a894017e7732e2392ecd66d5602a2d}{\index{Indexer@{Indexer}!perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:@{perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:}}
+\index{perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:@{perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:}!Indexer@{Indexer}}
+\subsubsection[{perform\-Threaded\-Search\-Operation\-:constrains\-:max\-Results\-:delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) perform\-Threaded\-Search\-Operation\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{query}
+\item[{constrains:(id)}]{constrains}
+\item[{maxResults:(int)}]{max\-Results}
+\item[{delegate:(id)}]{delegate}
+\end{DoxyParamCaption}
+}}\label{interface_indexer_aa8a894017e7732e2392ecd66d5602a2d}
+creates a new thread for searching and returnes immediately. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em query} & this query to search in \\
+\hline
+\mbox{\tt in}  & {\em constrains,search} & constrains \\
+\hline
+\mbox{\tt in}  & {\em max\-Results} & the maximum number of results \\
+\hline
+\mbox{\tt in}  & {\em delegate} & report to delegate. (search\-Operation\-Finished\-:) is called with a N\-S\-Array of search results\\
+\hline
+\end{DoxyParams}
+creates a new thread for searching. returnes immediately. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em query} & this query to search in \\
+\hline
+\mbox{\tt in}  & {\em constrains,search} & constrains \\
+\hline
+\mbox{\tt in}  & {\em max\-Results} & the maximum number of results \\
+\hline
+\mbox{\tt in}  & {\em delegate} & report to delegate. (search\-Operation\-Finished\-:) is called with a N\-S\-Array of search results \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_indexer_a3b8a502187743f242c1f4f57bcf8956d}{\index{Indexer@{Indexer}!content\-Index\-Ref@{content\-Index\-Ref}}
+\index{content\-Index\-Ref@{content\-Index\-Ref}!Indexer@{Indexer}}
+\subsubsection[{content\-Index\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-K\-Index\-Ref) content\-Index\-Ref\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_indexer_a3b8a502187743f242c1f4f57bcf8956d}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_indexer_a24dc56807333bd3537c6726504aa5571}{\index{Indexer@{Indexer}!access\-Counter@{access\-Counter}}
+\index{access\-Counter@{access\-Counter}!Indexer@{Indexer}}
+\subsubsection[{access\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Integer) access\-Counter\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_indexer_a24dc56807333bd3537c6726504aa5571}
+\hypertarget{interface_indexer_ac61c48dde87af1b51eeb32db2b2eebfb}{\index{Indexer@{Indexer}!access\-Lock@{access\-Lock}}
+\index{access\-Lock@{access\-Lock}!Indexer@{Indexer}}
+\subsubsection[{access\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Lock $\ast$) access\-Lock\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexer_ac61c48dde87af1b51eeb32db2b2eebfb}
+\hypertarget{interface_indexer_a208783d55c6b490ed92682b5e76d22e8}{\index{Indexer@{Indexer}!mod\-Name@{mod\-Name}}
+\index{mod\-Name@{mod\-Name}!Indexer@{Indexer}}
+\subsubsection[{mod\-Name}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) mod\-Name\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexer_a208783d55c6b490ed92682b5e76d22e8}
+\hypertarget{interface_indexer_a09d31959da036910db2e1f4a621b88d2}{\index{Indexer@{Indexer}!mod\-Type@{mod\-Type}}
+\index{mod\-Type@{mod\-Type}!Indexer@{Indexer}}
+\subsubsection[{mod\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Type}) mod\-Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_indexer_a09d31959da036910db2e1f4a621b88d2}
+\hypertarget{interface_indexer_a00bdac9f17c1a48234d3c42b544b1a12}{\index{Indexer@{Indexer}!mod\-Type\-Str@{mod\-Type\-Str}}
+\index{mod\-Type\-Str@{mod\-Type\-Str}!Indexer@{Indexer}}
+\subsubsection[{mod\-Type\-Str}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) mod\-Type\-Str\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexer_a00bdac9f17c1a48234d3c42b544b1a12}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Indexing/\hyperlink{_indexer_8h}{Indexer.\-h}\item 
+src/\-Indexing/\hyperlink{_indexer_8m}{Indexer.\-m}\end{DoxyCompactItemize}

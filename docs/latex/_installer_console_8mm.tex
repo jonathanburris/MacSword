@@ -1,0 +1,165 @@
+\hypertarget{_installer_console_8mm}{\section{src/\-Installer\-Console/\-Installer\-Console.mm File Reference}
+\label{_installer_console_8mm}\index{src/\-Installer\-Console/\-Installer\-Console.\-mm@{src/\-Installer\-Console/\-Installer\-Console.\-mm}}
+}
+{\ttfamily \#import $<$Foundation/\-Foundation.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Install\-Source\-Controller.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Install\-Source.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Manager.\-h$>$}\\*
+{\ttfamily \#import $<$Sword\-Module.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_installer_console_8mm_a1c6d5de492ac61ad29aec7aa9a436bbf}{V\-E\-R\-S\-I\-O\-N}~\char`\"{}0.\-1.\-4\char`\"{}
+\item 
+\#define \hyperlink{_installer_console_8mm_a241c29d2f83cc417ad8948d726389d1f}{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F}~256
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{_installer_console_8mm_a296ce0a775d20e682c27b69e6f81d8c2}{convert\-To\-Hex} (char $\ast$string)
+\item 
+unsigned int \hyperlink{_installer_console_8mm_a16a1b9ddccc6c5e276793e11a2ab935b}{convert\-To\-Int} (char $\ast$string)
+\item 
+int \hyperlink{_installer_console_8mm_af65a5ae025f2abe01b412bde2530cac0}{get\-Next\-Param} (char $\ast$string, char $\ast$next\-Param)
+\item 
+int \hyperlink{_installer_console_8mm_a67390f8ac0e687ac51f6573e6d6d50bb}{cmd\-Processor} ()
+\item 
+void \hyperlink{_installer_console_8mm_a11aac3e3ceb26f26f084ab59d8edd1c7}{help\-Mode} ()
+\item 
+void \hyperlink{_installer_console_8mm_aa91f57a31f4e148da335475826d3284d}{init\-Module\-Installer} (char $\ast$parameter)
+\item 
+void \hyperlink{_installer_console_8mm_a21d796658993213d85b425938fd17144}{list\-Install\-Sources} ()
+\item 
+void \hyperlink{_installer_console_8mm_a3f852e1f48e6d778583f892d321bdf0e}{list\-Modules\-For\-Install\-Source} (char $\ast$parameter)
+\item 
+void \hyperlink{_installer_console_8mm_a8010d3dd8e579abafa7ddae688300a40}{refresh\-Install\-Source} (char $\ast$parameter)
+\item 
+void \hyperlink{_installer_console_8mm_a2d753511e26f2313f8b5d3ce728f2a01}{install\-Module\-From\-Source} (char $\ast$parameter)
+\item 
+void \hyperlink{_installer_console_8mm_a384f1e0287326fae281d7c44f7c380b0}{list\-Module\-Status} (char $\ast$parameter)
+\item 
+void \hyperlink{_installer_console_8mm_af68f1b80aec9820daca63edc6c391452}{uninstall\-Module} (char $\ast$parameter)
+\item 
+int \hyperlink{_installer_console_8mm_ac0f2228420376f4db7e1274f2b41667c}{main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_sword_install_source_controller}{Sword\-Install\-Source\-Controller} $\ast$ \hyperlink{_installer_console_8mm_a458feba2289b733ac159f8541bdd2b44}{sim}
+\item 
+\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$ \hyperlink{_installer_console_8mm_a41efc4ed8ae2a8890c4ea4225f64de52}{sw\-Mgr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_installer_console_8mm_a241c29d2f83cc417ad8948d726389d1f}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F@{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F}}
+\index{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F@{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-S\-T\-R\-I\-N\-G\-\_\-\-B\-U\-F~256}}\label{_installer_console_8mm_a241c29d2f83cc417ad8948d726389d1f}
+\hypertarget{_installer_console_8mm_a1c6d5de492ac61ad29aec7aa9a436bbf}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!V\-E\-R\-S\-I\-O\-N@{V\-E\-R\-S\-I\-O\-N}}
+\index{V\-E\-R\-S\-I\-O\-N@{V\-E\-R\-S\-I\-O\-N}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{V\-E\-R\-S\-I\-O\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\-E\-R\-S\-I\-O\-N~\char`\"{}0.\-1.\-4\char`\"{}}}\label{_installer_console_8mm_a1c6d5de492ac61ad29aec7aa9a436bbf}
+
+
+\subsection{Function Documentation}
+\hypertarget{_installer_console_8mm_a67390f8ac0e687ac51f6573e6d6d50bb}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!cmd\-Processor@{cmd\-Processor}}
+\index{cmd\-Processor@{cmd\-Processor}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{cmd\-Processor}]{\setlength{\rightskip}{0pt plus 5cm}int cmd\-Processor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a67390f8ac0e687ac51f6573e6d6d50bb}
+\hypertarget{_installer_console_8mm_a296ce0a775d20e682c27b69e6f81d8c2}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!convert\-To\-Hex@{convert\-To\-Hex}}
+\index{convert\-To\-Hex@{convert\-To\-Hex}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{convert\-To\-Hex}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int convert\-To\-Hex (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a296ce0a775d20e682c27b69e6f81d8c2}
+forward declarations \hypertarget{_installer_console_8mm_a16a1b9ddccc6c5e276793e11a2ab935b}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!convert\-To\-Int@{convert\-To\-Int}}
+\index{convert\-To\-Int@{convert\-To\-Int}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{convert\-To\-Int}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int convert\-To\-Int (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a16a1b9ddccc6c5e276793e11a2ab935b}
+\hypertarget{_installer_console_8mm_af65a5ae025f2abe01b412bde2530cac0}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!get\-Next\-Param@{get\-Next\-Param}}
+\index{get\-Next\-Param@{get\-Next\-Param}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{get\-Next\-Param}]{\setlength{\rightskip}{0pt plus 5cm}int get\-Next\-Param (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string, }
+\item[{char $\ast$}]{next\-Param}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_af65a5ae025f2abe01b412bde2530cac0}
+\hypertarget{_installer_console_8mm_a11aac3e3ceb26f26f084ab59d8edd1c7}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!help\-Mode@{help\-Mode}}
+\index{help\-Mode@{help\-Mode}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{help\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void help\-Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a11aac3e3ceb26f26f084ab59d8edd1c7}
+\hypertarget{_installer_console_8mm_aa91f57a31f4e148da335475826d3284d}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!init\-Module\-Installer@{init\-Module\-Installer}}
+\index{init\-Module\-Installer@{init\-Module\-Installer}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{init\-Module\-Installer}]{\setlength{\rightskip}{0pt plus 5cm}void init\-Module\-Installer (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_aa91f57a31f4e148da335475826d3284d}
+\hypertarget{_installer_console_8mm_a2d753511e26f2313f8b5d3ce728f2a01}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!install\-Module\-From\-Source@{install\-Module\-From\-Source}}
+\index{install\-Module\-From\-Source@{install\-Module\-From\-Source}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{install\-Module\-From\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void install\-Module\-From\-Source (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a2d753511e26f2313f8b5d3ce728f2a01}
+\hypertarget{_installer_console_8mm_a21d796658993213d85b425938fd17144}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!list\-Install\-Sources@{list\-Install\-Sources}}
+\index{list\-Install\-Sources@{list\-Install\-Sources}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{list\-Install\-Sources}]{\setlength{\rightskip}{0pt plus 5cm}void list\-Install\-Sources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a21d796658993213d85b425938fd17144}
+\hypertarget{_installer_console_8mm_a3f852e1f48e6d778583f892d321bdf0e}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!list\-Modules\-For\-Install\-Source@{list\-Modules\-For\-Install\-Source}}
+\index{list\-Modules\-For\-Install\-Source@{list\-Modules\-For\-Install\-Source}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{list\-Modules\-For\-Install\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void list\-Modules\-For\-Install\-Source (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a3f852e1f48e6d778583f892d321bdf0e}
+\hypertarget{_installer_console_8mm_a384f1e0287326fae281d7c44f7c380b0}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!list\-Module\-Status@{list\-Module\-Status}}
+\index{list\-Module\-Status@{list\-Module\-Status}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{list\-Module\-Status}]{\setlength{\rightskip}{0pt plus 5cm}void list\-Module\-Status (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a384f1e0287326fae281d7c44f7c380b0}
+\hypertarget{_installer_console_8mm_ac0f2228420376f4db7e1274f2b41667c}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!main@{main}}
+\index{main@{main}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_ac0f2228420376f4db7e1274f2b41667c}
+\hypertarget{_installer_console_8mm_a8010d3dd8e579abafa7ddae688300a40}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!refresh\-Install\-Source@{refresh\-Install\-Source}}
+\index{refresh\-Install\-Source@{refresh\-Install\-Source}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{refresh\-Install\-Source}]{\setlength{\rightskip}{0pt plus 5cm}void refresh\-Install\-Source (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_a8010d3dd8e579abafa7ddae688300a40}
+\hypertarget{_installer_console_8mm_af68f1b80aec9820daca63edc6c391452}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!uninstall\-Module@{uninstall\-Module}}
+\index{uninstall\-Module@{uninstall\-Module}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{uninstall\-Module}]{\setlength{\rightskip}{0pt plus 5cm}void uninstall\-Module (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{_installer_console_8mm_af68f1b80aec9820daca63edc6c391452}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_installer_console_8mm_a458feba2289b733ac159f8541bdd2b44}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!sim@{sim}}
+\index{sim@{sim}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{sim}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sword\-Install\-Source\-Controller}$\ast$ sim}}\label{_installer_console_8mm_a458feba2289b733ac159f8541bdd2b44}
+\hypertarget{_installer_console_8mm_a41efc4ed8ae2a8890c4ea4225f64de52}{\index{Installer\-Console.\-mm@{Installer\-Console.\-mm}!sw\-Mgr@{sw\-Mgr}}
+\index{sw\-Mgr@{sw\-Mgr}!InstallerConsole.mm@{Installer\-Console.\-mm}}
+\subsubsection[{sw\-Mgr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sword\-Manager}$\ast$ sw\-Mgr}}\label{_installer_console_8mm_a41efc4ed8ae2a8890c4ea4225f64de52}

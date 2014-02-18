@@ -1,0 +1,136 @@
+\hypertarget{interface_hostable_view_controller}{\section{Hostable\-View\-Controller Class Reference}
+\label{interface_hostable_view_controller}\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Hostable\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Hostable\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.592592cm]{interface_hostable_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(void) -\/ \hyperlink{interface_hostable_view_controller_a8a1662b9f3f94d140436f911c0ba76c1}{report\-Loading\-Complete}
+\item 
+(void) -\/ \hyperlink{interface_hostable_view_controller_a74ef57ab8521b78e51f6f328af6e3e1b}{remove\-From\-Superview}
+\item 
+(void) -\/ \hyperlink{interface_hostable_view_controller_acda22137b423344be66ad81dd4efc461}{adapt\-U\-I\-To\-Host}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_hostable_view_controller_a50ff9ca7f683d08f191bf2ee41b8a8ef}{label}
+\item 
+(void) -\/ \hyperlink{interface_hostable_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}{begin\-Indicate\-Progress}
+\item 
+(void) -\/ \hyperlink{interface_hostable_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}{end\-Indicate\-Progress}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet id \hyperlink{interface_hostable_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{delegate}
+\item 
+B\-O\-O\-L \hyperlink{interface_hostable_view_controller_a9ff9f2ffba33d1aa9c9bae29cc8cef1b}{is\-Loading\-Comlete\-Reported}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_hostable_view_controller_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\item 
+id \hyperlink{interface_hostable_view_controller_a4b4c555a8e2787aa3a2d784b2e449552}{hosting\-Delegate}
+\item 
+B\-O\-O\-L \hyperlink{interface_hostable_view_controller_ae23af126b4da27e312cebe7b026b5284}{view\-Loaded}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_hostable_view_controller_acda22137b423344be66ad81dd4efc461}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!adapt\-U\-I\-To\-Host@{adapt\-U\-I\-To\-Host}}
+\index{adapt\-U\-I\-To\-Host@{adapt\-U\-I\-To\-Host}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{adapt\-U\-I\-To\-Host}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) adapt\-U\-I\-To\-Host 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_acda22137b423344be66ad81dd4efc461}
+
+
+Reimplemented in \hyperlink{interface_bible_view_controller_acda22137b423344be66ad81dd4efc461}{Bible\-View\-Controller}, \hyperlink{interface_dictionary_view_controller_acda22137b423344be66ad81dd4efc461}{Dictionary\-View\-Controller}, and \hyperlink{interface_gen_book_view_controller_acda22137b423344be66ad81dd4efc461}{Gen\-Book\-View\-Controller}.
+
+\hypertarget{interface_hostable_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!begin\-Indicate\-Progress@{begin\-Indicate\-Progress}}
+\index{begin\-Indicate\-Progress@{begin\-Indicate\-Progress}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{begin\-Indicate\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) begin\-Indicate\-Progress 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}
+
+
+Reimplemented from \hyperlink{protocol_progress_indicating-p_ab140e379b24385c3f31d9fd4a5fd551c}{$<$\-Progress\-Indicating$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_bible_combi_view_controller_ab140e379b24385c3f31d9fd4a5fd551c}{Bible\-Combi\-View\-Controller}.
+
+\hypertarget{interface_hostable_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!end\-Indicate\-Progress@{end\-Indicate\-Progress}}
+\index{end\-Indicate\-Progress@{end\-Indicate\-Progress}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{end\-Indicate\-Progress}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) end\-Indicate\-Progress 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}
+
+
+Reimplemented from \hyperlink{protocol_progress_indicating-p_aec838665fe7ae1c4e48312dc17d6ad87}{$<$\-Progress\-Indicating$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_bible_combi_view_controller_aec838665fe7ae1c4e48312dc17d6ad87}{Bible\-Combi\-View\-Controller}.
+
+\hypertarget{interface_hostable_view_controller_a50ff9ca7f683d08f191bf2ee41b8a8ef}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!label@{label}}
+\index{label@{label}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{label}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) label 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_a50ff9ca7f683d08f191bf2ee41b8a8ef}
+\hypertarget{interface_hostable_view_controller_a74ef57ab8521b78e51f6f328af6e3e1b}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!remove\-From\-Superview@{remove\-From\-Superview}}
+\index{remove\-From\-Superview@{remove\-From\-Superview}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{remove\-From\-Superview}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-From\-Superview 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_a74ef57ab8521b78e51f6f328af6e3e1b}
+\hypertarget{interface_hostable_view_controller_a8a1662b9f3f94d140436f911c0ba76c1}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!report\-Loading\-Complete@{report\-Loading\-Complete}}
+\index{report\-Loading\-Complete@{report\-Loading\-Complete}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{report\-Loading\-Complete}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) report\-Loading\-Complete 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_hostable_view_controller_a8a1662b9f3f94d140436f911c0ba76c1}
+report the loading of the view is completed 
+
+\subsection{Field Documentation}
+\hypertarget{interface_hostable_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet id) delegate\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_hostable_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}
+\hypertarget{interface_hostable_view_controller_a9ff9f2ffba33d1aa9c9bae29cc8cef1b}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!is\-Loading\-Comlete\-Reported@{is\-Loading\-Comlete\-Reported}}
+\index{is\-Loading\-Comlete\-Reported@{is\-Loading\-Comlete\-Reported}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{is\-Loading\-Comlete\-Reported}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) is\-Loading\-Comlete\-Reported\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_hostable_view_controller_a9ff9f2ffba33d1aa9c9bae29cc8cef1b}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_hostable_view_controller_a8d9332fcd23523b1e2520b8765577423}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_hostable_view_controller_a8d9332fcd23523b1e2520b8765577423}
+\hypertarget{interface_hostable_view_controller_a4b4c555a8e2787aa3a2d784b2e449552}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!hosting\-Delegate@{hosting\-Delegate}}
+\index{hosting\-Delegate@{hosting\-Delegate}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{hosting\-Delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) hosting\-Delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_hostable_view_controller_a4b4c555a8e2787aa3a2d784b2e449552}
+\hypertarget{interface_hostable_view_controller_ae23af126b4da27e312cebe7b026b5284}{\index{Hostable\-View\-Controller@{Hostable\-View\-Controller}!view\-Loaded@{view\-Loaded}}
+\index{view\-Loaded@{view\-Loaded}!HostableViewController@{Hostable\-View\-Controller}}
+\subsubsection[{view\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) view\-Loaded\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_hostable_view_controller_ae23af126b4da27e312cebe7b026b5284}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_hostable_view_controller_8h}{Hostable\-View\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_hostable_view_controller_8m}{Hostable\-View\-Controller.\-m}\end{DoxyCompactItemize}

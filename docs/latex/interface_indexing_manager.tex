@@ -1,0 +1,241 @@
+\hypertarget{interface_indexing_manager}{\section{Indexing\-Manager Class Reference}
+\label{interface_indexing_manager}\index{Indexing\-Manager@{Indexing\-Manager}}
+}
+
+
+{\ttfamily \#import $<$Indexing\-Manager.\-h$>$}
+
+Inheritance diagram for Indexing\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_indexing_manager}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_indexing_manager_a4213bb26f5207ee3f402fe463badc691}{init}
+\begin{DoxyCompactList}\small\item\em init is called after alloc\-:. some initialization work can be done here. \end{DoxyCompactList}\item 
+(S\-K\-Index\-Ref) -\/ \hyperlink{interface_indexing_manager_ae29221a94d1b39d8cab62acdcd886eed}{open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:}
+\begin{DoxyCompactList}\small\item\em open or create index for the given parameters \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_indexing_manager_ae4e9d1ddd1e2a7588da243a83027008c}{store\-Search\-Book\-Sets}
+\item 
+(void) -\/ \hyperlink{interface_indexing_manager_a16d11aa0606b5d889a8bfef5321dee8d}{trigger\-Background\-Index\-Check}
+\item 
+(void) -\/ \hyperlink{interface_indexing_manager_ab4ddaa4f4e9e68b76e76ec2cbaad7555}{invalidate\-Background\-Indexer}
+\item 
+(\hyperlink{interface_indexer}{Indexer} $\ast$) -\/ \hyperlink{interface_indexing_manager_a5635f99b3981c2847444d1e497e3468c}{indexer\-For\-Module\-Name\-:module\-Type\-:}
+\item 
+(void) -\/ \hyperlink{interface_indexing_manager_a52455a543b3cc1956453b155f0b68518}{close\-Indexer\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_indexing_manager_a8ef24975159d5855a0e625b91404f7a5}{index\-Path\-For\-Module\-Name\-:text\-Type\-:}
+\begin{DoxyCompactList}\small\item\em returns the path of the index folder for the given module name \end{DoxyCompactList}\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_indexing_manager_a2e60b5d0fe5ffd5b684dd17d591bd049}{index\-Folder\-Path\-For\-Module\-Name\-:}
+\begin{DoxyCompactList}\small\item\em returns the path of the index folder for the given module name \end{DoxyCompactList}\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_indexing_manager_a439666abbb6fefa76caada4af28649a2}{index\-Exists\-For\-Module\-Name\-:}
+\begin{DoxyCompactList}\small\item\em checks whether an index already exists for the given module name and type \end{DoxyCompactList}\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_indexing_manager_ae09c73aa123f996eb91f152b380f6a88}{remove\-Index\-For\-Module\-Name\-:}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_indexing_manager}{Indexing\-Manager} $\ast$) + \hyperlink{interface_indexing_manager_ac9521eb6eb16027d1a4755a5379a6f30}{shared\-Manager}
+\begin{DoxyCompactList}\small\item\em singleton convenient allocator and getter of instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Timer $\ast$ \hyperlink{interface_indexing_manager_a49efd1a3e05e38497c176a4e11fdbaab}{timer}
+\item 
+N\-S\-Lock $\ast$ \hyperlink{interface_indexing_manager_a0e3ac8fdf6dc5319ccd6eacde9ac823e}{index\-Check\-Lock}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_indexing_manager_a9a3484f0fcbdee9b2555cece4280811b}{indexer\-Registrat}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-String $\ast$ \hyperlink{interface_indexing_manager_ac10a75f5b8c0414f6934cc8848ec7872}{base\-Index\-Path}
+\item 
+\hyperlink{interface_sword_manager}{Sword\-Manager} $\ast$ \hyperlink{interface_indexing_manager_a5c5d0eea93f588d2bcc46da1b6db122e}{sword\-Manager}
+\item 
+int \hyperlink{interface_indexing_manager_ae0c690118932b32ef40a74bb6a259acd}{interval}
+\item 
+B\-O\-O\-L \hyperlink{interface_indexing_manager_aa14a936f3cacdee52cdf8b3064ffebf3}{stalled}
+\item 
+N\-S\-Mutable\-Array $\ast$ \hyperlink{interface_indexing_manager_a493d6c6e3a4d8b94f3ac47ce56cf48db}{search\-Book\-Sets}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_indexing_manager_a52455a543b3cc1956453b155f0b68518}{\index{Indexing\-Manager@{Indexing\-Manager}!close\-Indexer\-:@{close\-Indexer\-:}}
+\index{close\-Indexer\-:@{close\-Indexer\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{close\-Indexer\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) close\-Indexer\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Indexer} $\ast$)}]{a\-Indexer}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a52455a543b3cc1956453b155f0b68518}
+the manager should also be used to close the index. it only closes an index if no other instance is using it any longer. \hypertarget{interface_indexing_manager_a5635f99b3981c2847444d1e497e3468c}{\index{Indexing\-Manager@{Indexing\-Manager}!indexer\-For\-Module\-Name\-:module\-Type\-:@{indexer\-For\-Module\-Name\-:module\-Type\-:}}
+\index{indexer\-For\-Module\-Name\-:module\-Type\-:@{indexer\-For\-Module\-Name\-:module\-Type\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{indexer\-For\-Module\-Name\-:module\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Indexer} $\ast$) indexer\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Name}
+\item[{moduleType:({\bf Module\-Type})}]{a\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a5635f99b3981c2847444d1e497e3468c}
+the manager should be used to aquire indexers. the manager will keep track of already opened indexers and not open new ones if not necessary. \hypertarget{interface_indexing_manager_a439666abbb6fefa76caada4af28649a2}{\index{Indexing\-Manager@{Indexing\-Manager}!index\-Exists\-For\-Module\-Name\-:@{index\-Exists\-For\-Module\-Name\-:}}
+\index{index\-Exists\-For\-Module\-Name\-:@{index\-Exists\-For\-Module\-Name\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{index\-Exists\-For\-Module\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) index\-Exists\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a439666abbb6fefa76caada4af28649a2}
+
+
+checks whether an index already exists for the given module name and type 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mod\-Name} & the name of the module. \\
+\hline
+\mbox{\tt in}  & {\em mod\-Type} & the type of the module. depending on this, more than one index may be created for the module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: Y\-E\-S/\-N\-O 
+\end{DoxyReturn}
+\hypertarget{interface_indexing_manager_a2e60b5d0fe5ffd5b684dd17d591bd049}{\index{Indexing\-Manager@{Indexing\-Manager}!index\-Folder\-Path\-For\-Module\-Name\-:@{index\-Folder\-Path\-For\-Module\-Name\-:}}
+\index{index\-Folder\-Path\-For\-Module\-Name\-:@{index\-Folder\-Path\-For\-Module\-Name\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{index\-Folder\-Path\-For\-Module\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) index\-Folder\-Path\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a2e60b5d0fe5ffd5b684dd17d591bd049}
+
+
+returns the path of the index folder for the given module name 
+
+returns the path of the index for the given module name
+
+\begin{DoxyReturn}{Returns}
+N\-S\-String that is autoreleased 
+\end{DoxyReturn}
+\hypertarget{interface_indexing_manager_a8ef24975159d5855a0e625b91404f7a5}{\index{Indexing\-Manager@{Indexing\-Manager}!index\-Path\-For\-Module\-Name\-:text\-Type\-:@{index\-Path\-For\-Module\-Name\-:text\-Type\-:}}
+\index{index\-Path\-For\-Module\-Name\-:text\-Type\-:@{index\-Path\-For\-Module\-Name\-:text\-Type\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{index\-Path\-For\-Module\-Name\-:text\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) index\-Path\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\item[{textType:(N\-S\-String $\ast$)}]{a\-Mod\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a8ef24975159d5855a0e625b91404f7a5}
+
+
+returns the path of the index folder for the given module name 
+
+returns the path of the index for the given module name and type
+
+\begin{DoxyReturn}{Returns}
+N\-S\-String that is autoreleased 
+\end{DoxyReturn}
+\hypertarget{interface_indexing_manager_a4213bb26f5207ee3f402fe463badc691}{\index{Indexing\-Manager@{Indexing\-Manager}!init@{init}}
+\index{init@{init}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a4213bb26f5207ee3f402fe463badc691}
+
+
+init is called after alloc\-:. some initialization work can be done here. 
+
+\begin{DoxyReturn}{Returns}
+initialized not nil object 
+\end{DoxyReturn}
+\hypertarget{interface_indexing_manager_ab4ddaa4f4e9e68b76e76ec2cbaad7555}{\index{Indexing\-Manager@{Indexing\-Manager}!invalidate\-Background\-Indexer@{invalidate\-Background\-Indexer}}
+\index{invalidate\-Background\-Indexer@{invalidate\-Background\-Indexer}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{invalidate\-Background\-Indexer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) invalidate\-Background\-Indexer 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_ab4ddaa4f4e9e68b76e76ec2cbaad7555}
+stops the background indexer and removes the timer \hypertarget{interface_indexing_manager_ae29221a94d1b39d8cab62acdcd886eed}{\index{Indexing\-Manager@{Indexing\-Manager}!open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:@{open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:}}
+\index{open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:@{open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{open\-Or\-Create\-Indexfor\-Mod\-Name\-:text\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (S\-K\-Index\-Ref) open\-Or\-Create\-Indexfor\-Mod\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Mod\-Name}
+\item[{textType:(N\-S\-String $\ast$)}]{a\-Mod\-Type}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_ae29221a94d1b39d8cab62acdcd886eed}
+
+
+open or create index for the given parameters 
+
+\begin{DoxyReturn}{Returns}
+S\-K\-Index\-Ref or N\-U\-L\-L on error 
+\end{DoxyReturn}
+\hypertarget{interface_indexing_manager_ae09c73aa123f996eb91f152b380f6a88}{\index{Indexing\-Manager@{Indexing\-Manager}!remove\-Index\-For\-Module\-Name\-:@{remove\-Index\-For\-Module\-Name\-:}}
+\index{remove\-Index\-For\-Module\-Name\-:@{remove\-Index\-For\-Module\-Name\-:}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{remove\-Index\-For\-Module\-Name\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) remove\-Index\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{mod\-Name}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_ae09c73aa123f996eb91f152b380f6a88}
+removed the index for the given module name \hypertarget{interface_indexing_manager_ac9521eb6eb16027d1a4755a5379a6f30}{\index{Indexing\-Manager@{Indexing\-Manager}!shared\-Manager@{shared\-Manager}}
+\index{shared\-Manager@{shared\-Manager}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{shared\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Indexing\-Manager} $\ast$) shared\-Manager 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_ac9521eb6eb16027d1a4755a5379a6f30}
+
+
+singleton convenient allocator and getter of instance 
+
+this is a singleton \hypertarget{interface_indexing_manager_ae4e9d1ddd1e2a7588da243a83027008c}{\index{Indexing\-Manager@{Indexing\-Manager}!store\-Search\-Book\-Sets@{store\-Search\-Book\-Sets}}
+\index{store\-Search\-Book\-Sets@{store\-Search\-Book\-Sets}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{store\-Search\-Book\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) store\-Search\-Book\-Sets 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_ae4e9d1ddd1e2a7588da243a83027008c}
+stores to disk \hypertarget{interface_indexing_manager_a16d11aa0606b5d889a8bfef5321dee8d}{\index{Indexing\-Manager@{Indexing\-Manager}!trigger\-Background\-Index\-Check@{trigger\-Background\-Index\-Check}}
+\index{trigger\-Background\-Index\-Check@{trigger\-Background\-Index\-Check}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{trigger\-Background\-Index\-Check}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) trigger\-Background\-Index\-Check 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_indexing_manager_a16d11aa0606b5d889a8bfef5321dee8d}
+calling this method will trigger checking for modules that do not have a valid index in a separate thread. 
+
+\subsection{Field Documentation}
+\hypertarget{interface_indexing_manager_a0e3ac8fdf6dc5319ccd6eacde9ac823e}{\index{Indexing\-Manager@{Indexing\-Manager}!index\-Check\-Lock@{index\-Check\-Lock}}
+\index{index\-Check\-Lock@{index\-Check\-Lock}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{index\-Check\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Lock$\ast$) index\-Check\-Lock\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_indexing_manager_a0e3ac8fdf6dc5319ccd6eacde9ac823e}
+don't start two threads \hypertarget{interface_indexing_manager_a9a3484f0fcbdee9b2555cece4280811b}{\index{Indexing\-Manager@{Indexing\-Manager}!indexer\-Registrat@{indexer\-Registrat}}
+\index{indexer\-Registrat@{indexer\-Registrat}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{indexer\-Registrat}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) indexer\-Registrat\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_indexing_manager_a9a3484f0fcbdee9b2555cece4280811b}
+registers open indexers \hypertarget{interface_indexing_manager_a49efd1a3e05e38497c176a4e11fdbaab}{\index{Indexing\-Manager@{Indexing\-Manager}!timer@{timer}}
+\index{timer@{timer}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Timer$\ast$) timer\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_indexing_manager_a49efd1a3e05e38497c176a4e11fdbaab}
+timer for background indexer 
+
+\subsection{Property Documentation}
+\hypertarget{interface_indexing_manager_ac10a75f5b8c0414f6934cc8848ec7872}{\index{Indexing\-Manager@{Indexing\-Manager}!base\-Index\-Path@{base\-Index\-Path}}
+\index{base\-Index\-Path@{base\-Index\-Path}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{base\-Index\-Path}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) base\-Index\-Path\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexing_manager_ac10a75f5b8c0414f6934cc8848ec7872}
+\hypertarget{interface_indexing_manager_ae0c690118932b32ef40a74bb6a259acd}{\index{Indexing\-Manager@{Indexing\-Manager}!interval@{interval}}
+\index{interval@{interval}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{interval}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (int) interval\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_indexing_manager_ae0c690118932b32ef40a74bb6a259acd}
+interval in seconds for timer to fire \hypertarget{interface_indexing_manager_a493d6c6e3a4d8b94f3ac47ce56cf48db}{\index{Indexing\-Manager@{Indexing\-Manager}!search\-Book\-Sets@{search\-Book\-Sets}}
+\index{search\-Book\-Sets@{search\-Book\-Sets}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{search\-Book\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Array $\ast$) search\-Book\-Sets\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexing_manager_a493d6c6e3a4d8b94f3ac47ce56cf48db}
+book sets for indexed search \hypertarget{interface_indexing_manager_aa14a936f3cacdee52cdf8b3064ffebf3}{\index{Indexing\-Manager@{Indexing\-Manager}!stalled@{stalled}}
+\index{stalled@{stalled}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{stalled}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) stalled\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_indexing_manager_aa14a936f3cacdee52cdf8b3064ffebf3}
+\hypertarget{interface_indexing_manager_a5c5d0eea93f588d2bcc46da1b6db122e}{\index{Indexing\-Manager@{Indexing\-Manager}!sword\-Manager@{sword\-Manager}}
+\index{sword\-Manager@{sword\-Manager}!IndexingManager@{Indexing\-Manager}}
+\subsubsection[{sword\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Manager} $\ast$) sword\-Manager\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_indexing_manager_a5c5d0eea93f588d2bcc46da1b6db122e}
+this indexing manager has a dedicated \hyperlink{interface_sword_manager}{Sword\-Manager} instance 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Indexing/\hyperlink{_indexing_manager_8h}{Indexing\-Manager.\-h}\item 
+src/\-Indexing/\hyperlink{_indexing_manager_8m}{Indexing\-Manager.\-m}\end{DoxyCompactItemize}

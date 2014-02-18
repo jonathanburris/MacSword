@@ -1,0 +1,107 @@
+\hypertarget{_left_side_bar_view_controller_8m}{\section{src/\-User\-Interface/\-Left\-Side\-Bar\-View\-Controller.m File Reference}
+\label{_left_side_bar_view_controller_8m}\index{src/\-User\-Interface/\-Left\-Side\-Bar\-View\-Controller.\-m@{src/\-User\-Interface/\-Left\-Side\-Bar\-View\-Controller.\-m}}
+}
+{\ttfamily \#import \char`\"{}Left\-Side\-Bar\-View\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}App\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Bible\-Combi\-View\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Hostable\-View\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Single\-View\-Host\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Workspace\-View\-Host\-Controller.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Sword\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Sword\-Module.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Sword\-Mod\-Category.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Bookmark\-Manager.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Bookmark.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Three\-Cells\-Cell.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Bookmark\-Drag\-Item.\-h\char`\"{}}\\*
+{\ttfamily \#import \char`\"{}Search\-Text\-Object.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_left_side_bar_view_controller_8m_aba7dc7af8c2f5265d49201f6605416c2}{D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E}~@\char`\"{}ddbookmarktype\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9}{Bookmark\-Menu\-\_\-\-Items} \{ \\*
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9acf1093af42fe5f7fac49ff5cd2fafd94}{Bookmark\-Menu\-Add\-New\-B\-M} = 1, 
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a3b501d15367e545326fcc6479a5b0f4a}{Bookmark\-Menu\-Add\-New\-B\-M\-Folder}, 
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a802c0d74fac0f235b1efb645552b3b60}{Bookmark\-Menu\-Edit\-B\-M}, 
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9af614a9f945546db5636e18943b920690}{Bookmark\-Menu\-Remove\-B\-M}, 
+\\*
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a4473fdce4e691ea2f85b8677e2fc8d18}{Bookmark\-Menu\-Open\-B\-M\-In\-New}, 
+\hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9ae5db829187c1f031036fdfb6a5f01aba}{Bookmark\-Menu\-Open\-B\-M\-In\-Current}
+ \}
+\item 
+enum \hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1}{Module\-Menu\-\_\-\-Items} \{ \\*
+\hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1ad9cc752aeb2364f1f9c72639401b6686}{Module\-Menu\-Open\-Single} = 100, 
+\hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a831ce2db4520a4567c72fda2b1fb5396}{Module\-Menu\-Open\-Workspace}, 
+\hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71ef442fec7e8cac9006d596a143f5eb}{Module\-Menu\-Open\-Current}, 
+\hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71e9e0906621a945db63d1f1f6301e13}{Module\-Menu\-Show\-About} = 120, 
+\\*
+\hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1aade5aa2c4c53ca073bd3d03f0a97a882}{Module\-Menu\-Unlock}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9}{Bookmark\-Menu\-\_\-\-Items} \hyperlink{_left_side_bar_view_controller_8m_a4267c3c4d4e47a7f00071a348ba58f79}{Book\-Mark\-Menu\-Items}
+\item 
+enum \hyperlink{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1}{Module\-Menu\-\_\-\-Items} \hyperlink{_left_side_bar_view_controller_8m_a88ea9b0d01441c7bd8b0fc0877e2b99b}{Module\-Menu\-Items}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_left_side_bar_view_controller_8m_aba7dc7af8c2f5265d49201f6605416c2}{\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E@{D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E}}
+\index{D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E@{D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E}!LeftSideBarViewController.m@{Left\-Side\-Bar\-View\-Controller.\-m}}
+\subsubsection[{D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-D\-\_\-\-B\-O\-O\-K\-M\-A\-R\-K\-\_\-\-T\-Y\-P\-E~@\char`\"{}ddbookmarktype\char`\"{}}}\label{_left_side_bar_view_controller_8m_aba7dc7af8c2f5265d49201f6605416c2}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9}{\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-\_\-\-Items@{Bookmark\-Menu\-\_\-\-Items}}
+\index{Bookmark\-Menu\-\_\-\-Items@{Bookmark\-Menu\-\_\-\-Items}!LeftSideBarViewController.m@{Left\-Side\-Bar\-View\-Controller.\-m}}
+\subsubsection[{Bookmark\-Menu\-\_\-\-Items}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Bookmark\-Menu\-\_\-\-Items}}}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Bookmark\-Menu\-Add\-New\-B\-M@{Bookmark\-Menu\-Add\-New\-B\-M}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Add\-New\-B\-M@{Bookmark\-Menu\-Add\-New\-B\-M}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9acf1093af42fe5f7fac49ff5cd2fafd94}{Bookmark\-Menu\-Add\-New\-B\-M}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9acf1093af42fe5f7fac49ff5cd2fafd94}
+}]\index{Bookmark\-Menu\-Add\-New\-B\-M\-Folder@{Bookmark\-Menu\-Add\-New\-B\-M\-Folder}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Add\-New\-B\-M\-Folder@{Bookmark\-Menu\-Add\-New\-B\-M\-Folder}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a3b501d15367e545326fcc6479a5b0f4a}{Bookmark\-Menu\-Add\-New\-B\-M\-Folder}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a3b501d15367e545326fcc6479a5b0f4a}
+}]\index{Bookmark\-Menu\-Edit\-B\-M@{Bookmark\-Menu\-Edit\-B\-M}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Edit\-B\-M@{Bookmark\-Menu\-Edit\-B\-M}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a802c0d74fac0f235b1efb645552b3b60}{Bookmark\-Menu\-Edit\-B\-M}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a802c0d74fac0f235b1efb645552b3b60}
+}]\index{Bookmark\-Menu\-Remove\-B\-M@{Bookmark\-Menu\-Remove\-B\-M}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Remove\-B\-M@{Bookmark\-Menu\-Remove\-B\-M}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9af614a9f945546db5636e18943b920690}{Bookmark\-Menu\-Remove\-B\-M}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9af614a9f945546db5636e18943b920690}
+}]\index{Bookmark\-Menu\-Open\-B\-M\-In\-New@{Bookmark\-Menu\-Open\-B\-M\-In\-New}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Open\-B\-M\-In\-New@{Bookmark\-Menu\-Open\-B\-M\-In\-New}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a4473fdce4e691ea2f85b8677e2fc8d18}{Bookmark\-Menu\-Open\-B\-M\-In\-New}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9a4473fdce4e691ea2f85b8677e2fc8d18}
+}]\index{Bookmark\-Menu\-Open\-B\-M\-In\-Current@{Bookmark\-Menu\-Open\-B\-M\-In\-Current}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Bookmark\-Menu\-Open\-B\-M\-In\-Current@{Bookmark\-Menu\-Open\-B\-M\-In\-Current}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9ae5db829187c1f031036fdfb6a5f01aba}{Bookmark\-Menu\-Open\-B\-M\-In\-Current}\label{_left_side_bar_view_controller_8m_acd112cbed18c0bab28412371a3ce2bc9ae5db829187c1f031036fdfb6a5f01aba}
+}]\end{description}
+\end{Desc}
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1}{\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-\_\-\-Items@{Module\-Menu\-\_\-\-Items}}
+\index{Module\-Menu\-\_\-\-Items@{Module\-Menu\-\_\-\-Items}!LeftSideBarViewController.m@{Left\-Side\-Bar\-View\-Controller.\-m}}
+\subsubsection[{Module\-Menu\-\_\-\-Items}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Module\-Menu\-\_\-\-Items}}}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Module\-Menu\-Open\-Single@{Module\-Menu\-Open\-Single}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Open\-Single@{Module\-Menu\-Open\-Single}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1ad9cc752aeb2364f1f9c72639401b6686}{Module\-Menu\-Open\-Single}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1ad9cc752aeb2364f1f9c72639401b6686}
+}]\index{Module\-Menu\-Open\-Workspace@{Module\-Menu\-Open\-Workspace}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Open\-Workspace@{Module\-Menu\-Open\-Workspace}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a831ce2db4520a4567c72fda2b1fb5396}{Module\-Menu\-Open\-Workspace}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a831ce2db4520a4567c72fda2b1fb5396}
+}]\index{Module\-Menu\-Open\-Current@{Module\-Menu\-Open\-Current}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Open\-Current@{Module\-Menu\-Open\-Current}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71ef442fec7e8cac9006d596a143f5eb}{Module\-Menu\-Open\-Current}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71ef442fec7e8cac9006d596a143f5eb}
+}]\index{Module\-Menu\-Show\-About@{Module\-Menu\-Show\-About}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Show\-About@{Module\-Menu\-Show\-About}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71e9e0906621a945db63d1f1f6301e13}{Module\-Menu\-Show\-About}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1a71e9e0906621a945db63d1f1f6301e13}
+}]\index{Module\-Menu\-Unlock@{Module\-Menu\-Unlock}!Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}}\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Unlock@{Module\-Menu\-Unlock}}\item[{\em 
+\hypertarget{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1aade5aa2c4c53ca073bd3d03f0a97a882}{Module\-Menu\-Unlock}\label{_left_side_bar_view_controller_8m_ad93d82e1cc62e5c6ff73c18592d58fd1aade5aa2c4c53ca073bd3d03f0a97a882}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_left_side_bar_view_controller_8m_a4267c3c4d4e47a7f00071a348ba58f79}{\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Book\-Mark\-Menu\-Items@{Book\-Mark\-Menu\-Items}}
+\index{Book\-Mark\-Menu\-Items@{Book\-Mark\-Menu\-Items}!LeftSideBarViewController.m@{Left\-Side\-Bar\-View\-Controller.\-m}}
+\subsubsection[{Book\-Mark\-Menu\-Items}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Bookmark\-Menu\-\_\-\-Items} Book\-Mark\-Menu\-Items}}\label{_left_side_bar_view_controller_8m_a4267c3c4d4e47a7f00071a348ba58f79}
+\hypertarget{_left_side_bar_view_controller_8m_a88ea9b0d01441c7bd8b0fc0877e2b99b}{\index{Left\-Side\-Bar\-View\-Controller.\-m@{Left\-Side\-Bar\-View\-Controller.\-m}!Module\-Menu\-Items@{Module\-Menu\-Items}}
+\index{Module\-Menu\-Items@{Module\-Menu\-Items}!LeftSideBarViewController.m@{Left\-Side\-Bar\-View\-Controller.\-m}}
+\subsubsection[{Module\-Menu\-Items}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Module\-Menu\-\_\-\-Items} Module\-Menu\-Items}}\label{_left_side_bar_view_controller_8m_a88ea9b0d01441c7bd8b0fc0877e2b99b}

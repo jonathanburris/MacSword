@@ -1,0 +1,77 @@
+\hypertarget{interface_sword_book}{\section{Sword\-Book Class Reference}
+\label{interface_sword_book}\index{Sword\-Book@{Sword\-Book}}
+}
+
+
+{\ttfamily \#import $<$Sword\-Book.\-h$>$}
+
+Inheritance diagram for Sword\-Book\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_sword_book}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_sword_book_a59d9654a2481d74c2f4d08c15a4910ce}{init\-With\-Name\-:sword\-Manager\-:}
+\item 
+(\hyperlink{interface_sword_tree_entry}{Sword\-Tree\-Entry} $\ast$) -\/ \hyperlink{interface_sword_book_a0f99bbbf89bd08d2956e3153ead8a2e3}{tree\-Entry\-For\-Key\-:}
+\item 
+(void) -\/ \hyperlink{interface_sword_book_a29f0145032190c9b34677dca673b8216}{test\-Loop}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_sword_book_a9cefdcab320999fc518fbccc3fd0fcdd}{contents}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_sword_book_a59d9654a2481d74c2f4d08c15a4910ce}{\index{Sword\-Book@{Sword\-Book}!init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}}
+\index{init\-With\-Name\-:sword\-Manager\-:@{init\-With\-Name\-:sword\-Manager\-:}!SwordBook@{Sword\-Book}}
+\subsubsection[{init\-With\-Name\-:sword\-Manager\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-Name}
+\item[{swordManager:({\bf Sword\-Manager} $\ast$)}]{a\-Manager}
+\end{DoxyParamCaption}
+}}\label{interface_sword_book_a59d9654a2481d74c2f4d08c15a4910ce}
+
+
+Reimplemented from \hyperlink{interface_sword_module_a59d9654a2481d74c2f4d08c15a4910ce}{Sword\-Module}.
+
+\hypertarget{interface_sword_book_a29f0145032190c9b34677dca673b8216}{\index{Sword\-Book@{Sword\-Book}!test\-Loop@{test\-Loop}}
+\index{test\-Loop@{test\-Loop}!SwordBook@{Sword\-Book}}
+\subsubsection[{test\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) test\-Loop 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_sword_book_a29f0145032190c9b34677dca673b8216}
+\hypertarget{interface_sword_book_a0f99bbbf89bd08d2956e3153ead8a2e3}{\index{Sword\-Book@{Sword\-Book}!tree\-Entry\-For\-Key\-:@{tree\-Entry\-For\-Key\-:}}
+\index{tree\-Entry\-For\-Key\-:@{tree\-Entry\-For\-Key\-:}!SwordBook@{Sword\-Book}}
+\subsubsection[{tree\-Entry\-For\-Key\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Sword\-Tree\-Entry} $\ast$) tree\-Entry\-For\-Key\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{tree\-Key}
+\end{DoxyParamCaption}
+}}\label{interface_sword_book_a0f99bbbf89bd08d2956e3153ead8a2e3}
+return the tree content for the given treekey the treekey has to be already loaded 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em } & treekey that we should look for, nil for root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: \hyperlink{interface_sword_tree_entry}{Sword\-Tree\-Entry} 
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_sword_book_a9cefdcab320999fc518fbccc3fd0fcdd}{\index{Sword\-Book@{Sword\-Book}!contents@{contents}}
+\index{contents@{contents}!SwordBook@{Sword\-Book}}
+\subsubsection[{contents}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary $\ast$) contents\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_sword_book_a9cefdcab320999fc518fbccc3fd0fcdd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Sword/\hyperlink{_sword_book_8h}{Sword\-Book.\-h}\item 
+src/\-Sword/\hyperlink{_sword_book_8mm}{Sword\-Book.\-mm}\end{DoxyCompactItemize}

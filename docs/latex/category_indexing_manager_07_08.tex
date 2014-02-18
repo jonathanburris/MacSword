@@ -1,0 +1,72 @@
+\hypertarget{category_indexing_manager_07_08}{\section{Indexing\-Manager() Category Reference}
+\label{category_indexing_manager_07_08}\index{Indexing\-Manager()@{Indexing\-Manager()}}
+}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{category_indexing_manager_07_08_a9168b0c145bd6bd2d451dab7f0f22c97}{create\-Index\-For\-Module\-Name\-:module\-Type\-:}
+\begin{DoxyCompactList}\small\item\em creates a nonexisting empty index for the given parameters \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{category_indexing_manager_07_08_ac631b13b40180298f467f1dbcf2c1f7e}{run\-Index\-Check}
+\item 
+(void) -\/ \hyperlink{category_indexing_manager_07_08_a2fa5bf410879de7980dd9c7e60e86dd6}{detached\-Index\-Check\-Runner}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+N\-S\-Timer $\ast$ \hyperlink{category_indexing_manager_07_08_a49efd1a3e05e38497c176a4e11fdbaab}{timer}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{category_indexing_manager_07_08_a9a3484f0fcbdee9b2555cece4280811b}{indexer\-Registrat}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{category_indexing_manager_07_08_a9168b0c145bd6bd2d451dab7f0f22c97}{\index{Indexing\-Manager()@{Indexing\-Manager()}!create\-Index\-For\-Module\-Name\-:module\-Type\-:@{create\-Index\-For\-Module\-Name\-:module\-Type\-:}}
+\index{create\-Index\-For\-Module\-Name\-:module\-Type\-:@{create\-Index\-For\-Module\-Name\-:module\-Type\-:}!IndexingManager()@{Indexing\-Manager()}}
+\subsubsection[{create\-Index\-For\-Module\-Name\-:module\-Type\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) create\-Index\-For\-Module\-Name\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{mod\-Name}
+\item[{moduleType:({\bf Module\-Type})}]{mod\-Type}
+\end{DoxyParamCaption}
+}}\label{category_indexing_manager_07_08_a9168b0c145bd6bd2d451dab7f0f22c97}
+
+
+creates a nonexisting empty index for the given parameters 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mod\-Name} & the name of the module. \\
+\hline
+\mbox{\tt in}  & {\em mod\-Type} & the type of the module. depending on this, more than one index may be created for the module. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\-: success Y\-E\-S/\-N\-O 
+\end{DoxyReturn}
+\hypertarget{category_indexing_manager_07_08_a2fa5bf410879de7980dd9c7e60e86dd6}{\index{Indexing\-Manager()@{Indexing\-Manager()}!detached\-Index\-Check\-Runner@{detached\-Index\-Check\-Runner}}
+\index{detached\-Index\-Check\-Runner@{detached\-Index\-Check\-Runner}!IndexingManager()@{Indexing\-Manager()}}
+\subsubsection[{detached\-Index\-Check\-Runner}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) detached\-Index\-Check\-Runner 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{category_indexing_manager_07_08_a2fa5bf410879de7980dd9c7e60e86dd6}
+\hypertarget{category_indexing_manager_07_08_ac631b13b40180298f467f1dbcf2c1f7e}{\index{Indexing\-Manager()@{Indexing\-Manager()}!run\-Index\-Check@{run\-Index\-Check}}
+\index{run\-Index\-Check@{run\-Index\-Check}!IndexingManager()@{Indexing\-Manager()}}
+\subsubsection[{run\-Index\-Check}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) run\-Index\-Check 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{category_indexing_manager_07_08_ac631b13b40180298f467f1dbcf2c1f7e}
+this method can be run in seperate thread for checking index validity 
+
+\subsection{Property Documentation}
+\hypertarget{category_indexing_manager_07_08_a9a3484f0fcbdee9b2555cece4280811b}{\index{Indexing\-Manager()@{Indexing\-Manager()}!indexer\-Registrat@{indexer\-Registrat}}
+\index{indexer\-Registrat@{indexer\-Registrat}!IndexingManager()@{Indexing\-Manager()}}
+\subsubsection[{indexer\-Registrat}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) indexer\-Registrat\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{category_indexing_manager_07_08_a9a3484f0fcbdee9b2555cece4280811b}
+\hypertarget{category_indexing_manager_07_08_a49efd1a3e05e38497c176a4e11fdbaab}{\index{Indexing\-Manager()@{Indexing\-Manager()}!timer@{timer}}
+\index{timer@{timer}!IndexingManager()@{Indexing\-Manager()}}
+\subsubsection[{timer}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Timer$\ast$) timer\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{category_indexing_manager_07_08_a49efd1a3e05e38497c176a4e11fdbaab}
+
+
+The documentation for this category was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Indexing/\hyperlink{_indexing_manager_8m}{Indexing\-Manager.\-m}\end{DoxyCompactItemize}

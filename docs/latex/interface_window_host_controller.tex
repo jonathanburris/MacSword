@@ -1,0 +1,575 @@
+\hypertarget{interface_window_host_controller}{\section{Window\-Host\-Controller Class Reference}
+\label{interface_window_host_controller}\index{Window\-Host\-Controller@{Window\-Host\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Window\-Host\-Controller.\-h$>$}
+
+Inheritance diagram for Window\-Host\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.187500cm]{interface_window_host_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(N\-S\-View $\ast$) -\/ \hyperlink{interface_window_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{view}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{set\-View\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a1bf9b440a8e52c664f8847c0ed02c130}{toggle\-L\-S\-B}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_aab043bb063df00ed83d05b65f723b302}{toggle\-R\-S\-B}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_aa015dcc15079fa85d78de55ddc852e08}{show\-Left\-Side\-Bar\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_adb9e833246bb7ec12598b796d5898dbb}{show\-Right\-Side\-Bar\-:}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_window_host_controller_a425114580d8bb9f1d880d49a4157ec5b}{showing\-L\-S\-B}
+\item 
+(B\-O\-O\-L) -\/ \hyperlink{interface_window_host_controller_a94d97f9617c4545b4c290f258c7e1f9d}{showing\-R\-S\-B}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_afb4c8baa0460815fc268a5c162e30b26}{setup\-Toolbar}
+\begin{DoxyCompactList}\small\item\em create a toolbar and add it to the window. Set the delegate to this object. \end{DoxyCompactList}\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a3eb9aa435d54b4d7936ae7cdf3b9a544}{set\-Search\-Text\-:}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_window_host_controller_a2a53926b5a6ba394220b139621c2c150}{search\-Text}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_ac0acccdffaa9e7ca4e9e14dfa014a367}{set\-Search\-U\-I\-Type\-:search\-String\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_add828a61792981a971a62679c01ed72d}{search\-Input\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_af809211014fa5b4880af5a201cc81b36}{adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a254da93c19ddea8db470cf653b8b5354}{display\-Module\-About\-Sheet\-For\-Module\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a24edf89dac463cf7e136edbc5b69e5fb}{my\-Print\-:}
+\item 
+(\hyperlink{_sword_module_8h_a224128d35337e2b42cebf846d4d0c6f1}{Module\-Type}) -\/ \hyperlink{interface_window_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{module\-Type}
+\item 
+(N\-S\-String $\ast$) -\/ \hyperlink{interface_window_host_controller_aa0e4f7fb871f11d6f4783c36df16c0e1}{compute\-Window\-Title}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{content\-View\-Init\-Finished\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{remove\-Subview\-:}
+\item 
+(id) -\/ \hyperlink{interface_window_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{init\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a958c5e82e2f22a1a132161999b5d1704}{encode\-With\-Coder\-:}
+\item 
+(void) -\/ \hyperlink{interface_window_host_controller_a8344565b9772af4717a1966dd674cc13}{clear\-Recents\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a8056b79e130201f665a4c33125546a72}{left\-Side\-Bottom\-Seg\-Change\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_ac9e6f47af3d2473b69f862a91025a786}{right\-Side\-Bottom\-Seg\-Change\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_ae7cc9eb1976537581413e803f560dd66}{navigation\-Action\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a94a15b622fea5bac0e9ad90c90d07401}{force\-Reload\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a4f1a59ffe927b9746c01e98799522036}{left\-Side\-Bar\-Hide\-Show\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a7a94333e829cba8ea9389f054862d5e8}{right\-Side\-Bar\-Hide\-Show\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a694f58c6afa324646611b3c1b336b6de}{switch\-Lookup\-View\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a4ec972591bfbe986c29481752489bb7f}{navigation\-Back\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a6ad4335b3d6a5e7b82a150b1d6af813c}{navigation\-Forward\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a039f89a557a3955a07c700c8a7a1f781}{full\-Screen\-Mode\-On\-Off\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_ac20a8823c41a8eb84d69a87b9493ab64}{focus\-Search\-Entry\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a7b7685c643a48ad37f25d585f1866649}{next\-Book\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a581d7b2440e58185f5e41c7cd6af155d}{previous\-Book\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a87ff06783b2bc09031f5ccd2a72c3938}{next\-Chapter\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_ae5eb6b46b077d6f29f42f385df24e0b9}{previous\-Chapter\-:}
+\item 
+(I\-B\-Action) -\/ \hyperlink{interface_window_host_controller_a7808d4ab43585768c54db08e0b78bae9}{perform\-Close\-:}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet \hyperlink{interface_full_screen_split_view}{Full\-Screen\-Split\-View} $\ast$ \hyperlink{interface_window_host_controller_a2e15c659bc5be433b9b85c4a5d8e78f5}{main\-Split\-View}
+\item 
+I\-B\-Outlet N\-S\-View $\ast$ \hyperlink{interface_window_host_controller_a88e9b5588420551f9537792f22670ead}{view}
+\item 
+I\-B\-Outlet N\-S\-Split\-View $\ast$ \hyperlink{interface_window_host_controller_aa1713f0f82ab2a192f47c6b561992907}{content\-Split\-View}
+\item 
+I\-B\-Outlet N\-S\-Box $\ast$ \hyperlink{interface_window_host_controller_a9a9977454586999c31286b17841fe58b}{place\-Holder\-View}
+\item 
+I\-B\-Outlet N\-S\-Box $\ast$ \hyperlink{interface_window_host_controller_ad0134d2b55bf1ab4b69e986c2b0edc44}{place\-Holder\-Search\-Options\-View}
+\item 
+I\-B\-Outlet N\-S\-View $\ast$ \hyperlink{interface_window_host_controller_a00127015b86c47d6c9a83fffc5d6bed8}{options\-View}
+\item 
+I\-B\-Outlet N\-S\-Progress\-Indicator $\ast$ \hyperlink{interface_window_host_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}{progress\-Indicator}
+\item 
+I\-B\-Outlet N\-S\-Segmented\-Control $\ast$ \hyperlink{interface_window_host_controller_a4b804ec22d1ef2d1fe15cae4ff6708ed}{left\-Side\-Bottom\-Seg\-Control}
+\item 
+I\-B\-Outlet N\-S\-Segmented\-Control $\ast$ \hyperlink{interface_window_host_controller_adcab827eb36b1a7a389988bb3c235127}{right\-Side\-Bottom\-Seg\-Control}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_window_host_controller_ab40e38814ec10120dad9db6618238119}{add\-Bookmark\-Btn}
+\item 
+I\-B\-Outlet N\-S\-Button $\ast$ \hyperlink{interface_window_host_controller_a5a0bd67b80255923e8e4faed0cb5b93a}{force\-Reload\-Btn}
+\item 
+\hyperlink{interface_hostable_view_controller}{Hostable\-View\-Controller} $\ast$ \hyperlink{interface_window_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}{content\-View\-Controller}
+\item 
+N\-S\-Mutable\-Dictionary $\ast$ \hyperlink{interface_window_host_controller_a93d7f18be64aa1f313d2e619660cbef0}{tb\-Identifiers}
+\item 
+\hyperlink{interface_left_side_bar_view_controller}{Left\-Side\-Bar\-View\-Controller} $\ast$ \hyperlink{interface_window_host_controller_a8fe05988327a9d0052a364bdb8b87fbe}{lsb\-View\-Controller}
+\item 
+float \hyperlink{interface_window_host_controller_a7cf08d1ac134e40bbf4e3cb66bea3826}{lsb\-Width}
+\item 
+float \hyperlink{interface_window_host_controller_a97974e94978fcc8ac5e90a1610cc6409}{default\-L\-S\-B\-Width}
+\item 
+\hyperlink{interface_right_side_bar_view_controller}{Right\-Side\-Bar\-View\-Controller} $\ast$ \hyperlink{interface_window_host_controller_a94b9e7c3de9a1abc5b715ac6bc182d2a}{rsb\-View\-Controller}
+\item 
+float \hyperlink{interface_window_host_controller_a64fd8d11fec8191eab3933f2d94569f2}{rsb\-Width}
+\item 
+float \hyperlink{interface_window_host_controller_ae6e99d228c278105d6e55ed4233d381f}{default\-R\-S\-B\-Width}
+\item 
+N\-S\-Segmented\-Control $\ast$ \hyperlink{interface_window_host_controller_a9f56cb307817974d630b327988d8e4dc}{navigation\-Seg\-Control}
+\item 
+B\-O\-O\-L \hyperlink{interface_window_host_controller_a6b49eef36496ce6c7de7a10b79b0ec04}{navigation\-Action}
+\item 
+N\-S\-Search\-Field $\ast$ \hyperlink{interface_window_host_controller_adc341adfa3b6e061f59727f2a436e343}{search\-Text\-Field}
+\item 
+N\-S\-View $\ast$ \hyperlink{interface_window_host_controller_a510695160a6c785a547d4c728a328212}{search\-Options\-View}
+\item 
+N\-S\-Segmented\-Control $\ast$ \hyperlink{interface_window_host_controller_af1ca6d59e96cd2aa1180d70667ee2047}{search\-Type\-Seg\-Control}
+\item 
+B\-O\-O\-L \hyperlink{interface_window_host_controller_a8beaf7d7571e92e333c70e6b192ca551}{host\-Loaded}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_window_host_controller_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\item 
+\hyperlink{_indexer_8h_a15cc00b2ac3048d3b89959ced9ba0520}{Search\-Type} \hyperlink{interface_window_host_controller_ac3a1fa49924063258d425f116eb8b687}{search\-Type}
+\item 
+\hyperlink{interface_search_text_object}{Search\-Text\-Object} $\ast$ \hyperlink{interface_window_host_controller_a4175731facced9b2f4065873b09674b8}{current\-Search\-Text}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_window_host_controller_af809211014fa5b4880af5a201cc81b36}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type@{adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type}}
+\index{adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type@{adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) adapt\-U\-I\-To\-Currently\-Displaying\-Module\-Type 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_af809211014fa5b4880af5a201cc81b36}
+change the module type that is currently displaying \hypertarget{interface_window_host_controller_a8344565b9772af4717a1966dd674cc13}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!clear\-Recents\-:@{clear\-Recents\-:}}
+\index{clear\-Recents\-:@{clear\-Recents\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{clear\-Recents\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) clear\-Recents\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a8344565b9772af4717a1966dd674cc13}
+\hypertarget{interface_window_host_controller_aa0e4f7fb871f11d6f4783c36df16c0e1}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!compute\-Window\-Title@{compute\-Window\-Title}}
+\index{compute\-Window\-Title@{compute\-Window\-Title}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{compute\-Window\-Title}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) compute\-Window\-Title 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_aa0e4f7fb871f11d6f4783c36df16c0e1}
+\hypertarget{interface_window_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}}
+\index{content\-View\-Init\-Finished\-:@{content\-View\-Init\-Finished\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{content\-View\-Init\-Finished\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) content\-View\-Init\-Finished\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}
+called from subview when it has fully loaded 
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_a0bd73ec236f8055ac6566b39ddf66add}{$<$\-Subview\-Hosting$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_a14ea82a054bc45c1a1c62bb7f6985da2}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_a254da93c19ddea8db470cf653b8b5354}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!display\-Module\-About\-Sheet\-For\-Module\-:@{display\-Module\-About\-Sheet\-For\-Module\-:}}
+\index{display\-Module\-About\-Sheet\-For\-Module\-:@{display\-Module\-About\-Sheet\-For\-Module\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{display\-Module\-About\-Sheet\-For\-Module\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) display\-Module\-About\-Sheet\-For\-Module\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Sword\-Module} $\ast$)}]{a\-Mod}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a254da93c19ddea8db470cf653b8b5354}
+tells the lsb to open the module about window \hypertarget{interface_window_host_controller_a958c5e82e2f22a1a132161999b5d1704}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!encode\-With\-Coder\-:@{encode\-With\-Coder\-:}}
+\index{encode\-With\-Coder\-:@{encode\-With\-Coder\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{encode\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) encode\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{encoder}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a958c5e82e2f22a1a132161999b5d1704}
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_a958c5e82e2f22a1a132161999b5d1704}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_a958c5e82e2f22a1a132161999b5d1704}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_ac20a8823c41a8eb84d69a87b9493ab64}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!focus\-Search\-Entry\-:@{focus\-Search\-Entry\-:}}
+\index{focus\-Search\-Entry\-:@{focus\-Search\-Entry\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{focus\-Search\-Entry\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) focus\-Search\-Entry\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ac20a8823c41a8eb84d69a87b9493ab64}
+\hypertarget{interface_window_host_controller_a94a15b622fea5bac0e9ad90c90d07401}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!force\-Reload\-:@{force\-Reload\-:}}
+\index{force\-Reload\-:@{force\-Reload\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{force\-Reload\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) force\-Reload\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a94a15b622fea5bac0e9ad90c90d07401}
+to be overriden by subclasses \hypertarget{interface_window_host_controller_a039f89a557a3955a07c700c8a7a1f781}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!full\-Screen\-Mode\-On\-Off\-:@{full\-Screen\-Mode\-On\-Off\-:}}
+\index{full\-Screen\-Mode\-On\-Off\-:@{full\-Screen\-Mode\-On\-Off\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{full\-Screen\-Mode\-On\-Off\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) full\-Screen\-Mode\-On\-Off\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a039f89a557a3955a07c700c8a7a1f781}
+\hypertarget{interface_window_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!init\-With\-Coder\-:@{init\-With\-Coder\-:}}
+\index{init\-With\-Coder\-:@{init\-With\-Coder\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{init\-With\-Coder\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Coder\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-Coder $\ast$)}]{decoder}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_a6cf57c30ef62d8a0b74eafd74d0f8b39}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_a4f1a59ffe927b9746c01e98799522036}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!left\-Side\-Bar\-Hide\-Show\-:@{left\-Side\-Bar\-Hide\-Show\-:}}
+\index{left\-Side\-Bar\-Hide\-Show\-:@{left\-Side\-Bar\-Hide\-Show\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{left\-Side\-Bar\-Hide\-Show\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) left\-Side\-Bar\-Hide\-Show\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a4f1a59ffe927b9746c01e98799522036}
+\hypertarget{interface_window_host_controller_a8056b79e130201f665a4c33125546a72}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!left\-Side\-Bottom\-Seg\-Change\-:@{left\-Side\-Bottom\-Seg\-Change\-:}}
+\index{left\-Side\-Bottom\-Seg\-Change\-:@{left\-Side\-Bottom\-Seg\-Change\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{left\-Side\-Bottom\-Seg\-Change\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) left\-Side\-Bottom\-Seg\-Change\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a8056b79e130201f665a4c33125546a72}
+\hypertarget{interface_window_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!module\-Type@{module\-Type}}
+\index{module\-Type@{module\-Type}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{module\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Module\-Type}) module\-Type 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}
+abstract method 
+
+Reimplemented from \hyperlink{protocol_window_hosting-p_a2e69825435ec5d0c8cd8c49f5655ab6c}{$<$\-Window\-Hosting$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_a2e69825435ec5d0c8cd8c49f5655ab6c}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_a24edf89dac463cf7e136edbc5b69e5fb}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!my\-Print\-:@{my\-Print\-:}}
+\index{my\-Print\-:@{my\-Print\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{my\-Print\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) my\-Print\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a24edf89dac463cf7e136edbc5b69e5fb}
+\hypertarget{interface_window_host_controller_ae7cc9eb1976537581413e803f560dd66}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!navigation\-Action\-:@{navigation\-Action\-:}}
+\index{navigation\-Action\-:@{navigation\-Action\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{navigation\-Action\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) navigation\-Action\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ae7cc9eb1976537581413e803f560dd66}
+\hypertarget{interface_window_host_controller_a4ec972591bfbe986c29481752489bb7f}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!navigation\-Back\-:@{navigation\-Back\-:}}
+\index{navigation\-Back\-:@{navigation\-Back\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{navigation\-Back\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) navigation\-Back\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a4ec972591bfbe986c29481752489bb7f}
+\hypertarget{interface_window_host_controller_a6ad4335b3d6a5e7b82a150b1d6af813c}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!navigation\-Forward\-:@{navigation\-Forward\-:}}
+\index{navigation\-Forward\-:@{navigation\-Forward\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{navigation\-Forward\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) navigation\-Forward\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a6ad4335b3d6a5e7b82a150b1d6af813c}
+\hypertarget{interface_window_host_controller_a7b7685c643a48ad37f25d585f1866649}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!next\-Book\-:@{next\-Book\-:}}
+\index{next\-Book\-:@{next\-Book\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{next\-Book\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) next\-Book\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a7b7685c643a48ad37f25d585f1866649}
+\hypertarget{interface_window_host_controller_a87ff06783b2bc09031f5ccd2a72c3938}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!next\-Chapter\-:@{next\-Chapter\-:}}
+\index{next\-Chapter\-:@{next\-Chapter\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{next\-Chapter\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) next\-Chapter\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a87ff06783b2bc09031f5ccd2a72c3938}
+\hypertarget{interface_window_host_controller_a7808d4ab43585768c54db08e0b78bae9}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!perform\-Close\-:@{perform\-Close\-:}}
+\index{perform\-Close\-:@{perform\-Close\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{perform\-Close\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) perform\-Close\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a7808d4ab43585768c54db08e0b78bae9}
+\hypertarget{interface_window_host_controller_a581d7b2440e58185f5e41c7cd6af155d}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!previous\-Book\-:@{previous\-Book\-:}}
+\index{previous\-Book\-:@{previous\-Book\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{previous\-Book\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) previous\-Book\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a581d7b2440e58185f5e41c7cd6af155d}
+\hypertarget{interface_window_host_controller_ae5eb6b46b077d6f29f42f385df24e0b9}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!previous\-Chapter\-:@{previous\-Chapter\-:}}
+\index{previous\-Chapter\-:@{previous\-Chapter\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{previous\-Chapter\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) previous\-Chapter\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ae5eb6b46b077d6f29f42f385df24e0b9}
+\hypertarget{interface_window_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!remove\-Subview\-:@{remove\-Subview\-:}}
+\index{remove\-Subview\-:@{remove\-Subview\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{remove\-Subview\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) remove\-Subview\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Hostable\-View\-Controller} $\ast$)}]{a\-View\-Controller}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}
+
+
+Reimplemented from \hyperlink{protocol_subview_hosting-p_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{$<$\-Subview\-Hosting$>$}.
+
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_afc97bbb7e9b0d2f6b9fd995ada16f4a1}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_a7a94333e829cba8ea9389f054862d5e8}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!right\-Side\-Bar\-Hide\-Show\-:@{right\-Side\-Bar\-Hide\-Show\-:}}
+\index{right\-Side\-Bar\-Hide\-Show\-:@{right\-Side\-Bar\-Hide\-Show\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{right\-Side\-Bar\-Hide\-Show\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) right\-Side\-Bar\-Hide\-Show\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a7a94333e829cba8ea9389f054862d5e8}
+\hypertarget{interface_window_host_controller_ac9e6f47af3d2473b69f862a91025a786}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!right\-Side\-Bottom\-Seg\-Change\-:@{right\-Side\-Bottom\-Seg\-Change\-:}}
+\index{right\-Side\-Bottom\-Seg\-Change\-:@{right\-Side\-Bottom\-Seg\-Change\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{right\-Side\-Bottom\-Seg\-Change\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) right\-Side\-Bottom\-Seg\-Change\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ac9e6f47af3d2473b69f862a91025a786}
+\hypertarget{interface_window_host_controller_add828a61792981a971a62679c01ed72d}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Input\-:@{search\-Input\-:}}
+\index{search\-Input\-:@{search\-Input\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Input\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) search\-Input\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_add828a61792981a971a62679c01ed72d}
+action of any input to the search text field \hypertarget{interface_window_host_controller_a2a53926b5a6ba394220b139621c2c150}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Text@{search\-Text}}
+\index{search\-Text@{search\-Text}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-String $\ast$) search\-Text 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a2a53926b5a6ba394220b139621c2c150}
+\hypertarget{interface_window_host_controller_a3eb9aa435d54b4d7936ae7cdf3b9a544}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!set\-Search\-Text\-:@{set\-Search\-Text\-:}}
+\index{set\-Search\-Text\-:@{set\-Search\-Text\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{set\-Search\-Text\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Search\-Text\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-String $\ast$)}]{a\-String}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a3eb9aa435d54b4d7936ae7cdf3b9a544}
+sets the text string into the search text field
+
+used to set text to the search field from outside \hypertarget{interface_window_host_controller_ac0acccdffaa9e7ca4e9e14dfa014a367}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!set\-Search\-U\-I\-Type\-:search\-String\-:@{set\-Search\-U\-I\-Type\-:search\-String\-:}}
+\index{set\-Search\-U\-I\-Type\-:search\-String\-:@{set\-Search\-U\-I\-Type\-:search\-String\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{set\-Search\-U\-I\-Type\-:search\-String\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-Search\-U\-I\-Type\-: 
+\begin{DoxyParamCaption}
+\item[{({\bf Search\-Type})}]{a\-Type}
+\item[{searchString:(N\-S\-String $\ast$)}]{a\-String}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ac0acccdffaa9e7ca4e9e14dfa014a367}
+sets the type of search to U\-I \hypertarget{interface_window_host_controller_afb4c8baa0460815fc268a5c162e30b26}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!setup\-Toolbar@{setup\-Toolbar}}
+\index{setup\-Toolbar@{setup\-Toolbar}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{setup\-Toolbar}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) setup\-Toolbar 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_afb4c8baa0460815fc268a5c162e30b26}
+
+
+create a toolbar and add it to the window. Set the delegate to this object. 
+
+\hypertarget{interface_window_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!set\-View\-:@{set\-View\-:}}
+\index{set\-View\-:@{set\-View\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{set\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) set\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(N\-S\-View $\ast$)}]{a\-View}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a9544a8dd4794dc764c2d74870c87ae35}
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_a9544a8dd4794dc764c2d74870c87ae35}{Single\-View\-Host\-Controller}.
+
+\hypertarget{interface_window_host_controller_a425114580d8bb9f1d880d49a4157ec5b}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!showing\-L\-S\-B@{showing\-L\-S\-B}}
+\index{showing\-L\-S\-B@{showing\-L\-S\-B}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{showing\-L\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) showing\-L\-S\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a425114580d8bb9f1d880d49a4157ec5b}
+\hypertarget{interface_window_host_controller_a94d97f9617c4545b4c290f258c7e1f9d}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!showing\-R\-S\-B@{showing\-R\-S\-B}}
+\index{showing\-R\-S\-B@{showing\-R\-S\-B}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{showing\-R\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) showing\-R\-S\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a94d97f9617c4545b4c290f258c7e1f9d}
+\hypertarget{interface_window_host_controller_aa015dcc15079fa85d78de55ddc852e08}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!show\-Left\-Side\-Bar\-:@{show\-Left\-Side\-Bar\-:}}
+\index{show\-Left\-Side\-Bar\-:@{show\-Left\-Side\-Bar\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{show\-Left\-Side\-Bar\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\-Left\-Side\-Bar\-: 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{flag}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_aa015dcc15079fa85d78de55ddc852e08}
+\hypertarget{interface_window_host_controller_adb9e833246bb7ec12598b796d5898dbb}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!show\-Right\-Side\-Bar\-:@{show\-Right\-Side\-Bar\-:}}
+\index{show\-Right\-Side\-Bar\-:@{show\-Right\-Side\-Bar\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{show\-Right\-Side\-Bar\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) show\-Right\-Side\-Bar\-: 
+\begin{DoxyParamCaption}
+\item[{(B\-O\-O\-L)}]{flag}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_adb9e833246bb7ec12598b796d5898dbb}
+\hypertarget{interface_window_host_controller_a694f58c6afa324646611b3c1b336b6de}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!switch\-Lookup\-View\-:@{switch\-Lookup\-View\-:}}
+\index{switch\-Lookup\-View\-:@{switch\-Lookup\-View\-:}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{switch\-Lookup\-View\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Action) switch\-Lookup\-View\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{sender}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a694f58c6afa324646611b3c1b336b6de}
+\hypertarget{interface_window_host_controller_a1bf9b440a8e52c664f8847c0ed02c130}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!toggle\-L\-S\-B@{toggle\-L\-S\-B}}
+\index{toggle\-L\-S\-B@{toggle\-L\-S\-B}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{toggle\-L\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) toggle\-L\-S\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_a1bf9b440a8e52c664f8847c0ed02c130}
+\hypertarget{interface_window_host_controller_aab043bb063df00ed83d05b65f723b302}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!toggle\-R\-S\-B@{toggle\-R\-S\-B}}
+\index{toggle\-R\-S\-B@{toggle\-R\-S\-B}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{toggle\-R\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) toggle\-R\-S\-B 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_aab043bb063df00ed83d05b65f723b302}
+\hypertarget{interface_window_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!view@{view}}
+\index{view@{view}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View $\ast$) view 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_window_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}
+
+
+Reimplemented in \hyperlink{interface_workspace_view_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{Workspace\-View\-Host\-Controller}, and \hyperlink{interface_single_view_host_controller_ac426656af30e3d0dc3b904ebcd81c38f}{Single\-View\-Host\-Controller}.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_window_host_controller_ab40e38814ec10120dad9db6618238119}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!add\-Bookmark\-Btn@{add\-Bookmark\-Btn}}
+\index{add\-Bookmark\-Btn@{add\-Bookmark\-Btn}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{add\-Bookmark\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) add\-Bookmark\-Btn\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_ab40e38814ec10120dad9db6618238119}
+\hypertarget{interface_window_host_controller_aa1713f0f82ab2a192f47c6b561992907}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!content\-Split\-View@{content\-Split\-View}}
+\index{content\-Split\-View@{content\-Split\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{content\-Split\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Split\-View$\ast$) content\-Split\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_aa1713f0f82ab2a192f47c6b561992907}
+\hypertarget{interface_window_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!content\-View\-Controller@{content\-View\-Controller}}
+\index{content\-View\-Controller@{content\-View\-Controller}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{content\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Hostable\-View\-Controller}$\ast$) content\-View\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a1ec163d3953f695d7ac4f2ee768c6a9a}
+\hypertarget{interface_window_host_controller_a97974e94978fcc8ac5e90a1610cc6409}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!default\-L\-S\-B\-Width@{default\-L\-S\-B\-Width}}
+\index{default\-L\-S\-B\-Width@{default\-L\-S\-B\-Width}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{default\-L\-S\-B\-Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) default\-L\-S\-B\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a97974e94978fcc8ac5e90a1610cc6409}
+\hypertarget{interface_window_host_controller_ae6e99d228c278105d6e55ed4233d381f}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!default\-R\-S\-B\-Width@{default\-R\-S\-B\-Width}}
+\index{default\-R\-S\-B\-Width@{default\-R\-S\-B\-Width}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{default\-R\-S\-B\-Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) default\-R\-S\-B\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_ae6e99d228c278105d6e55ed4233d381f}
+\hypertarget{interface_window_host_controller_a5a0bd67b80255923e8e4faed0cb5b93a}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!force\-Reload\-Btn@{force\-Reload\-Btn}}
+\index{force\-Reload\-Btn@{force\-Reload\-Btn}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{force\-Reload\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Button$\ast$) force\-Reload\-Btn\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a5a0bd67b80255923e8e4faed0cb5b93a}
+\hypertarget{interface_window_host_controller_a8beaf7d7571e92e333c70e6b192ca551}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!host\-Loaded@{host\-Loaded}}
+\index{host\-Loaded@{host\-Loaded}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{host\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) host\-Loaded\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a8beaf7d7571e92e333c70e6b192ca551}
+flag indicating that the host has fully loaded \hypertarget{interface_window_host_controller_a4b804ec22d1ef2d1fe15cae4ff6708ed}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!left\-Side\-Bottom\-Seg\-Control@{left\-Side\-Bottom\-Seg\-Control}}
+\index{left\-Side\-Bottom\-Seg\-Control@{left\-Side\-Bottom\-Seg\-Control}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{left\-Side\-Bottom\-Seg\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Segmented\-Control$\ast$) left\-Side\-Bottom\-Seg\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a4b804ec22d1ef2d1fe15cae4ff6708ed}
+the segmentedcontrol for left sides \hypertarget{interface_window_host_controller_a8fe05988327a9d0052a364bdb8b87fbe}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!lsb\-View\-Controller@{lsb\-View\-Controller}}
+\index{lsb\-View\-Controller@{lsb\-View\-Controller}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{lsb\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Left\-Side\-Bar\-View\-Controller}$\ast$) lsb\-View\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a8fe05988327a9d0052a364bdb8b87fbe}
+\hypertarget{interface_window_host_controller_a7cf08d1ac134e40bbf4e3cb66bea3826}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!lsb\-Width@{lsb\-Width}}
+\index{lsb\-Width@{lsb\-Width}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{lsb\-Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) lsb\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a7cf08d1ac134e40bbf4e3cb66bea3826}
+\hypertarget{interface_window_host_controller_a2e15c659bc5be433b9b85c4a5d8e78f5}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!main\-Split\-View@{main\-Split\-View}}
+\index{main\-Split\-View@{main\-Split\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{main\-Split\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet {\bf Full\-Screen\-Split\-View}$\ast$) main\-Split\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a2e15c659bc5be433b9b85c4a5d8e78f5}
+\hypertarget{interface_window_host_controller_a6b49eef36496ce6c7de7a10b79b0ec04}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!navigation\-Action@{navigation\-Action}}
+\index{navigation\-Action@{navigation\-Action}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{navigation\-Action}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (B\-O\-O\-L) navigation\-Action\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a6b49eef36496ce6c7de7a10b79b0ec04}
+\hypertarget{interface_window_host_controller_a9f56cb307817974d630b327988d8e4dc}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!navigation\-Seg\-Control@{navigation\-Seg\-Control}}
+\index{navigation\-Seg\-Control@{navigation\-Seg\-Control}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{navigation\-Seg\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Segmented\-Control$\ast$) navigation\-Seg\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a9f56cb307817974d630b327988d8e4dc}
+\hypertarget{interface_window_host_controller_a00127015b86c47d6c9a83fffc5d6bed8}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!options\-View@{options\-View}}
+\index{options\-View@{options\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{options\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-View$\ast$) options\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a00127015b86c47d6c9a83fffc5d6bed8}
+\hypertarget{interface_window_host_controller_ad0134d2b55bf1ab4b69e986c2b0edc44}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!place\-Holder\-Search\-Options\-View@{place\-Holder\-Search\-Options\-View}}
+\index{place\-Holder\-Search\-Options\-View@{place\-Holder\-Search\-Options\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{place\-Holder\-Search\-Options\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Box$\ast$) place\-Holder\-Search\-Options\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_ad0134d2b55bf1ab4b69e986c2b0edc44}
+\hypertarget{interface_window_host_controller_a9a9977454586999c31286b17841fe58b}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!place\-Holder\-View@{place\-Holder\-View}}
+\index{place\-Holder\-View@{place\-Holder\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{place\-Holder\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Box$\ast$) place\-Holder\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a9a9977454586999c31286b17841fe58b}
+\hypertarget{interface_window_host_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!progress\-Indicator@{progress\-Indicator}}
+\index{progress\-Indicator@{progress\-Indicator}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{progress\-Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Progress\-Indicator$\ast$) progress\-Indicator\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}
+\hypertarget{interface_window_host_controller_adcab827eb36b1a7a389988bb3c235127}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!right\-Side\-Bottom\-Seg\-Control@{right\-Side\-Bottom\-Seg\-Control}}
+\index{right\-Side\-Bottom\-Seg\-Control@{right\-Side\-Bottom\-Seg\-Control}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{right\-Side\-Bottom\-Seg\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Segmented\-Control$\ast$) right\-Side\-Bottom\-Seg\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_adcab827eb36b1a7a389988bb3c235127}
+the segmentedcontrol for right sides \hypertarget{interface_window_host_controller_a94b9e7c3de9a1abc5b715ac6bc182d2a}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!rsb\-View\-Controller@{rsb\-View\-Controller}}
+\index{rsb\-View\-Controller@{rsb\-View\-Controller}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{rsb\-View\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Right\-Side\-Bar\-View\-Controller}$\ast$) rsb\-View\-Controller\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a94b9e7c3de9a1abc5b715ac6bc182d2a}
+\hypertarget{interface_window_host_controller_a64fd8d11fec8191eab3933f2d94569f2}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!rsb\-Width@{rsb\-Width}}
+\index{rsb\-Width@{rsb\-Width}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{rsb\-Width}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (float) rsb\-Width\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a64fd8d11fec8191eab3933f2d94569f2}
+\hypertarget{interface_window_host_controller_a510695160a6c785a547d4c728a328212}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Options\-View@{search\-Options\-View}}
+\index{search\-Options\-View@{search\-Options\-View}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Options\-View}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-View$\ast$) search\-Options\-View\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a510695160a6c785a547d4c728a328212}
+\hypertarget{interface_window_host_controller_adc341adfa3b6e061f59727f2a436e343}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Text\-Field@{search\-Text\-Field}}
+\index{search\-Text\-Field@{search\-Text\-Field}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Text\-Field}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Search\-Field$\ast$) search\-Text\-Field\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_adc341adfa3b6e061f59727f2a436e343}
+\hypertarget{interface_window_host_controller_af1ca6d59e96cd2aa1180d70667ee2047}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Type\-Seg\-Control@{search\-Type\-Seg\-Control}}
+\index{search\-Type\-Seg\-Control@{search\-Type\-Seg\-Control}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Type\-Seg\-Control}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Segmented\-Control$\ast$) search\-Type\-Seg\-Control\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_af1ca6d59e96cd2aa1180d70667ee2047}
+search type segmented control \hypertarget{interface_window_host_controller_a93d7f18be64aa1f313d2e619660cbef0}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!tb\-Identifiers@{tb\-Identifiers}}
+\index{tb\-Identifiers@{tb\-Identifiers}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{tb\-Identifiers}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (N\-S\-Mutable\-Dictionary$\ast$) tb\-Identifiers\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a93d7f18be64aa1f313d2e619660cbef0}
+\hypertarget{interface_window_host_controller_a88e9b5588420551f9537792f22670ead}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!view@{view}}
+\index{view@{view}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-View$\ast$) view\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_window_host_controller_a88e9b5588420551f9537792f22670ead}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_window_host_controller_a4175731facced9b2f4065873b09674b8}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!current\-Search\-Text@{current\-Search\-Text}}
+\index{current\-Search\-Text@{current\-Search\-Text}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{current\-Search\-Text}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Search\-Text\-Object} $\ast$) current\-Search\-Text\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [retain]}}}\label{interface_window_host_controller_a4175731facced9b2f4065873b09674b8}
+\hypertarget{interface_window_host_controller_a8d9332fcd23523b1e2520b8765577423}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_window_host_controller_a8d9332fcd23523b1e2520b8765577423}
+\hypertarget{interface_window_host_controller_ac3a1fa49924063258d425f116eb8b687}{\index{Window\-Host\-Controller@{Window\-Host\-Controller}!search\-Type@{search\-Type}}
+\index{search\-Type@{search\-Type}!WindowHostController@{Window\-Host\-Controller}}
+\subsubsection[{search\-Type}]{\setlength{\rightskip}{0pt plus 5cm}-\/ ({\bf Search\-Type}) search\-Type\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_window_host_controller_ac3a1fa49924063258d425f116eb8b687}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-User\-Interface/\hyperlink{_window_host_controller_8h}{Window\-Host\-Controller.\-h}\item 
+src/\-User\-Interface/\hyperlink{_window_host_controller_8m}{Window\-Host\-Controller.\-m}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{interface_progress_overlay_view_controller}{\section{Progress\-Overlay\-View\-Controller Class Reference}
+\label{interface_progress_overlay_view_controller}\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}}
+}
+
+
+{\ttfamily \#import $<$Progress\-Overlay\-View\-Controller.\-h$>$}
+
+Inheritance diagram for Progress\-Overlay\-View\-Controller\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_progress_overlay_view_controller}
+\end{center}
+\end{figure}
+\subsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \hyperlink{interface_progress_overlay_view_controller_a31987d71b58e0520588676a4f6896d2c}{init\-With\-Delegate\-:}
+\item 
+(void) -\/ \hyperlink{interface_progress_overlay_view_controller_a76f768a1588a3dee3d0ae08939156996}{start\-Progress\-Animation}
+\item 
+(void) -\/ \hyperlink{interface_progress_overlay_view_controller_a6c377016e2cceb931938a3086da5f808}{stop\-Progress\-Animation}
+\end{DoxyCompactItemize}
+\subsection*{Class Methods}
+\begin{DoxyCompactItemize}
+\item 
+(\hyperlink{interface_progress_overlay_view_controller}{Progress\-Overlay\-View\-Controller} $\ast$) + \hyperlink{interface_progress_overlay_view_controller_a9a003421cf639ab427eb0e6d395a2e39}{default\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+I\-B\-Outlet N\-S\-Progress\-Indicator $\ast$ \hyperlink{interface_progress_overlay_view_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}{progress\-Indicator}
+\item 
+I\-B\-Outlet id \hyperlink{interface_progress_overlay_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{delegate}
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+id \hyperlink{interface_progress_overlay_view_controller_a8d9332fcd23523b1e2520b8765577423}{delegate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Method Documentation}
+\hypertarget{interface_progress_overlay_view_controller_a9a003421cf639ab427eb0e6d395a2e39}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!default\-Controller@{default\-Controller}}
+\index{default\-Controller@{default\-Controller}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{default\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}+ ({\bf Progress\-Overlay\-View\-Controller} $\ast$) default\-Controller 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_progress_overlay_view_controller_a9a003421cf639ab427eb0e6d395a2e39}
+\hypertarget{interface_progress_overlay_view_controller_a31987d71b58e0520588676a4f6896d2c}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!init\-With\-Delegate\-:@{init\-With\-Delegate\-:}}
+\index{init\-With\-Delegate\-:@{init\-With\-Delegate\-:}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{init\-With\-Delegate\-:}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) init\-With\-Delegate\-: 
+\begin{DoxyParamCaption}
+\item[{(id)}]{a\-Delegate}
+\end{DoxyParamCaption}
+}}\label{interface_progress_overlay_view_controller_a31987d71b58e0520588676a4f6896d2c}
+when using this initializer, the delegate should implement -\/content\-View\-Init\-Finished\-: in order to be notified when the loading of progress indcator is done \hypertarget{interface_progress_overlay_view_controller_a76f768a1588a3dee3d0ae08939156996}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!start\-Progress\-Animation@{start\-Progress\-Animation}}
+\index{start\-Progress\-Animation@{start\-Progress\-Animation}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{start\-Progress\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) start\-Progress\-Animation 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_progress_overlay_view_controller_a76f768a1588a3dee3d0ae08939156996}
+\hypertarget{interface_progress_overlay_view_controller_a6c377016e2cceb931938a3086da5f808}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!stop\-Progress\-Animation@{stop\-Progress\-Animation}}
+\index{stop\-Progress\-Animation@{stop\-Progress\-Animation}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{stop\-Progress\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (void) stop\-Progress\-Animation 
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+}}\label{interface_progress_overlay_view_controller_a6c377016e2cceb931938a3086da5f808}
+
+
+\subsection{Field Documentation}
+\hypertarget{interface_progress_overlay_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet id) delegate\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_progress_overlay_view_controller_a9f85cc570ea673f3b6001f8509d4bb11}
+\hypertarget{interface_progress_overlay_view_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!progress\-Indicator@{progress\-Indicator}}
+\index{progress\-Indicator@{progress\-Indicator}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{progress\-Indicator}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (I\-B\-Outlet N\-S\-Progress\-Indicator$\ast$) progress\-Indicator\hspace{0.3cm}{\ttfamily [protected]}}}\label{interface_progress_overlay_view_controller_a8d8847912bf02123b1ed3e8a70e6ed7e}
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_progress_overlay_view_controller_a8d9332fcd23523b1e2520b8765577423}{\index{Progress\-Overlay\-View\-Controller@{Progress\-Overlay\-View\-Controller}!delegate@{delegate}}
+\index{delegate@{delegate}!ProgressOverlayViewController@{Progress\-Overlay\-View\-Controller}}
+\subsubsection[{delegate}]{\setlength{\rightskip}{0pt plus 5cm}-\/ (id) delegate\hspace{0.3cm}{\ttfamily [read]}, {\ttfamily [write]}, {\ttfamily [atomic]}, {\ttfamily [assign]}}}\label{interface_progress_overlay_view_controller_a8d9332fcd23523b1e2520b8765577423}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Progress\-Overlay\-View/\hyperlink{_progress_overlay_view_controller_8h}{Progress\-Overlay\-View\-Controller.\-h}\item 
+src/\-Progress\-Overlay\-View/\hyperlink{_progress_overlay_view_controller_8m}{Progress\-Overlay\-View\-Controller.\-m}\end{DoxyCompactItemize}
